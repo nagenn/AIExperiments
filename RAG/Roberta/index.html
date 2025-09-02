@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Freshbite RAG QA Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        input, button { padding: 8px; }
+        #answer { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Freshbite RAG Question Answering</h1>
+    <input id="question" type="text" placeholder="Ask me something..." size="50">
+    <button onclick="ask()">Ask</button>
+    <div id="answer"></div>
+
+    <script>
+        async function ask() {
+            const question = document.getElementById("question").value;
+            const res = await fetch("/ask", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ question })
+            });
+            const data = await res.json();
+            document.getElementById("answer").innerHTML =
+                `<strong>Answer:</strong> ${data.answer} <br>
+                 <strong>Confidence:</strong> ${data.confidence}`;
+        }
+    </script>
+</body>
+</html>
