@@ -1,46 +1,100 @@
 import pandas as pd
-from mlxtend.preprocessing import TransactionEncoder
-from mlxtend.frequent_patterns import apriori, association_rules
+import matplotlib.pyplot as plt
+from collections import Counter, defaultdict
+import itertools
 
-# Load dataset
-df = pd.read_csv("grocery_transactions.csv")
+CSV_PATH = "grocery_transactions.csv"
 
-# Convert 'ProductSequence' column into lists
-transactions = df['ProductSequence'].apply(lambda x: x.split(", ")).tolist()
+# --- Build co-occurrence counts ---
+def cooccurrence_fallback_scores(customer_baskets):
+    transactions = customer_baskets["ProductList"].tolist()
+    item_counts = Counter()
+    for t in transactions:
+        item_counts.update(set(t))
+    pair_counts = Counter()
+    for t in transactions:
+        items = sorted(set(t))
+        for a, b in itertools.combinations(items, 2):
+            pair_counts[(a, b)] += 1
+    return item_counts, pair_counts
 
-# Encode transactions
-te = TransactionEncoder()
-te_data = te.fit(transactions).transform(transactions)
-df_encoded = pd.DataFrame(te_data, columns=te.columns_)
+def conditional_score(history, candidates, item_counts, pair_counts):
+    scores = defaultdict(float)
+    hist_list = sorted(history)
+    for j in candidates:
+        s = 0.0
+        for i in hist_list:
+            if i == j:
+                continue
+            a, b = sorted((i, j))
+            co = pair_counts.get((a, b), 0)
+            cnt_i = item_counts.get(i, 1)
+            s += co / cnt_i  # approximate P(j|i)
+        scores[j] = s
+    return scores
 
-# Frequent itemsets & association rules
-frequent_itemsets = apriori(df_encoded, min_support=0.1, use_colnames=True)
-rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=0.5)
+def predict_next_products(customer_id, top_k=3, plot=True):
+    # Load raw dataset
+    df = pd.read_csv(CSV_PATH)
+    df.columns = df.columns.str.strip()
 
-# Function to predict next products for a given customer
-def predict_next_products(customer_id):
-    customer_basket = df[df['CustomerID'] == customer_id]['ProductSequence'].values[0].split(", ")
-    print(f"Customer {customer_id} Basket: {customer_basket}\n")
-    
-    # Filter rules where antecedents are subset of customer's basket
-    possible_rules = rules[rules['antecedents'].apply(lambda x: x.issubset(customer_basket))]
-    
-    if possible_rules.empty:
-        print("No strong prediction could be made for this basket.")
+    if customer_id not in set(df["CustomerID"].values):
+        print("Customer ID not found.")
         return
-    
-    # Show predictions
-    print("Predicted Next Product(s):")
-    for _, row in possible_rules.iterrows():
-        next_product = list(row['consequents'])
-        print(f"- {next_product} | Confidence: {row['confidence']:.2f} | Lift: {row['lift']:.2f}")
 
-# Ask user for input
-try:
-    customer_id = int(input("Enter Customer ID (1–50): "))
-    if customer_id in df['CustomerID'].values:
-        predict_next_products(customer_id)
-    else:
-        print("Invalid Customer ID. Please try again.")
-except ValueError:
-    print("Please enter a valid numeric Customer ID.")
+    # --- RAW PURCHASE HISTORY ---
+    cols = [c for c in ["CustomerID", "PurchaseDate", "ProductSequence"] if c in df.columns]
+    raw_history = df[df["CustomerID"] == customer_id][cols]
+    print(f"All purchases for Customer {customer_id}:\n{raw_history.to_string(index=False)}\n")
+
+    # --- AGGREGATED HISTORY ---
+    history = set()
+    for seq in df[df["CustomerID"] == customer_id]["ProductSequence"]:
+        history.update(seq.split(", "))
+    print(f"Aggregated Purchase History (unique items): {sorted(history)}\n")
+
+    # --- CUSTOMER-LEVEL BASKETS ---
+    customer_baskets = (
+        df.groupby("CustomerID")["ProductSequence"]
+          .apply(lambda x: ", ".join(x))
+          .reset_index()
+    )
+    customer_baskets["ProductList"] = customer_baskets["ProductSequence"].apply(
+        lambda x: list(dict.fromkeys(x.split(", ")))
+    )
+
+    # --- ALWAYS USE CO-OCCURRENCE ---
+    item_counts, pair_counts = cooccurrence_fallback_scores(customer_baskets)
+    all_items = set(item_counts.keys())
+    candidates = sorted(all_items - history)
+    scores = conditional_score(history, candidates, item_counts, pair_counts)
+
+    max_s = max(scores.values()) if scores else 1.0
+    preds = sorted(
+        [(j, (scores[j]/max_s if max_s else 0)) for j in candidates],
+        key=lambda x: x[1], reverse=True
+    )[:top_k]
+
+    # --- SHOW TOP 3 PREDICTIONS ---
+    print("Top 3 Predicted Next Products (ranked):")
+    for rank, (item, conf) in enumerate(preds, start=1):
+        print(f"{rank}. {item} | Score: {conf:.2f}")
+
+    # --- POPUP CHART ---
+    if plot:
+        items = [p[0] for p in preds]
+        scores = [p[1] for p in preds]
+        plt.figure(figsize=(6, 4))
+        plt.bar(items, scores, color="skyblue")
+        plt.xlabel("Predicted Products")
+        plt.ylabel("Score")
+        plt.title(f"Top 3 Predictions for Customer {customer_id}")
+        plt.tight_layout()
+        plt.show(block=True)
+
+if __name__ == "__main__":
+    try:
+        cid = int(input("Enter Customer ID (1–50): ").strip())
+        predict_next_products(cid, top_k=3, plot=True)
+    except ValueError:
+        print("Please enter a valid numeric Customer ID.")
