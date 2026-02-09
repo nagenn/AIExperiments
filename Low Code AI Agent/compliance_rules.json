@@ -1,0 +1,22 @@
+{
+  "contract_type": "vendor",
+  "required_clauses": [
+    "Limitation of Liability",
+    "Indemnification",
+    "Termination Rights",
+    "Data Protection / Privacy",
+    "Intellectual Property Ownership"
+  ],
+  "prohibited_terms": [
+    "unlimited liability",
+    "automatic renewal without notice",
+    "exclusive jurisdiction in foreign country"
+  ],
+  "risk_thresholds": {
+    "payment_terms": "Net 30 days maximum",
+    "liability_cap": "Must not exceed total contract value"
+  },
+  "escalation_rules": {
+    "confidence_below": 0.75
+  }
+}
