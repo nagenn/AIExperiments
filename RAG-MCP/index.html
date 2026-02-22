@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Freshbite RAG QA Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; max-width: 700px; }
+        input { padding: 8px; width: 420px; }
+        button { padding: 8px 16px; margin-left: 6px; cursor: pointer; }
+        #answer-box { margin-top: 24px; padding: 16px; border: 1px solid #ddd; border-radius: 6px; display: none; }
+        #context-box { margin-top: 12px; font-size: 0.85em; color: #555; }
+        summary { cursor: pointer; color: #888; }
+    </style>
+</head>
+<body>
+    <h1>FreshBite RAG Question Answering</h1>
+    <input id="question" type="text" placeholder="Ask me something..." />
+    <button onclick="ask()">Ask</button>
+
+    <div id="answer-box">
+        <strong>Answer:</strong>
+        <p id="answer-text"></p>
+        <details id="context-box">
+            <summary>Show retrieved context</summary>
+            <ul id="context-list"></ul>
+        </details>
+    </div>
+
+    <script>
+        async function ask() {
+            const question = document.getElementById("question").value.trim();
+            if (!question) return;
+
+            document.getElementById("answer-text").textContent = "Thinking...";
+            document.getElementById("answer-box").style.display = "block";
+
+            const res = await fetch("/ask", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ question })
+            });
+            const data = await res.json();
+
+            if (data.error) {
+                document.getElementById("answer-text").textContent = "Error: " + data.error;
+            } else {
+                document.getElementById("answer-text").textContent = data.answer;
+
+                // Show the chunks that were used (useful for demos)
+                const list = document.getElementById("context-list");
+                list.innerHTML = "";
+                (data.context_used || []).forEach(chunk => {
+                    const li = document.createElement("li");
+                    li.textContent = chunk;
+                    list.appendChild(li);
+                });
+            }
+        }
+
+        // Allow Enter key to submit
+        document.getElementById("question").addEventListener("keydown", e => {
+            if (e.key === "Enter") ask();
+        });
+    </script>
+</body>
+</html>
