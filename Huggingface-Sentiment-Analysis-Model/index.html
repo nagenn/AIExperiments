@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analyser</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0e0e10;
+            --surface: #1a1a1f;
+            --border: #2e2e38;
+            --text: #e8e8f0;
+            --muted: #666680;
+            --positive: #22d98a;
+            --negative: #ff4d6d;
+            --neutral: #f0c040;
+            --positive-bg: rgba(34, 217, 138, 0.08);
+            --negative-bg: rgba(255, 77, 109, 0.08);
+            --neutral-bg: rgba(240, 192, 64, 0.08);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'DM Mono', monospace;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* Subtle grid background */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(var(--border) 1px, transparent 1px),
+                linear-gradient(90deg, var(--border) 1px, transparent 1px);
+            background-size: 48px 48px;
+            opacity: 0.35;
+            pointer-events: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 660px;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 0.65rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--muted);
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            border-radius: 2px;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2.2rem, 6vw, 3.4rem);
+            font-weight: 800;
+            line-height: 1.05;
+            letter-spacing: -0.02em;
+            color: #fff;
+        }
+
+        h1 span {
+            color: var(--positive);
+        }
+
+        .subtitle {
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 28px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text);
+            font-family: 'DM Mono', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            padding: 14px 16px;
+            resize: vertical;
+            min-height: 120px;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+
+        textarea:focus {
+            border-color: var(--muted);
+        }
+
+        textarea::placeholder {
+            color: #3a3a50;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 14px;
+            padding: 14px;
+            background: #fff;
+            color: #0e0e10;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.15s, transform 0.1s;
+        }
+
+        button:hover { background: #d0d0e0; }
+        button:active { transform: scale(0.99); }
+        button:disabled { background: var(--border); color: var(--muted); cursor: not-allowed; }
+
+        /* Loading */
+        #loading {
+            display: none;
+            align-items: center;
+            gap: 10px;
+            color: var(--muted);
+            font-size: 0.8rem;
+            font-style: italic;
+            margin-top: 16px;
+        }
+
+        .spinner {
+            width: 16px;
+            height: 16px;
+            border: 2px solid var(--border);
+            border-top-color: var(--muted);
+            border-radius: 50%;
+            animation: spin 0.75s linear infinite;
+            flex-shrink: 0;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Result card */
+        #result {
+            display: none;
+            border-radius: 6px;
+            padding: 28px;
+            border: 1px solid var(--border);
+            animation: fadeUp 0.35s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        #result.positive { background: var(--positive-bg); border-color: var(--positive); }
+        #result.negative { background: var(--negative-bg); border-color: var(--negative); }
+        #result.neutral  { background: var(--neutral-bg);  border-color: var(--neutral); }
+
+        .result-label-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+
+        .emoji { font-size: 2.2rem; line-height: 1; }
+
+        .result-label {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .positive .result-label { color: var(--positive); }
+        .negative .result-label { color: var(--negative); }
+        .neutral  .result-label { color: var(--neutral); }
+
+        .confidence-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .confidence-label {
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        .bar-track {
+            flex: 1;
+            height: 6px;
+            background: var(--border);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            border-radius: 3px;
+            width: 0%;
+            transition: width 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .positive .bar-fill { background: var(--positive); }
+        .negative .bar-fill { background: var(--negative); }
+        .neutral  .bar-fill { background: var(--neutral); }
+
+        .confidence-pct {
+            font-size: 0.85rem;
+            font-weight: bold;
+            min-width: 40px;
+            text-align: right;
+        }
+
+        .positive .confidence-pct { color: var(--positive); }
+        .negative .confidence-pct { color: var(--negative); }
+        .neutral  .confidence-pct { color: var(--neutral); }
+
+        .model-note {
+            margin-top: 20px;
+            font-size: 0.7rem;
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        /* Example chips */
+        .examples {
+            margin-top: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .example-chip {
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            color: var(--muted);
+            font-family: 'DM Mono', monospace;
+            font-size: 0.72rem;
+            padding: 5px 12px;
+            cursor: pointer;
+            transition: border-color 0.2s, color 0.2s;
+            width: auto;
+            margin: 0;
+            text-transform: none;
+            letter-spacing: 0;
+            font-weight: 400;
+        }
+
+        .example-chip:hover {
+            border-color: var(--muted);
+            color: var(--text);
+            background: transparent;
+            transform: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="tag">Open Source AI · Demo</div>
+            <h1>Sentiment<br><span>Analyser</span></h1>
+            <p class="subtitle">cardiffnlp/twitter-roberta-base-sentiment-latest</p>
+        </header>
+
+        <div class="card">
+            <label for="textInput">Enter text to analyse</label>
+            <textarea id="textInput" placeholder="Type a review, tweet, or any sentence..."></textarea>
+
+            <div class="examples">
+                <button class="example-chip" onclick="useExample(this)">This product is amazing!</button>
+                <button class="example-chip" onclick="useExample(this)">Worst experience ever.</button>
+                <button class="example-chip" onclick="useExample(this)">It arrived on Tuesday.</button>
+                <button class="example-chip" onclick="useExample(this)">I guess it's fine, whatever.</button>
+            </div>
+
+            <button id="submitBtn" onclick="analyse()">Analyse →</button>
+
+            <div id="loading">
+                <div class="spinner"></div>
+                <span>Model is thinking...</span>
+            </div>
+        </div>
+
+        <div id="result">
+            <div class="result-label-row">
+                <span class="emoji" id="resultEmoji"></span>
+                <span class="result-label" id="resultLabel"></span>
+            </div>
+            <div class="confidence-row">
+                <span class="confidence-label">Confidence</span>
+                <div class="bar-track">
+                    <div class="bar-fill" id="barFill"></div>
+                </div>
+                <span class="confidence-pct" id="confidencePct"></span>
+            </div>
+            <p class="model-note">The model returns a score between 0–1. Higher = more certain.</p>
+        </div>
+    </div>
+
+    <script>
+        const EMOJI_MAP = { Positive: "😄", Negative: "😠", Neutral: "😐" };
+
+        function useExample(el) {
+            document.getElementById("textInput").value = el.textContent;
+        }
+
+        async function analyse() {
+            const text = document.getElementById("textInput").value.trim();
+            if (!text) return;
+
+            const btn = document.getElementById("submitBtn");
+            const loading = document.getElementById("loading");
+            const result = document.getElementById("result");
+
+            // Reset UI
+            result.style.display = "none";
+            result.className = "";
+            btn.disabled = true;
+            loading.style.display = "flex";
+
+            try {
+                const response = await fetch("/analyse", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ text })
+                });
+                const data = await response.json();
+
+                if (data.error) throw new Error(data.error);
+
+                const label = data.label;       // "Positive" / "Negative" / "Neutral"
+                const conf  = data.confidence;  // e.g. 94.3
+
+                document.getElementById("resultEmoji").textContent = EMOJI_MAP[label] || "🤔";
+                document.getElementById("resultLabel").textContent = label;
+                document.getElementById("confidencePct").textContent = conf + "%";
+
+                result.className = label.toLowerCase();
+                result.style.display = "block";
+
+                // Animate bar after a tick so the transition fires
+                setTimeout(() => {
+                    document.getElementById("barFill").style.width = conf + "%";
+                }, 30);
+
+            } catch (err) {
+                alert("Error: " + err.message);
+            } finally {
+                loading.style.display = "none";
+                btn.disabled = false;
+            }
+        }
+
+        // Allow Enter key (Ctrl/Cmd + Enter) to submit
+        document.getElementById("textInput").addEventListener("keydown", e => {
+            if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) analyse();
+        });
+    </script>
+</body>
+</html>
