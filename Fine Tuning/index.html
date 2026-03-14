@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Support Ticket Classifier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f5f0e8;
+            --ink: #1a1410;
+            --muted: #8a7f72;
+            --border: #d4c9b8;
+            --surface: #fff;
+            --blue:    #1a4fa0;
+            --blue-bg: #eef3fc;
+            --orange:  #c45a00;
+            --orange-bg: #fef3e8;
+            --green:   #1a7a3c;
+            --green-bg: #eaf6ee;
+            --purple:  #6b3fa0;
+            --purple-bg: #f4effe;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: var(--bg);
+            color: var(--ink);
+            font-family: 'IBM Plex Mono', monospace;
+            min-height: 100vh;
+            padding: 48px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 27px,
+                rgba(0,0,0,0.04) 28px
+            );
+            pointer-events: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 680px;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            border-top: 3px solid var(--ink);
+            border-bottom: 1px solid var(--ink);
+            padding: 20px 0 16px;
+            margin-bottom: 36px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .kicker {
+            font-size: 0.62rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--muted);
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 5vw, 2.8rem);
+            font-weight: 900;
+            line-height: 1.05;
+            color: var(--ink);
+        }
+
+        .header-right {
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        .model-badge {
+            font-size: 0.62rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        .model-badge strong {
+            display: block;
+            color: var(--ink);
+            font-weight: 500;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 28px;
+            margin-bottom: 20px;
+            box-shadow: 3px 3px 0 var(--border);
+        }
+
+        label {
+            display: block;
+            font-size: 0.65rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--ink);
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.88rem;
+            line-height: 1.7;
+            padding: 14px 16px;
+            resize: vertical;
+            min-height: 110px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        textarea:focus { border-color: var(--ink); }
+        textarea::placeholder { color: var(--border); }
+
+        .examples {
+            margin-top: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+
+        .chip {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--muted);
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.68rem;
+            padding: 4px 10px;
+            cursor: pointer;
+            transition: all 0.15s;
+            width: auto;
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+
+        .chip:hover {
+            border-color: var(--ink);
+            color: var(--ink);
+            background: transparent;
+            transform: none;
+            box-shadow: 2px 2px 0 var(--border);
+        }
+
+        .submit-btn {
+            width: 100%;
+            margin-top: 16px;
+            padding: 14px;
+            background: var(--ink);
+            color: var(--bg);
+            border: none;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            transition: background 0.15s, transform 0.1s;
+            box-shadow: 3px 3px 0 var(--muted);
+        }
+
+        .submit-btn:hover { background: #2d2520; }
+        .submit-btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--muted); }
+        .submit-btn:disabled { background: var(--border); color: var(--muted); cursor: not-allowed; box-shadow: none; }
+
+        #loading {
+            display: none;
+            align-items: center;
+            gap: 10px;
+            color: var(--muted);
+            font-size: 0.75rem;
+            font-style: italic;
+            margin-top: 14px;
+        }
+
+        .spinner {
+            width: 14px; height: 14px;
+            border: 2px solid var(--border);
+            border-top-color: var(--ink);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            flex-shrink: 0;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        #result {
+            display: none;
+            border: 1px solid var(--border);
+            padding: 28px;
+            animation: fadeIn 0.3s ease forwards;
+            box-shadow: 3px 3px 0 var(--border);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        #result.blue   { background: var(--blue-bg);   border-color: var(--blue);   box-shadow: 3px 3px 0 var(--blue); }
+        #result.orange { background: var(--orange-bg); border-color: var(--orange); box-shadow: 3px 3px 0 var(--orange); }
+        #result.green  { background: var(--green-bg);  border-color: var(--green);  box-shadow: 3px 3px 0 var(--green); }
+        #result.purple { background: var(--purple-bg); border-color: var(--purple); box-shadow: 3px 3px 0 var(--purple); }
+
+        .result-top {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .result-icon { font-size: 2.4rem; line-height: 1; }
+
+        .result-routed {
+            font-size: 0.62rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 4px;
+        }
+
+        .result-label {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .blue   .result-label { color: var(--blue); }
+        .orange .result-label { color: var(--orange); }
+        .green  .result-label { color: var(--green); }
+        .purple .result-label { color: var(--purple); }
+
+        .result-desc {
+            font-size: 0.75rem;
+            color: var(--muted);
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        .conf-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .conf-label {
+            font-size: 0.62rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        .bar-track {
+            flex: 1;
+            height: 8px;
+            background: var(--border);
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            width: 0%;
+            transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .blue   .bar-fill { background: var(--blue); }
+        .orange .bar-fill { background: var(--orange); }
+        .green  .bar-fill { background: var(--green); }
+        .purple .bar-fill { background: var(--purple); }
+
+        .conf-pct {
+            font-size: 0.88rem;
+            font-weight: 500;
+            min-width: 44px;
+            text-align: right;
+        }
+
+        .blue   .conf-pct { color: var(--blue); }
+        .orange .conf-pct { color: var(--orange); }
+        .green  .conf-pct { color: var(--green); }
+        .purple .conf-pct { color: var(--purple); }
+
+        .model-note {
+            margin-top: 18px;
+            font-size: 0.65rem;
+            color: var(--muted);
+            font-style: italic;
+            border-top: 1px solid var(--border);
+            padding-top: 12px;
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .legend-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 10px 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.72rem;
+        }
+
+        .legend-icon { font-size: 1.1rem; }
+
+        .legend-text strong {
+            display: block;
+            font-weight: 500;
+            color: var(--ink);
+        }
+
+        .legend-text span {
+            color: var(--muted);
+            font-size: 0.65rem;
+        }
+
+        .section-label {
+            font-size: 0.62rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <span class="kicker">Open Source AI · Fine-tuning Demo</span>
+                <h1>Support Ticket<br>Classifier</h1>
+            </div>
+            <div class="header-right">
+                <div class="model-badge">
+                    Model<strong>distilbert-base-uncased</strong>
+                    Fine-tuned on<strong>500 synthetic tickets</strong>
+                </div>
+            </div>
+        </header>
+
+        <p class="section-label">Categories the model learned</p>
+        <div class="legend">
+            <div class="legend-item">
+                <span class="legend-icon">💳</span>
+                <div class="legend-text">
+                    <strong>Billing</strong>
+                    <span>Charges, invoices, refunds</span>
+                </div>
+            </div>
+            <div class="legend-item">
+                <span class="legend-icon">🔧</span>
+                <div class="legend-text">
+                    <strong>Technical</strong>
+                    <span>Bugs, errors, integrations</span>
+                </div>
+            </div>
+            <div class="legend-item">
+                <span class="legend-icon">📦</span>
+                <div class="legend-text">
+                    <strong>Delivery</strong>
+                    <span>Shipping, tracking, couriers</span>
+                </div>
+            </div>
+            <div class="legend-item">
+                <span class="legend-icon">↩️</span>
+                <div class="legend-text">
+                    <strong>Returns</strong>
+                    <span>Returns, exchanges, replacements</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <label for="textInput">Enter a support message</label>
+            <textarea id="textInput" placeholder="e.g. I was charged twice this month and need a refund..."></textarea>
+
+            <div class="examples">
+                <button class="chip" onclick="useExample(this)">Charged twice this month</button>
+                <button class="chip" onclick="useExample(this)">App crashes on login</button>
+                <button class="chip" onclick="useExample(this)">Package not arrived after 2 weeks</button>
+                <button class="chip" onclick="useExample(this)">Item broken, want replacement</button>
+                <button class="chip" onclick="useExample(this)">Password reset email not received</button>
+                <button class="chip" onclick="useExample(this)">Wrong item delivered</button>
+            </div>
+
+            <button class="submit-btn" id="submitBtn" onclick="classify()">
+                Route this ticket →
+            </button>
+
+            <div id="loading">
+                <div class="spinner"></div>
+                <span>Classifying...</span>
+            </div>
+        </div>
+
+        <div id="result">
+            <div class="result-top">
+                <span class="result-icon" id="resultIcon"></span>
+                <div class="result-label-block">
+                    <div class="result-routed">Routed to</div>
+                    <div class="result-label" id="resultLabel"></div>
+                    <div class="result-desc" id="resultDesc"></div>
+                </div>
+            </div>
+            <div class="conf-row">
+                <span class="conf-label">Confidence</span>
+                <div class="bar-track">
+                    <div class="bar-fill" id="barFill"></div>
+                </div>
+                <span class="conf-pct" id="confPct"></span>
+            </div>
+            <p class="model-note">
+                This model was fine-tuned from distilbert-base-uncased on 500 labelled support tickets.
+                The confidence score reflects how certain the model is about its classification.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function useExample(el) {
+            document.getElementById("textInput").value = el.textContent;
+        }
+
+        async function classify() {
+            const text = document.getElementById("textInput").value.trim();
+            if (!text) return;
+
+            const btn     = document.getElementById("submitBtn");
+            const loading = document.getElementById("loading");
+            const result  = document.getElementById("result");
+
+            result.style.display = "none";
+            result.className = "";
+            document.getElementById("barFill").style.width = "0%";
+            btn.disabled = true;
+            loading.style.display = "flex";
+
+            try {
+                const response = await fetch("/classify", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ text })
+                });
+                const data = await response.json();
+                if (data.error) throw new Error(data.error);
+
+                document.getElementById("resultIcon").textContent  = data.icon;
+                document.getElementById("resultLabel").textContent = data.label;
+                document.getElementById("resultDesc").textContent  = data.description;
+                document.getElementById("confPct").textContent     = data.confidence + "%";
+
+                result.className = data.color;
+                result.style.display = "block";
+
+                setTimeout(() => {
+                    document.getElementById("barFill").style.width = data.confidence + "%";
+                }, 30);
+
+            } catch (err) {
+                alert("Error: " + err.message);
+            } finally {
+                loading.style.display = "none";
+                btn.disabled = false;
+            }
+        }
+
+        document.getElementById("textInput").addEventListener("keydown", e => {
+            if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) classify();
+        });
+    </script>
+</body>
+</html>

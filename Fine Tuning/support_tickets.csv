@@ -1,0 +1,225 @@
+text,label
+"I was charged twice for my last order, please refund the extra amount.",Billing
+"My credit card was billed but I never received a confirmation email.",Billing
+"Can you explain the charges on my invoice from last Tuesday?",Billing
+"I think there's a mistake on my bill, I was overcharged by $20.",Billing
+"Why did my subscription renew? I cancelled it last month.",Billing
+"I need a receipt for my purchase for expense reporting.",Billing
+"The discount code didn't apply at checkout but I was still charged full price.",Billing
+"I cancelled my plan but was still charged this month.",Billing
+"Please send me an invoice for my annual subscription.",Billing
+"My payment failed but the money was still taken from my account.",Billing
+"I'd like to upgrade my plan but want to know the prorated cost.",Billing
+"I was charged for a feature I never signed up for.",Billing
+"Can I get a refund for the unused portion of my subscription?",Billing
+"My bank shows a charge I don't recognise from your company.",Billing
+"The price on your website doesn't match what I was charged.",Billing
+"I need to update my billing address on my account.",Billing
+"How do I switch from monthly to annual billing?",Billing
+"I was charged in USD but I live in Canada, can you bill in CAD?",Billing
+"My free trial ended and I was charged without warning.",Billing
+"I have a question about the tax on my last invoice.",Billing
+"Please cancel my subscription immediately and refund this month.",Billing
+"I was double billed for the same order.",Billing
+"Why is my invoice showing a different amount than quoted?",Billing
+"I need to change the credit card linked to my account.",Billing
+"The promotional price I was promised isn't reflected in my bill.",Billing
+"The app crashes every time I try to open it on my iPhone.",Technical
+"I can't log into my account, the password reset email never arrives.",Technical
+"Your website is down, I keep getting a 500 error.",Technical
+"The export to PDF feature isn't working, it just shows a blank page.",Technical
+"My account dashboard is loading very slowly today.",Technical
+"I keep getting logged out randomly throughout the day.",Technical
+"The mobile app won't sync with my desktop account.",Technical
+"I'm getting an error message when I try to upload a file.",Technical
+"The search function isn't returning any results even for exact matches.",Technical
+"I can't connect my Google account, the OAuth fails every time.",Technical
+"Notifications aren't working on my Android phone.",Technical
+"The dark mode setting keeps resetting every time I reload.",Technical
+"Videos won't play in your app, just a spinning loader.",Technical
+"I lost all my saved data after the last update.",Technical
+"Two-factor authentication is not sending me the code.",Technical
+"The browser extension stopped working after I updated Chrome.",Technical
+"I can't download my data export, the link says it has expired.",Technical
+"Your API keeps returning a 403 error for valid requests.",Technical
+"The app is using too much battery on my phone.",Technical
+"I can't change my email address, the form gives an error.",Technical
+"The calendar integration with Outlook isn't syncing properly.",Technical
+"My files uploaded but now I can't find them anywhere.",Technical
+"The print layout is completely broken in Firefox.",Technical
+"I'm getting a white screen when I try to access my dashboard.",Technical
+"The autocomplete suggestions stopped appearing in the text editor.",Technical
+"My order still hasn't arrived and it's been 10 days.",Delivery
+"The tracking number you sent me isn't working on the courier site.",Delivery
+"I ordered express shipping but my package is marked as standard.",Delivery
+"My delivery was marked as delivered but nothing arrived.",Delivery
+"Can you tell me the expected delivery date for my order?",Delivery
+"I need to change the delivery address for my pending order.",Delivery
+"My package arrived damaged, looks like it was dropped.",Delivery
+"The courier attempted delivery but I was home all day.",Delivery
+"I haven't received any shipping confirmation for my order placed 3 days ago.",Delivery
+"My order was split into two shipments but I only received one.",Delivery
+"The estimated delivery date has passed and there's no update.",Delivery
+"Can I upgrade to next day delivery for my current order?",Delivery
+"My parcel shows as being in the wrong city on the tracker.",Delivery
+"I received someone else's order by mistake.",Delivery
+"How long does international shipping to Australia take?",Delivery
+"My order has been stuck at the warehouse for 5 days.",Delivery
+"The delivery driver left my package outside in the rain.",Delivery
+"I need to reschedule my delivery for next week.",Delivery
+"Can I pick up my order from a local depot instead?",Delivery
+"My tracking shows delivered but my neighbours haven't seen it either.",Delivery
+"I ordered two items but only one was in the box.",Delivery
+"The package seal was broken when it arrived.",Delivery
+"Why is my delivery taking longer than the estimated time?",Delivery
+"I need to add delivery instructions for my order.",Delivery
+"My order was returned to sender but I don't know why.",Delivery
+"I'd like to return this item, it's not what I expected.",Returns
+"How do I start a return for an order I placed last week?",Returns
+"The product I received is faulty, I want a replacement.",Returns
+"I changed my mind about this purchase, can I get a refund?",Returns
+"The item I received doesn't match the description on your website.",Returns
+"I want to exchange this for a different size.",Returns
+"My return was delivered back to you 2 weeks ago but no refund yet.",Returns
+"Can I return a sale item or is it final sale?",Returns
+"I lost the original packaging, can I still return the product?",Returns
+"The return label you sent me isn't printing correctly.",Returns
+"How long does it take to process a refund once you receive my return?",Returns
+"I was told I'd get store credit but I want a cash refund.",Returns
+"The product stopped working after just two weeks, I want a refund.",Returns
+"Do I have to pay for return shipping?",Returns
+"I'm outside the 30-day return window, can you make an exception?",Returns
+"I received a refund but it's less than what I paid.",Returns
+"I'd like to return half of my order and keep the rest.",Returns
+"The return portal on your website isn't accepting my order number.",Returns
+"I accidentally returned the wrong item, can you send it back?",Returns
+"The replacement you sent me is also faulty.",Returns
+"How do I return a digital product I'm not happy with?",Returns
+"My refund was processed to the wrong card.",Returns
+"I never got the return confirmation email.",Returns
+"Can I get a refund if I've already opened the product?",Returns
+"The item was a gift, can the refund go to a different account?",Returns
+"I was charged twice for my subscription this quarter.",Billing
+"App keeps freezing on the checkout screen.",Technical
+"Package shows delivered but it's not here.",Delivery
+"Item arrived with a broken screen, need a replacement.",Returns
+"Invoice shows wrong tax amount.",Billing
+"Can't reset my password, the link is expired.",Technical
+"Shipping to wrong address, order still in transit.",Delivery
+"Purchased the wrong size, want to swap it.",Returns
+"Being charged for a plan I downgraded from.",Billing
+"API integration keeps timing out.",Technical
+"It's been 2 weeks with no delivery update.",Delivery
+"Product broke on first use, requesting refund.",Returns
+"My team members aren't receiving their billing emails.",Billing
+"The desktop app won't install on Windows 11.",Technical
+"My express order is now showing standard delivery.",Delivery
+"Refund processed but not in my bank after 2 weeks.",Returns
+"I need VAT removed from my invoice.",Billing
+"Single sign-on isn't working for our company domain.",Technical
+"Parcel stuck in customs for 8 days.",Delivery
+"Wrong item sent, need correct one or refund.",Returns
+"Charged for annual plan but signed up for monthly.",Billing
+"Data export fails every time with no error message.",Technical
+"No tracking update for 6 days.",Delivery
+"Returning unused items from a bulk order.",Returns
+"Discount not applied despite valid promo code.",Billing
+"Dashboard not loading on Safari browser.",Technical
+"Courier left package with wrong neighbour.",Delivery
+"Product quality not as described, want money back.",Returns
+"Need invoice reissued with company VAT number.",Billing
+"Integration with Slack stopped posting notifications.",Technical
+"Package marked returned to sender without attempt.",Delivery
+"Store credit issued but I requested cash refund.",Returns
+"Subscription auto-renewed when it should be cancelled.",Billing
+"File upload stuck at 99% and never completes.",Technical
+"Tracking number invalid on DHL website.",Delivery
+"Faulty product after 3 days, want replacement.",Returns
+"Wrong currency charged on my international account.",Billing
+"Two-step verification code not arriving by SMS.",Technical
+"Order split but second parcel has no tracking.",Delivery
+"Return window passed due to being in hospital.",Returns
+"Payment declined but charge still showing on card.",Billing
+"Webhook not firing on our production server.",Technical
+"Delivery attempted but gates were open all day.",Delivery
+"Gift recipient wants to return item for credit.",Returns
+"Need itemised receipt for my last 3 orders.",Billing
+"App crashes when switching between team workspaces.",Technical
+"Package re-routed to different city on tracker.",Delivery
+"Opened product is defective, eligible for return?",Returns
+"Free trial ended, charged before I could cancel.",Billing
+"Import CSV feature broken after recent update.",Technical
+"Order arrived 3 weeks late with no communication.",Delivery
+"Refund amount doesn't match original payment.",Returns
+"Can I pause my subscription instead of cancelling?",Billing
+"Can't invite new team members, getting permission error.",Technical
+"Can I collect from a local locker instead of home delivery?",Delivery
+"Exchanged item arrived but it's also the wrong size.",Returns
+"Charged premium rate for basic plan features.",Billing
+"Search indexing not updating after new content added.",Technical
+"Second delivery attempt missed despite leaving note.",Delivery
+"Original packaging thrown away, can I still return?",Returns
+"Need to split payment across two cards.",Billing
+"Custom domain setup failing with DNS error.",Technical
+"International order stopped at border with no update.",Delivery
+"Replacement sent but original refund also needed.",Returns
+"Invoice sent to wrong email address.",Billing
+"Real-time collaboration feature causing data conflicts.",Technical
+"Neighbour signed for my parcel without permission.",Delivery
+"Product works but not as advertised, partial refund?",Returns
+"Tax exempt status not reflected in my account.",Billing
+"Background sync draining phone battery excessively.",Technical
+"Same day delivery option not available in my area.",Delivery
+"Digital download not working after purchase.",Returns
+"Duplicate charges on my account this month.",Billing
+"Login session expiring after only 5 minutes.",Technical
+"Parcel weight mismatch caused delivery hold.",Delivery
+"Returned goods received by you but refund not initiated.",Returns
+"Annual invoice missing our purchase order number.",Billing
+"Offline mode not syncing data when reconnected.",Technical
+"Delivery estimate changed 4 times in one week.",Delivery
+"Product arrived but one component missing from box.",Returns
+"Credit note issued but not visible in my account.",Billing
+"Mobile app not available in my country's app store.",Technical
+"Order delayed due to weather but no communication sent.",Delivery
+"Used product once, defective, full refund requested.",Returns
+"Charged for seats I removed from our team plan.",Billing
+"Bulk import tool crashing with large data files.",Technical
+"Customs fee charged unexpectedly on my delivery.",Delivery
+"Wrong colour received, want correct one or refund.",Returns
+"Bank statement shows different amount than invoice.",Billing
+"Email notifications going to spam folder.",Technical
+"Package delivered to apartment lobby not my door.",Delivery
+"Return label expired before I could use it.",Returns
+"Need pro-rated credit for unused subscription days.",Billing
+"Third party calendar not syncing after permission grant.",Technical
+"Delivery window 9am to 9pm is too broad, can you narrow it?",Delivery
+"Refund to gift card but I want it to my bank.",Returns
+"Payment method update not saving in account settings.",Billing
+"Embedded widget not rendering on our website.",Technical
+"Order tracking app showing different status than website.",Delivery
+"Item returned 3 weeks ago, still no refund or update.",Returns
+"Proration calculation on my invoice looks wrong.",Billing
+"Audio transcription feature producing gibberish output.",Technical
+"Next day delivery arrived 3 days later.",Delivery
+"Warranty claim rejected but product is clearly faulty.",Returns
+"Annual plan discount not applied at checkout.",Billing
+"Dark mode causing contrast issues with text editor.",Technical
+"Parcel opened and resealed when it arrived.",Delivery
+"Digital subscription refund policy unclear.",Returns
+"Group discount not showing on team account invoice.",Billing
+"Plugin conflicting with our existing WordPress setup.",Technical
+"Courier app shows different location to main tracker.",Delivery
+"Replacement product worse than the original faulty one.",Returns
+"I need to request a copy of all my past invoices.",Billing
+"Video calls dropping after exactly 40 minutes.",Technical
+"Free shipping threshold not applied to my order.",Delivery
+"Bought wrong product, can I exchange without return?",Returns
+"Credit card expiry updated but still getting failed payment.",Billing
+"AI summarisation feature giving inaccurate results.",Technical
+"Signature required but I work from home and missed it.",Delivery
+"Faulty item replaced but courier lost the replacement.",Returns
+"Early termination fee not explained before charging.",Billing
+"Data dashboard showing metrics from wrong date range.",Technical
+"Order arrived but box was completely crushed.",Delivery
+"Changed mind within 1 hour of ordering, want cancel.",Returns
