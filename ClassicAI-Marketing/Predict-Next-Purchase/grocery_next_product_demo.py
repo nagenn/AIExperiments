@@ -75,17 +75,40 @@ def predict_next_products(customer_id, top_k=3, plot=True):
         key=lambda x: x[1], reverse=True
     )[:top_k]
 
-    # --- SHOW TOP 3 PREDICTIONS ---
-    print("Top 3 Predicted Next Products (ranked):")
+    if not preds:
+        print(
+            "\nNo next-product forecast could be generated for this customer.\n"
+            "Reason: The algorithm could not find any statistically meaningful\n"
+            "new items based on the customer's purchase history and dataset."
+        )
+        return
+
+    # --- SHOW TOP PREDICTIONS WITH EXPLANATIONS ---
+    print("Top 3 Predicted Next Products (ranked):\n")
     for rank, (item, conf) in enumerate(preds, start=1):
-        print(f"{rank}. {item} | Score: {conf:.2f}")
+        # Find which items in history drove this recommendation
+        drivers = []
+        for h_item in sorted(history):
+            a, b = sorted((h_item, item))
+            co = pair_counts.get((a, b), 0)
+            if co > 0:
+                drivers.append((h_item, co))
+        drivers = sorted(drivers, key=lambda x: x[1], reverse=True)[:2]
+
+        if drivers:
+            driver_str = ", ".join([f"{d[0]}" for d in drivers])
+            why = f"(Often bought by customers who also bought {driver_str})"
+        else:
+            why = "(Recommended based on overall popularity)"
+
+        print(f"{rank}. {item} | Score: {conf:.2f} {why}")
 
     # --- POPUP CHART ---
     if plot:
         items = [p[0] for p in preds]
-        scores = [p[1] for p in preds]
+        chart_scores = [p[1] for p in preds]
         plt.figure(figsize=(6, 4))
-        plt.bar(items, scores, color="skyblue")
+        plt.bar(items, chart_scores, color="skyblue")
         plt.xlabel("Predicted Products")
         plt.ylabel("Score")
         plt.title(f"Top 3 Predictions for Customer {customer_id}")
