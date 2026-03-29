@@ -32,7 +32,7 @@ their first-ever return (approve warmly).
 > burned through our response window.
 > Watch what happens when the agent does this instead."*
 
-Then run: `python agent.py`
+Then run: `./launch_demo.sh`
 
 ---
 
@@ -40,10 +40,11 @@ Then run: `python agent.py`
 
 ```
 support_triage_agent/
+├── launch_demo.sh      ← START HERE — launches both terminal windows automatically
 ├── agent.py            ← Main LangChain agent (run this for the demo)
 ├── api.py              ← FastAPI REST wrapper over SQLite
 ├── seed_db.py          ← One-time setup: generates data with GPT + loads DB
-├── tickets.csv         ← The 12 incoming tickets to process in the demo
+├── tickets.csv         ← The 3 incoming tickets to process in the demo
 ├── sla_guidelines.json ← SLA thresholds and return policy rules
 ├── support_history.db  ← SQLite DB (created by seed_db.py)
 └── README.md           ← This file
@@ -59,6 +60,8 @@ support_triage_agent/
 pip install langchain langchain-openai openai fastapi uvicorn pandas requests python-dotenv
 ```
 
+> **Note on SQLite:** No installation needed — `sqlite3` is built into Python's standard library. It will work out of the box.
+
 ### 2. Set up your .env file
 
 Create a `.env` file in the same directory:
@@ -73,7 +76,7 @@ This generates 50 customers and 500+ interaction records using GPT,
 then loads them into SQLite. Takes about 60-90 seconds.
 
 ```bash
-python seed_db.py
+python3.9 seed_db.py
 ```
 
 You should see:
@@ -87,27 +90,32 @@ You should see:
 
 ## Running the Demo
 
-You need **two terminal windows**.
+### The easy way — use the launch script
 
-### Terminal 1 — Start the Customer History API
+```bash
+chmod +x launch_demo.sh   # first time only
+./launch_demo.sh
+```
 
+This will:
+1. Check your `OPENAI_API_KEY` is set
+2. Check the database exists (and offer to seed it if not)
+3. Open **Terminal 1** automatically — starts the Customer History API
+4. Open **Terminal 2** automatically — runs the triage agent
+
+Press **Enter** in Terminal 2 to advance to the next ticket.
+
+### Manual launch (if needed)
+
+**Terminal 1 — Start the Customer History API:**
 ```bash
 uvicorn api:app --reload --port 8000
 ```
 
-Leave this running. You should see:
-```
-INFO:     Uvicorn running on http://127.0.0.1:8000
-```
-
-### Terminal 2 — Run the Agent
-
+**Terminal 2 — Run the Agent:**
 ```bash
-python agent.py
+python3.9 agent.py
 ```
-
-The agent will process each of the 12 tickets and pause between each one.
-Press **Enter** to advance to the next ticket.
 
 ---
 
@@ -115,12 +123,9 @@ Press **Enter** to advance to the next ticket.
 
 | Ticket | What the agent reveals |
 |--------|----------------------|
-| TKT-1001 | Return request — agent checks purchase history before deciding |
-| TKT-1002 | Account lockout — SLA check reveals Enterprise customer at risk |
-| TKT-1003 | GDPR deletion request — auto-escalated regardless of tier |
-| TKT-1006 | Third return request — agent flags high return rate, escalates |
-| TKT-1008 | Cancellation threat — highest urgency, Senior Account Manager assigned |
-| TKT-1011 | First return, loyal customer — approved warmly |
+| TKT-1003 | GDPR deletion request — auto-escalated regardless of tier, regulatory override in action |
+| TKT-1006 | Third return request — agent spots the pattern in history and escalates instead of approving |
+| TKT-1008 | Cancellation threat from Enterprise customer — highest urgency, Senior Account Manager assigned |
 
 ---
 
