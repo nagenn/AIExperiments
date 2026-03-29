@@ -1,0 +1,4 @@
+ticket_id,customer_id,submitted_at,subject,body
+TKT-1003,CUST-031,2025-01-15 06:15:00,Request to delete all our data,"As per GDPR Article 17, I am formally requesting the deletion of all personal data associated with our account. Please confirm receipt and provide a timeline for completion."
+TKT-1006,CUST-012,2025-01-15 02:55:00,Third return request - order #38771,"This is the third time I'm requesting a return. The product still isn't working as described. I want a full refund this time or I will be disputing the charge with my bank."
+TKT-1008,CUST-001,2025-01-15 03:20:00,We are considering cancelling our Enterprise contract,"I need to have an urgent conversation about our contract renewal. We've had three unresolved incidents in the past 60 days and our board is questioning the ROI. Please have a senior account manager call me today."

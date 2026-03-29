@@ -1,0 +1,66 @@
+{
+  "sla_tiers": {
+    "Platinum": {
+      "first_response_hours": 1,
+      "resolution_hours": 4,
+      "escalation_hours": 2,
+      "priority": "critical",
+      "description": "Enterprise / Platinum customers — near-immediate response required"
+    },
+    "Gold": {
+      "first_response_hours": 4,
+      "resolution_hours": 8,
+      "escalation_hours": 6,
+      "priority": "high",
+      "description": "Business / Gold customers — same business day response"
+    },
+    "Silver": {
+      "first_response_hours": 8,
+      "resolution_hours": 24,
+      "escalation_hours": 12,
+      "priority": "medium",
+      "description": "Standard / Silver customers — next business day acceptable"
+    },
+    "Bronze": {
+      "first_response_hours": 24,
+      "resolution_hours": 72,
+      "escalation_hours": 48,
+      "priority": "low",
+      "description": "Trial / Bronze customers — best effort, no contractual obligation"
+    }
+  },
+  "ticket_type_modifiers": {
+    "data_privacy_request": {
+      "override_priority": "critical",
+      "max_resolution_hours": 4,
+      "note": "GDPR / regulatory — always treat as critical regardless of tier"
+    },
+    "cancellation_request": {
+      "override_priority": "high",
+      "note": "Revenue at risk — always escalate to account management"
+    },
+    "billing_dispute": {
+      "override_priority": "high",
+      "note": "Financial impact — escalate if unresolved within first_response window"
+    }
+  },
+  "return_policy": {
+    "standard_window_days": 30,
+    "auto_approve_if": {
+      "max_prior_returns": 1,
+      "min_purchases": 2,
+      "note": "Auto-approve returns for customers with good purchase history and low return rate"
+    },
+    "escalate_if": {
+      "prior_returns_gte": 2,
+      "return_rate_pct_gte": 40,
+      "note": "Escalate to human review if return rate is high relative to purchases"
+    }
+  },
+  "churn_risk_signals": [
+    "cancellation_request",
+    "repeated_negative_sentiment",
+    "billing_dispute_unresolved",
+    "technical_issue_unresolved"
+  ]
+}
