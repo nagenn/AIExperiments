@@ -1,0 +1,38 @@
+Project: Books Manager
+Version: 1.0
+Stack: Python 3, Tornado (web framework), SQLite (database), Jinja2 (templates)
+
+Description:
+A simple web application that allows users to log in and manage a personal list of books.
+After logging in, users can add books via a form. Added books are displayed as a list on
+the main page. Authentication is session-based. Data is persisted in a local SQLite database.
+
+File Descriptions:
+- app.py       : Application entry point. Sets up the Tornado app, defines URL routes,
+                 configures cookie secret, and starts the IOLoop.
+- handlers.py  : Tornado RequestHandlers for all routes — login, logout, home page (list books),
+                 and add book. Handles form submissions and redirects.
+- models.py    : Data models for User and Book. Defines structure and any model-level logic.
+- db.py        : SQLite database initialisation and all query helpers (get user, add book,
+                 list books, etc). All database access goes through here.
+- auth.py      : Authentication logic — password hashing, password verification,
+                 session/cookie management.
+
+Review Focus Areas:
+- db.py        : Check all SQL queries are parameterised (not f-strings or concatenation).
+                 SQL injection is the #1 risk in this file.
+- auth.py      : Verify passwords are hashed with a strong algorithm (bcrypt or similar).
+                 Flag any use of MD5, SHA1, or plain-text storage immediately.
+                 Check cookie/session secret handling.
+- handlers.py  : Verify all routes that display or modify data require login (use
+                 Tornado's @tornado.web.authenticated or equivalent check).
+                 Check for missing input validation on form fields.
+- app.py       : Check cookie_secret is not hardcoded as a plain string.
+                 Check debug mode is not left as True.
+- models.py    : Check for any logic that should be in db.py or handlers.py instead.
+
+General Standards:
+- All user inputs must be validated and sanitised before use
+- Errors should be handled gracefully — no raw exception tracebacks to the browser
+- No credentials, secrets, or API keys should be hardcoded
+- Code should follow PEP8 conventions
