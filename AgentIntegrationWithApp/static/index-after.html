@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ContractIQ — Review Portal</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0f1117;
+    --surface: #181c25;
+    --surface2: #1e2330;
+    --border: #2a2f3d;
+    --border2: #353b4d;
+    --text: #e2e6f0;
+    --text-muted: #7a8099;
+    --text-dim: #4a5068;
+    --accent: #4f8ef7;
+    --accent-dim: rgba(79,142,247,0.12);
+    --green: #3dd68c;
+    --green-dim: rgba(61,214,140,0.12);
+    --amber: #f5a623;
+    --amber-dim: rgba(245,166,35,0.12);
+    --red: #f05252;
+    --red-dim: rgba(240,82,82,0.12);
+    --purple: #a78bfa;
+    --purple-dim: rgba(167,139,250,0.12);
+    --font: 'IBM Plex Sans', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+    --radius: 8px;
+    --radius-sm: 4px;
+  }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* HEADER */
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0 32px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: -0.3px;
+  }
+  .logo-icon {
+    width: 28px; height: 28px;
+    background: var(--accent);
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+  }
+  .header-meta {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-family: var(--mono);
+  }
+
+  /* MAIN LAYOUT */
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    height: calc(100vh - 56px);
+  }
+
+  /* LEFT PANEL */
+  .left-panel {
+    overflow-y: auto;
+    padding: 28px 32px;
+    border-right: 1px solid var(--border);
+  }
+
+  .panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .panel-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+  }
+  .queue-count {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  /* STATS ROW */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+  }
+  .stat-value {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--mono);
+    line-height: 1;
+  }
+  .stat-value.pending { color: var(--amber); }
+  .stat-value.cleared { color: var(--green); }
+  .stat-value.escalated { color: var(--red); }
+  .stat-value.total { color: var(--text); }
+
+  /* CONTRACT TABLE */
+  .table-wrap {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  thead tr {
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    padding: 10px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    background: var(--surface2);
+  }
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.1s;
+  }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: var(--surface2); }
+  tbody tr.selected { background: var(--accent-dim); border-left: 2px solid var(--accent); }
+  td {
+    padding: 12px 16px;
+    vertical-align: middle;
+  }
+  .contract-name {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--text);
+    margin-bottom: 2px;
+  }
+  .contract-vendor {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .uploaded-time {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-family: var(--mono);
+  }
+  .reviewer-name {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  /* STATUS BADGES */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .badge::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .badge-pending { background: var(--amber-dim); color: var(--amber); }
+  .badge-pending::before { background: var(--amber); }
+  .badge-cleared { background: var(--green-dim); color: var(--green); }
+  .badge-cleared::before { background: var(--green); }
+  .badge-escalated { background: var(--red-dim); color: var(--red); }
+  .badge-escalated::before { background: var(--red); }
+  .badge-flagged { background: var(--amber-dim); color: var(--amber); }
+  .badge-flagged::before { background: var(--amber); }
+  .badge-agent { background: var(--purple-dim); color: var(--purple); }
+  .badge-agent::before { background: var(--purple); }
+
+  .review-type-tag {
+    font-size: 10px;
+    font-family: var(--mono);
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: var(--surface2);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+  }
+  .review-type-tag.agent-tag {
+    background: var(--purple-dim);
+    color: var(--purple);
+    border-color: rgba(167,139,250,0.3);
+  }
+
+  /* RIGHT PANEL */
+  .right-panel {
+    overflow-y: auto;
+    background: var(--surface);
+  }
+
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--text-dim);
+    gap: 12px;
+    padding: 40px;
+    text-align: center;
+  }
+  .empty-icon { font-size: 32px; opacity: 0.4; }
+  .empty-text { font-size: 13px; }
+
+  /* DETAIL PANEL */
+  .detail-panel { display: none; }
+  .detail-panel.visible { display: block; }
+
+  .detail-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface2);
+  }
+  .detail-filename {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .detail-vendor {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+  .detail-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* TABS */
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    padding: 0 24px;
+  }
+  .tab {
+    padding: 12px 0;
+    margin-right: 24px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.15s;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .tab-content { display: none; padding: 24px; }
+  .tab-content.active { display: block; }
+
+  /* MANUAL REVIEW FORM */
+  .form-section-title {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .checklist { margin-bottom: 20px; }
+  .check-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text);
+  }
+  .check-item:last-child { border-bottom: none; }
+  .check-item input[type="checkbox"] {
+    width: 16px; height: 16px;
+    accent-color: var(--accent);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .check-label { cursor: pointer; flex: 1; }
+  .check-item.checked .check-label { color: var(--text-muted); text-decoration: line-through; }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .form-group { margin-bottom: 14px; }
+  label {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+  input[type="text"], select, textarea {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 8px 10px;
+    font-family: var(--font);
+    font-size: 13px;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  input[type="text"]:focus, select:focus, textarea:focus {
+    border-color: var(--accent);
+  }
+  select option { background: var(--surface2); }
+  textarea { resize: vertical; min-height: 72px; }
+
+  /* BUTTONS */
+  .btn-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .btn {
+    padding: 9px 18px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: white;
+  }
+  .btn-primary:hover { background: #3d7ef5; }
+  .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+  .btn-agent {
+    background: var(--purple);
+    color: white;
+  }
+  .btn-agent:hover { background: #9671f5; }
+  .btn-agent:disabled { opacity: 0.5; cursor: not-allowed; }
+  .btn-ghost {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+  .btn-ghost:hover { border-color: var(--border2); color: var(--text); }
+  .btn-danger {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--red);
+  }
+  .btn-danger:hover { background: var(--red-dim); }
+
+  /* AGENT TRACE */
+  .trace-container {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    font-family: var(--mono);
+    font-size: 12px;
+    line-height: 1.7;
+    min-height: 120px;
+    max-height: 280px;
+    overflow-y: auto;
+    margin-bottom: 16px;
+  }
+  .trace-line { color: var(--text-muted); margin-bottom: 2px; }
+  .trace-line.info { color: var(--accent); }
+  .trace-line.warn { color: var(--amber); }
+  .trace-line.error { color: var(--red); }
+  .trace-line.success { color: var(--green); }
+  .trace-line.step { color: var(--text); }
+  .cursor-blink {
+    display: inline-block;
+    width: 8px; height: 13px;
+    background: var(--accent);
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+    margin-left: 2px;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+  /* RESULT CARDS */
+  .result-section { margin-bottom: 20px; }
+  .result-title {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+  .result-risk {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .risk-high { background: var(--red-dim); color: var(--red); border: 1px solid rgba(240,82,82,0.3); }
+  .risk-medium { background: var(--amber-dim); color: var(--amber); border: 1px solid rgba(245,166,35,0.3); }
+  .risk-low { background: var(--green-dim); color: var(--green); border: 1px solid rgba(61,214,140,0.3); }
+
+  .tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag {
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+  .tag.missing { background: var(--red-dim); border-color: rgba(240,82,82,0.2); color: var(--red); }
+  .tag.problem { background: var(--amber-dim); border-color: rgba(245,166,35,0.2); color: var(--amber); }
+
+  .obligations-list { list-style: none; }
+  .obligations-list li {
+    padding: 7px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text);
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .obligations-list li::before { content: '→'; color: var(--text-dim); flex-shrink: 0; margin-top: 1px; }
+  .obligations-list li:last-child { border-bottom: none; }
+
+  .recommendation-box {
+    background: var(--accent-dim);
+    border: 1px solid rgba(79,142,247,0.2);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  .confidence-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .confidence-label { font-size: 12px; color: var(--text-muted); }
+  .confidence-bar {
+    flex: 1;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .confidence-fill {
+    height: 100%;
+    border-radius: 2px;
+    background: var(--green);
+    transition: width 0.5s ease;
+  }
+  .confidence-value {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    width: 36px;
+    text-align: right;
+  }
+
+  .escalation-notice {
+    background: var(--red-dim);
+    border: 1px solid rgba(240,82,82,0.3);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    font-size: 13px;
+    color: var(--red);
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-top: 16px;
+  }
+
+  /* HISTORY / EXISTING REVIEW */
+  .review-summary {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .review-summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .review-summary-row:last-child { border-bottom: none; }
+  .review-summary-key { color: var(--text-muted); }
+  .review-summary-val { color: var(--text); font-weight: 500; }
+
+  .btn-scan {
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    transition: all 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .btn-scan:hover { border-color: var(--accent); color: var(--accent); }
+  .btn-scan.scanning { opacity: 0.6; cursor: not-allowed; }
+  .scan-toast {
+    font-size: 12px;
+    color: var(--green);
+    font-family: var(--mono);
+    margin-left: 8px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .scan-toast.visible { opacity: 1; }
+
+  .loading-spinner {
+    display: inline-block;
+    width: 14px; height: 14px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* SCROLLBAR */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+  .divider { height: 1px; background: var(--border); margin: 20px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">📄</div>
+    ContractIQ — Review Portal
+  </div>
+  <div class="header-meta" id="header-time"></div>
+</header>
+
+<div class="layout">
+
+  <!-- LEFT: CONTRACT QUEUE -->
+  <div class="left-panel">
+    <div class="stats-row" id="stats-row">
+      <div class="stat-card"><div class="stat-label">Total</div><div class="stat-value total" id="stat-total">—</div></div>
+      <div class="stat-card"><div class="stat-label">Pending</div><div class="stat-value pending" id="stat-pending">—</div></div>
+      <div class="stat-card"><div class="stat-label">Cleared</div><div class="stat-value cleared" id="stat-cleared">—</div></div>
+      <div class="stat-card"><div class="stat-label">Escalated</div><div class="stat-value escalated" id="stat-escalated">—</div></div>
+    </div>
+
+    <div class="panel-header">
+      <div class="panel-title">Contract Queue</div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="scan-toast" id="scan-toast"></span>
+        <div class="queue-count" id="queue-count"></div>
+        <button class="btn-scan" id="btn-scan" onclick="scanContracts()">⟳ Check for New</button>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Contract</th>
+            <th>Uploaded</th>
+            <th>Status</th>
+            <th>Reviewer</th>
+          </tr>
+        </thead>
+        <tbody id="contracts-tbody">
+          <tr><td colspan="4" style="text-align:center;padding:32px;color:var(--text-dim)">Loading contracts...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- RIGHT: DETAIL + REVIEW -->
+  <div class="right-panel" id="right-panel">
+    <div class="empty-state" id="empty-state">
+      <div class="empty-icon">↖</div>
+      <div class="empty-text">Select a contract from the queue<br>to begin review</div>
+    </div>
+
+    <div class="detail-panel" id="detail-panel">
+      <div class="detail-header">
+        <div class="detail-filename" id="detail-filename"></div>
+        <div class="detail-vendor" id="detail-vendor"></div>
+        <div class="detail-meta" id="detail-meta"></div>
+      </div>
+
+      <div class="tabs">
+        <div class="tab active" data-tab="manual">Manual Review</div>
+        <div class="tab" data-tab="agent">Agent Review</div>
+        <div class="tab" data-tab="result">Result</div>
+      </div>
+
+      <!-- MANUAL REVIEW TAB -->
+      <div class="tab-content active" id="tab-manual">
+        <div class="form-section-title">Compliance Checklist</div>
+        <div class="checklist">
+          <div class="check-item" id="ci-liability">
+            <input type="checkbox" id="chk-liability"> <label class="check-label" for="chk-liability">Limitation of Liability clause present</label>
+          </div>
+          <div class="check-item" id="ci-indemnification">
+            <input type="checkbox" id="chk-indemnification"> <label class="check-label" for="chk-indemnification">Indemnification clause present</label>
+          </div>
+          <div class="check-item" id="ci-termination">
+            <input type="checkbox" id="chk-termination"> <label class="check-label" for="chk-termination">Termination rights defined</label>
+          </div>
+          <div class="check-item" id="ci-dataprot">
+            <input type="checkbox" id="chk-dataprot"> <label class="check-label" for="chk-dataprot">Data Protection / Privacy clause present</label>
+          </div>
+          <div class="check-item" id="ci-ip">
+            <input type="checkbox" id="chk-ip"> <label class="check-label" for="chk-ip">Intellectual Property ownership defined</label>
+          </div>
+          <div class="check-item" id="ci-payment">
+            <input type="checkbox" id="chk-payment"> <label class="check-label" for="chk-payment">Payment terms within Net 30 days</label>
+          </div>
+          <div class="check-item" id="ci-prohibited">
+            <input type="checkbox" id="chk-prohibited"> <label class="check-label" for="chk-prohibited">No prohibited terms found</label>
+          </div>
+        </div>
+
+        <div class="form-section-title">Review Details</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Reviewer Name</label>
+            <input type="text" id="reviewer-name" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label>Risk Assessment</label>
+            <select id="manual-risk">
+              <option value="">— Select risk level —</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Notes</label>
+          <textarea id="manual-notes" placeholder="Add review notes, concerns, or context..."></textarea>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary" id="btn-submit-manual">Submit Review</button>
+          <button class="btn btn-ghost" id="btn-reset">Reset</button>
+        </div>
+      </div>
+
+      <!-- AGENT REVIEW TAB -->
+      <div class="tab-content" id="tab-agent">
+        <div class="form-section-title">AI Agent Analysis</div>
+        <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px;line-height:1.6">
+          The agent will read the contract, apply compliance rules, and post its findings directly to this system. No manual checklist required.
+        </p>
+        <div class="trace-container" id="trace-container">
+          <span style="color:var(--text-dim)">Agent output will appear here...</span>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-agent" id="btn-run-agent">▶ Run Agent Review</button>
+          <button class="btn btn-ghost" id="btn-reset-agent">Reset</button>
+        </div>
+        <div style="margin-top:16px;font-size:12px;color:var(--text-dim);font-family:var(--mono)">
+          ⚡ Runs analyze_contract.py against the selected contract
+        </div>
+      </div>
+
+      <!-- RESULT TAB -->
+      <div class="tab-content" id="tab-result">
+        <div id="result-empty" style="color:var(--text-dim);font-size:13px;padding:8px 0">
+          No review completed yet. Use Manual or Agent Review tab.
+        </div>
+        <div id="result-content" style="display:none">
+          <!-- populated dynamically -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+let contracts = [];
+let selectedId = null;
+let pollingTimer = null;
+
+// --- TIME ---
+function updateTime() {
+  const now = new Date();
+  document.getElementById('header-time').textContent =
+    now.toLocaleDateString('en-IN', {weekday:'short', day:'2-digit', month:'short'}) + '  ' +
+    now.toLocaleTimeString('en-IN', {hour:'2-digit', minute:'2-digit'});
+}
+updateTime();
+setInterval(updateTime, 10000);
+
+// --- STATUS HELPERS ---
+function badgeClass(status) {
+  if (!status) return 'badge-pending';
+  const s = status.toLowerCase();
+  if (s.includes('pending')) return 'badge-pending';
+  if (s.includes('cleared') || s.includes('clear')) return 'badge-cleared';
+  if (s.includes('escalated') || s.includes('high')) return 'badge-escalated';
+  if (s.includes('flagged') || s.includes('medium')) return 'badge-flagged';
+  if (s.includes('agent')) return 'badge-agent';
+  return 'badge-pending';
+}
+
+function timeAgo(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  const diff = Math.floor((Date.now() - d) / 1000);
+  if (diff < 60) return 'just now';
+  if (diff < 3600) return Math.floor(diff/60) + 'm ago';
+  if (diff < 86400) return Math.floor(diff/3600) + 'h ago';
+  return Math.floor(diff/86400) + 'd ago';
+}
+
+// --- LOAD CONTRACTS ---
+async function loadContracts(forceRender = false) {
+  const res = await fetch('/api/contracts');
+  contracts = await res.json();
+  renderTable();
+  updateStats();
+  if (selectedId && forceRender) {
+    const c = contracts.find(x => x.id === selectedId);
+    if (c) renderDetail(c);
+  }
+}
+
+function updateStats() {
+  const total = contracts.length;
+  const pending = contracts.filter(c => c.status === 'Pending Review').length;
+  const cleared = contracts.filter(c => c.status.includes('Cleared')).length;
+  const escalated = contracts.filter(c => c.status.includes('Escalated')).length;
+  document.getElementById('stat-total').textContent = total;
+  document.getElementById('stat-pending').textContent = pending;
+  document.getElementById('stat-cleared').textContent = cleared;
+  document.getElementById('stat-escalated').textContent = escalated;
+  document.getElementById('queue-count').textContent = pending + ' pending review';
+}
+
+function renderTable() {
+  const tbody = document.getElementById('contracts-tbody');
+  if (!contracts.length) {
+    tbody.innerHTML = `<tr><td colspan="4" style="text-align:center;padding:32px;color:var(--text-dim)">No contracts found. Run seed_contracts.py</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = contracts.map(c => {
+    const isSelected = c.id === selectedId ? 'selected' : '';
+    const reviewerTag = c.review_type
+      ? `<span class="review-type-tag ${c.review_type === 'Agent' ? 'agent-tag' : ''}">${c.review_type}</span>`
+      : '';
+    const reviewerName = c.reviewer
+      ? `<div class="reviewer-name">${c.reviewer}</div>`
+      : `<div style="color:var(--text-dim);font-size:12px">—</div>`;
+    return `
+      <tr class="${isSelected}" onclick="selectContract(${c.id})">
+        <td>
+          <div class="contract-name">${c.filename.replace('.pdf','')}</div>
+          <div class="contract-vendor">${c.vendor}</div>
+        </td>
+        <td><div class="uploaded-time">${timeAgo(c.uploaded_at)}</div></td>
+        <td><span class="badge ${badgeClass(c.status)}">${c.status}</span></td>
+        <td>${reviewerTag} ${reviewerName}</td>
+      </tr>`;
+  }).join('');
+}
+
+// --- SELECT CONTRACT ---
+function selectContract(id) {
+  selectedId = id;
+  renderTable();
+  const c = contracts.find(x => x.id === id);
+  if (c) renderDetail(c);
+}
+
+function renderDetail(c) {
+  document.getElementById('empty-state').style.display = 'none';
+  document.getElementById('detail-panel').classList.add('visible');
+
+  document.getElementById('detail-filename').textContent = c.filename;
+  document.getElementById('detail-vendor').textContent = c.vendor;
+
+  const meta = document.getElementById('detail-meta');
+  meta.innerHTML = `
+    <span class="badge ${badgeClass(c.status)}">${c.status}</span>
+    ${c.review_type ? `<span class="review-type-tag ${c.review_type === 'Agent' ? 'agent-tag' : ''}">${c.review_type}</span>` : ''}
+    <span style="font-size:12px;color:var(--text-muted)">Uploaded ${timeAgo(c.uploaded_at)}</span>
+  `;
+
+  // Clear form
+  ['liability','indemnification','termination','dataprot','ip','payment','prohibited'].forEach(k => {
+    const el = document.getElementById('chk-'+k);
+    if (el) el.checked = false;
+  });
+  document.getElementById('reviewer-name').value = '';
+  document.getElementById('manual-risk').value = '';
+  document.getElementById('manual-notes').value = '';
+
+  renderResult(c);
+
+  // If already reviewed, show result tab
+  if (c.status !== 'Pending Review') {
+    switchTab('result');
+  }
+}
+
+function renderResult(c) {
+  const empty = document.getElementById('result-empty');
+  const content = document.getElementById('result-content');
+
+  if (!c.risk_score) {
+    empty.style.display = 'block';
+    content.style.display = 'none';
+    return;
+  }
+
+  empty.style.display = 'none';
+  content.style.display = 'block';
+
+  const riskClass = c.risk_score === 'High' ? 'risk-high' : c.risk_score === 'Medium' ? 'risk-medium' : 'risk-low';
+  const missing = c.missing_clauses ? JSON.parse(c.missing_clauses) : [];
+  const problems = c.problematic_terms ? JSON.parse(c.problematic_terms) : [];
+  const obligations = c.key_obligations ? JSON.parse(c.key_obligations) : [];
+
+  const missingHtml = missing.length
+    ? missing.map(m => `<span class="tag missing">${m}</span>`).join('')
+    : `<span style="color:var(--green);font-size:13px">✓ All required clauses present</span>`;
+
+  const problemsHtml = problems.length
+    ? problems.map(p => `<span class="tag problem">${p}</span>`).join('')
+    : `<span style="color:var(--green);font-size:13px">✓ No prohibited terms found</span>`;
+
+  const obligationsHtml = obligations.length
+    ? `<ul class="obligations-list">${obligations.map(o => `<li>${o}</li>`).join('')}</ul>`
+    : `<span style="color:var(--text-dim);font-size:13px">None extracted</span>`;
+
+  const confidenceHtml = c.confidence != null ? `
+    <div class="confidence-row">
+      <span class="confidence-label">Confidence</span>
+      <div class="confidence-bar"><div class="confidence-fill" style="width:${Math.round(c.confidence*100)}%"></div></div>
+      <span class="confidence-value">${Math.round(c.confidence*100)}%</span>
+    </div>` : '';
+
+  const escalationHtml = c.risk_score === 'High' ? `
+    <div class="escalation-notice">⚠ This contract has been escalated for legal review. Human sign-off required before proceeding.</div>` : '';
+
+  const reviewMeta = c.review_type === 'Manual'
+    ? `<div class="review-summary">
+        <div class="review-summary-row"><span class="review-summary-key">Review type</span><span class="review-summary-val">Manual — ${c.reviewer}</span></div>
+        <div class="review-summary-row"><span class="review-summary-key">Completed</span><span class="review-summary-val">${timeAgo(c.reviewed_at)}</span></div>
+        ${c.manual_notes ? `<div class="review-summary-row"><span class="review-summary-key">Notes</span><span class="review-summary-val">${c.manual_notes}</span></div>` : ''}
+      </div>`
+    : `<div class="review-summary">
+        <div class="review-summary-row"><span class="review-summary-key">Review type</span><span class="review-summary-val" style="color:var(--purple)">AI Agent</span></div>
+        <div class="review-summary-row"><span class="review-summary-key">Completed</span><span class="review-summary-val">${timeAgo(c.reviewed_at)}</span></div>
+        ${confidenceHtml ? `<div class="review-summary-row"><span class="review-summary-key">Confidence</span><span class="review-summary-val">${Math.round(c.confidence*100)}%</span></div>` : ''}
+      </div>`;
+
+  content.innerHTML = `
+    ${reviewMeta}
+    <div class="result-section">
+      <div class="result-title">Risk Assessment</div>
+      <div class="result-risk ${riskClass}">${c.risk_score} Risk</div>
+    </div>
+    <div class="result-section">
+      <div class="result-title">Missing Clauses</div>
+      <div class="tag-list">${missingHtml}</div>
+    </div>
+    <div class="result-section">
+      <div class="result-title">Problematic Terms</div>
+      <div class="tag-list">${problemsHtml}</div>
+    </div>
+    <div class="result-section">
+      <div class="result-title">Key Obligations</div>
+      ${obligationsHtml}
+    </div>
+    ${c.recommendations ? `
+    <div class="result-section">
+      <div class="result-title">Recommendations</div>
+      <div class="recommendation-box">${c.recommendations}</div>
+    </div>` : ''}
+    ${escalationHtml}
+    <div class="divider"></div>
+    <button class="btn btn-danger" onclick="resetContract(${c.id})">↺ Reset for Demo</button>
+  `;
+}
+
+// --- TABS ---
+function switchTab(tabName) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tabName));
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.toggle('active', t.id === 'tab-' + tabName));
+}
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => switchTab(tab.dataset.tab));
+});
+
+// --- CHECKBOX STRIKETHROUGH ---
+document.querySelectorAll('.check-item input[type="checkbox"]').forEach(chk => {
+  chk.addEventListener('change', function() {
+    this.closest('.check-item').classList.toggle('checked', this.checked);
+  });
+});
+
+// --- MANUAL SUBMIT ---
+document.getElementById('btn-submit-manual').addEventListener('click', async () => {
+  if (!selectedId) return;
+  const reviewer = document.getElementById('reviewer-name').value.trim();
+  const risk = document.getElementById('manual-risk').value;
+  if (!reviewer) { alert('Please enter reviewer name'); return; }
+  if (!risk) { alert('Please select a risk level'); return; }
+
+  const btn = document.getElementById('btn-submit-manual');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="loading-spinner"></span> Submitting...';
+
+  const body = {
+    reviewer,
+    limitation_of_liability: document.getElementById('chk-liability').checked,
+    indemnification: document.getElementById('chk-indemnification').checked,
+    termination_rights: document.getElementById('chk-termination').checked,
+    data_protection: document.getElementById('chk-dataprot').checked,
+    ip_ownership: document.getElementById('chk-ip').checked,
+    payment_terms_ok: document.getElementById('chk-payment').checked,
+    no_prohibited_terms: document.getElementById('chk-prohibited').checked,
+    risk_score: risk,
+    notes: document.getElementById('manual-notes').value
+  };
+
+  await fetch(`/api/contracts/${selectedId}/manual-review`, {
+    method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body)
+  });
+
+  btn.disabled = false;
+  btn.innerHTML = 'Submit Review';
+  await loadContracts(true);
+  switchTab('result');
+});
+
+// --- AGENT REVIEW ---
+document.getElementById('btn-run-agent').addEventListener('click', async () => {
+  if (!selectedId) return;
+  const contract = contracts.find(c => c.id === selectedId);
+  if (!contract) return;
+
+  const btn = document.getElementById('btn-run-agent');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="loading-spinner"></span> Agent running...';
+
+  const trace = document.getElementById('trace-container');
+  trace.innerHTML = '';
+
+  function addTrace(msg, cls = 'step') {
+    const line = document.createElement('div');
+    line.className = `trace-line ${cls}`;
+    line.textContent = msg;
+    trace.appendChild(line);
+    trace.scrollTop = trace.scrollHeight;
+  }
+
+  addTrace(`[${new Date().toLocaleTimeString()}] Starting agent...`, 'info');
+  addTrace(`→ Contract: ${contract.filename}`, 'step');
+  addTrace(`→ Loading compliance rules...`, 'step');
+  addTrace(``, 'step');
+  addTrace(`[STEP 1] Extracting text from PDF...`, 'info');
+  addTrace(`[STEP 2] Sending to LLM for analysis...`, 'info');
+  addTrace(`→ This may take 10–20 seconds...`, 'step');
+
+  try {
+    const res = await fetch(`/api/contracts/${selectedId}/analyse`, { method: 'POST' });
+
+    if (!res.ok) {
+      const err = await res.json();
+      addTrace(`ERROR: ${err.detail}`, 'error');
+      btn.disabled = false;
+      btn.innerHTML = '▶ Run Agent Review';
+      return;
+    }
+
+    const data = await res.json();
+    const result = data.result;
+
+    addTrace(``, 'step');
+    addTrace(`[STEP 3] Analysis complete.`, 'success');
+    addTrace(``, 'step');
+
+    // Display clause findings
+    const required = ['Limitation of Liability','Indemnification','Termination Rights','Data Protection / Privacy','Intellectual Property Ownership'];
+    required.forEach(clause => {
+      const missing = result.missing_clauses || [];
+      if (missing.includes(clause)) {
+        addTrace(`  ✗ ${clause} — NOT FOUND`, 'error');
+      } else {
+        addTrace(`  ✓ ${clause} — found`, 'success');
+      }
+    });
+
+    addTrace(``, 'step');
+    if (result.problematic_terms && result.problematic_terms.length > 0) {
+      result.problematic_terms.forEach(t => addTrace(`  ⚠ ${t}`, 'warn'));
+    } else {
+      addTrace(`  ✓ No prohibited terms found`, 'success');
+    }
+
+    addTrace(``, 'step');
+    const riskCls = result.risk_score === 'High' ? 'error' : result.risk_score === 'Medium' ? 'warn' : 'success';
+    addTrace(`[STEP 4] Risk assessment: ${result.risk_score.toUpperCase()}`, riskCls);
+    addTrace(`→ Status: ${data.status}`, riskCls);
+    addTrace(`→ Confidence: ${Math.round((result.confidence || 0) * 100)}%`, 'step');
+    addTrace(``, 'step');
+    addTrace(`[DONE] ContractIQ updated.`, 'success');
+
+    await loadContracts(true);
+    setTimeout(() => switchTab('result'), 600);
+
+  } catch(e) {
+    addTrace(`ERROR: ${e.message}`, 'error');
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = '▶ Run Agent Review';
+});
+
+// --- RESET ---
+document.getElementById('btn-reset').addEventListener('click', async () => {
+  if (!selectedId) return;
+  await fetch(`/api/contracts/${selectedId}/reset`, { method: 'POST' });
+  await loadContracts(true);
+});
+
+document.getElementById('btn-reset-agent').addEventListener('click', async () => {
+  if (!selectedId) return;
+  document.getElementById('trace-container').innerHTML = '<span style="color:var(--text-dim)">Agent output will appear here...</span>';
+  await fetch(`/api/contracts/${selectedId}/reset`, { method: 'POST' });
+  await loadContracts(true);
+});
+
+async function resetContract(id) {
+  await fetch(`/api/contracts/${id}/reset`, { method: 'POST' });
+  await loadContracts(true);
+  switchTab('manual');
+}
+
+// --- INIT ---
+async function scanContracts() {
+  const btn = document.getElementById('btn-scan');
+  const toast = document.getElementById('scan-toast');
+  btn.classList.add('scanning');
+  btn.textContent = '⟳ Scanning...';
+  try {
+    const res = await fetch('/api/contracts/scan', { method: 'POST' });
+    const data = await res.json();
+    toast.textContent = data.message;
+    toast.classList.add('visible');
+    setTimeout(() => toast.classList.remove('visible'), 3000);
+    if (data.count > 0) await loadContracts(false);
+  } catch(e) {
+    toast.textContent = 'Scan failed.';
+    toast.classList.add('visible');
+    setTimeout(() => toast.classList.remove('visible'), 3000);
+  }
+  btn.classList.remove('scanning');
+  btn.textContent = '⟳ Check for New';
+}
+
+loadContracts();
+setInterval(loadContracts, 5000);
+</script>
+</body>
+</html>
