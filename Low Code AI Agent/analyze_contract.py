@@ -2,12 +2,13 @@
 import json
 import pdfplumber
 from openai import OpenAI
+import os
 
 # ----------------------------
 # CONFIG
 # ----------------------------
 OPENAI_MODEL = "gpt-4o-mini"  # cost-effective + strong reasoning
-client = OpenAI(api_key="<your-api-key>")
+client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 #You will need to get this from the AI service you chose
 # For example: https://platform.openai.com/api-keys for GPT. This is usually a paid service.
 
