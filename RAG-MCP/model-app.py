@@ -1,9 +1,9 @@
 """
 MCP CLIENT + WEB SERVER - model-app.py
-Acts as an MCP client: connects to chroma_mcp_server.py to retrieve
-relevant chunks, then sends them to OpenAI GPT to generate an answer.
+Connects to the persistent chroma_mcp_server.py over SSE.
+No subprocess spawning — the MCP server runs independently.
 
-Run this after chroma_mcp_server.py is available:
+Run this in a second terminal (after chroma_mcp_server.py is running):
     python model-app.py
 
 Requires:
@@ -17,49 +17,38 @@ import asyncio
 import tornado.ioloop
 import tornado.web
 from openai import OpenAI
-from mcp import ClientSession, StdioServerParameters
-from mcp.client.stdio import stdio_client
+from mcp.client.sse import sse_client
+from mcp import ClientSession
 
 # --- Configuration ---
 CHAT_MODEL = "gpt-4o-mini"
-MCP_SERVER_SCRIPT = "chroma_mcp_server.py"  # path to your MCP server
+MCP_SERVER_URL = "http://localhost:8001/sse"
 
 openai_client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
-
-# MCP server connection parameters
-server_params = StdioServerParameters(
-    command="python",
-    args=[MCP_SERVER_SCRIPT]
-)
 
 
 async def retrieve_chunks_via_mcp(question: str) -> list[str]:
     """
-    Connect to the MCP server, call the search_faq tool, and return chunks.
-    The model-app has no knowledge of ChromaDB or embeddings — it just speaks MCP.
+    Connect to the persistent MCP server over SSE and call search_faq.
+    No subprocess — just an HTTP connection to the running server.
     """
-    async with stdio_client(server_params) as (read, write):
+    async with sse_client(MCP_SERVER_URL) as (read, write):
         async with ClientSession(read, write) as session:
             await session.initialize()
-
-            # Call the MCP tool — this is the only thing the client knows about
             result = await session.call_tool("search_faq", {"question": question})
 
-            # Extract the text content from the MCP response
             chunks = []
-            for content_item in result.content:
-                if hasattr(content_item, "text"):
-                    # The tool returns a JSON list of strings
+            for item in result.content:
+                if hasattr(item, "text"):
                     import ast
                     try:
-                        parsed = ast.literal_eval(content_item.text)
+                        parsed = ast.literal_eval(item.text)
                         if isinstance(parsed, list):
                             chunks.extend(parsed)
                         else:
-                            chunks.append(content_item.text)
+                            chunks.append(item.text)
                     except Exception:
-                        chunks.append(content_item.text)
-
+                        chunks.append(item.text)
             return chunks
 
 
@@ -85,12 +74,12 @@ class QnAHandler(tornado.web.RequestHandler):
                 self.write(json.dumps({"error": "Missing 'question' in request"}))
                 return
 
-            # Step 1: Retrieve relevant chunks via MCP (no ChromaDB code here!)
+            # Step 1: Retrieve relevant chunks via MCP SSE connection
             top_chunks = await retrieve_chunks_via_mcp(question)
             retrieved_context = "\n".join(f"- {chunk}" for chunk in top_chunks)
 
-            print(f"\nQuestion: {question}")
-            print(f"Retrieved via MCP:\n{retrieved_context}")
+            print(f"\n[Web App] Question: {question}")
+            print(f"[Web App] Retrieved via MCP:\n{retrieved_context}")
 
             # Step 2: Augment the prompt and generate an answer
             response = openai_client.chat.completions.create(
@@ -136,4 +125,5 @@ if __name__ == "__main__":
     app = make_app()
     app.listen(8686)
     print("Tornado QA API running at http://localhost:8686")
+    print(f"Connecting to MCP server at {MCP_SERVER_URL}")
     tornado.ioloop.IOLoop.current().start()
