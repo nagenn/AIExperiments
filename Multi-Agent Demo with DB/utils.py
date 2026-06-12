@@ -63,9 +63,11 @@ def read_contract(filepath):
 def prompt_contract_file():
     """Show available contracts and prompt for a filename."""
     print()
+    contracts_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "contracts")
+    os.makedirs(contracts_dir, exist_ok=True)
     contracts = sorted([
-        f for f in os.listdir(".")
-        if f.endswith((".txt", ".pdf")) and not f.startswith(".")
+    os.path.join("contracts", f) for f in os.listdir(contracts_dir)
+    if f.endswith((".txt", ".pdf")) and not f.startswith(".")
     ])
     if contracts:
         print("  Available contracts:")
