@@ -14,7 +14,7 @@ Requires:
 import os
 import chromadb
 from openai import OpenAI
-from mcp.server.fastmcp import FastMCP
+from mcp.server import MCPServer as FastMCP
 
 # --- Configuration ---
 CHROMA_DB_PATH = "./chroma_db"
@@ -37,7 +37,7 @@ except Exception:
     )
 
 # --- Create the MCP server ---
-mcp = FastMCP("FreshBite FAQ Retriever", port=PORT)
+mcp = FastMCP("FreshBite FAQ Retriever")
 
 
 @mcp.tool()
@@ -71,4 +71,4 @@ def search_faq(question: str) -> list[str]:
 
 if __name__ == "__main__":
     print(f"Starting FreshBite MCP server on http://localhost:{PORT}/sse ...")
-    mcp.run(transport="sse")
+    mcp.run(transport="sse", port=PORT)
