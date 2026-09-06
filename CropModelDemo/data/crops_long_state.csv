@@ -1,0 +1,2583 @@
+year,state,crop,area,production,yield
+2010,Bihar,Barley,11.85,15.7,1324.89
+2011,Bihar,Barley,10.83,16.71,1542.94
+2012,Bihar,Barley,10.43,15.229999999999999,1460.21
+2013,Bihar,Barley,10.16,14.239999999999998,1401.57
+2014,Bihar,Barley,12.11,13.43,1109.0
+2015,Bihar,Barley,10.690000000000001,13.889999999999999,1299.35
+2016,Bihar,Barley,10.83,16.3,1505.08
+2017,Bihar,Barley,10.38,16.47,1586.71
+2010,Chhattisgarh,Barley,2.25,1.2,533.33
+2011,Chhattisgarh,Barley,2.8600000000000003,2.19,765.73
+2012,Chhattisgarh,Barley,2.8000000000000003,1.34,478.57
+2013,Chhattisgarh,Barley,2.7100000000000004,2.4499999999999997,904.06
+2014,Chhattisgarh,Barley,2.52,2.6999999999999997,1071.43
+2015,Chhattisgarh,Barley,1.06,0.67,632.08
+2016,Chhattisgarh,Barley,2.07,1.88,908.21
+2017,Chhattisgarh,Barley,1.88,1.96,1042.55
+2010,Haryana,Barley,37.3,130.0,3485.25
+2011,Haryana,Barley,41.21,149.0,3615.63
+2012,Haryana,Barley,47.730000000000004,167.0,3498.85
+2013,Haryana,Barley,39.0,151.0,3871.79
+2014,Haryana,Barley,35.0,110.0,3142.86
+2015,Haryana,Barley,28.9,99.0,3425.61
+2016,Haryana,Barley,20.0,73.0,3650.0
+2017,Haryana,Barley,20.19,69.0,3417.53
+2010,Himachal Pradesh,Barley,21.240000000000002,25.049999999999997,1179.38
+2011,Himachal Pradesh,Barley,21.13,30.060000000000002,1422.62
+2012,Himachal Pradesh,Barley,20.83,35.9,1723.48
+2013,Himachal Pradesh,Barley,20.59,18.7,908.21
+2014,Himachal Pradesh,Barley,20.37,36.47,1790.38
+2015,Himachal Pradesh,Barley,19.15,33.59,1754.05
+2016,Himachal Pradesh,Barley,19.95,18.13,908.77
+2017,Himachal Pradesh,Barley,19.14,33.88,1770.11
+2010,Madhya Pradesh,Barley,76.60000000000001,98.7,1288.51
+2011,Madhya Pradesh,Barley,80.9,138.3,1709.52
+2012,Madhya Pradesh,Barley,80.7,108.58,1345.48
+2013,Madhya Pradesh,Barley,83.56,146.92000000000002,1758.26
+2014,Madhya Pradesh,Barley,42.0,56.0,1333.33
+2015,Madhya Pradesh,Barley,75.0,191.0,2546.67
+2016,Madhya Pradesh,Barley,116.10000000000001,384.79,3314.3
+2017,Madhya Pradesh,Barley,130.02,431.03,3315.11
+2010,Punjab,Barley,12.0,44.0,3666.67
+2011,Punjab,Barley,12.0,47.0,3916.67
+2012,Punjab,Barley,13.0,47.0,3615.38
+2013,Punjab,Barley,12.0,46.0,3833.33
+2014,Punjab,Barley,11.0,39.4,3581.82
+2015,Punjab,Barley,9.0,33.3,3700.0
+2016,Punjab,Barley,8.29,31.499999999999996,3799.76
+2017,Punjab,Barley,7.6899999999999995,29.9,3888.17
+2010,Rajasthan,Barley,328.01,954.82,2910.95
+2011,Rajasthan,Barley,278.01,789.19,2838.71
+2012,Rajasthan,Barley,307.93,957.8399999999999,3110.58
+2013,Rajasthan,Barley,309.27,942.05,3046.04
+2014,Rajasthan,Barley,343.32,962.41,2803.24
+2015,Rajasthan,Barley,256.03000000000003,766.42,2993.48
+2016,Rajasthan,Barley,275.92,909.7,3296.97
+2017,Rajasthan,Barley,273.98,910.72,3324.04
+2010,Uttar Pradesh,Barley,164.25,409.29,2491.87
+2011,Uttar Pradesh,Barley,166.31,441.77,2656.3
+2012,Uttar Pradesh,Barley,168.47,445.69,2645.52
+2013,Uttar Pradesh,Barley,156.38,450.32,2879.65
+2014,Uttar Pradesh,Barley,170.28,287.82,1690.27
+2015,Uttar Pradesh,Barley,124.8,270.26,2165.54
+2016,Uttar Pradesh,Barley,169.99,460.18,2707.1
+2017,Uttar Pradesh,Barley,143.91,403.14,2801.33
+2010,Uttarakhand,Barley,22.04,27.65,1254.54
+2011,Uttarakhand,Barley,20.69,26.15,1263.9
+2012,Uttarakhand,Barley,20.7,28.21,1362.8
+2013,Uttarakhand,Barley,21.32,29.029999999999998,1361.63
+2014,Uttarakhand,Barley,21.03,24.78,1178.32
+2015,Uttarakhand,Barley,18.37,18.07,983.67
+2016,Uttarakhand,Barley,19.82,24.59,1240.67
+2017,Uttarakhand,Barley,19.2,25.46,1326.04
+2010,West Bengal,Barley,2.03,2.79,1374.38
+2011,West Bengal,Barley,2.33,3.35,1437.77
+2012,West Bengal,Barley,2.4,3.54,1475.0
+2013,West Bengal,Barley,2.37,3.3899999999999997,1430.38
+2014,West Bengal,Barley,2.47,3.46,1400.81
+2015,West Bengal,Barley,2.5,3.5199999999999996,1408.0
+2016,West Bengal,Barley,2.56,3.61,1410.16
+2010,Andhra Pradesh,Castor,83.98000000000002,70.47,839.13
+2011,Andhra Pradesh,Castor,161.76,16.78,103.73
+2012,Andhra Pradesh,Castor,110.0,52.629999999999995,478.45
+2013,Andhra Pradesh,Castor,48.89,25.8,527.72
+2014,Andhra Pradesh,Castor,47.84,27.52,575.25
+2015,Andhra Pradesh,Castor,50.71,28.81,568.13
+2016,Andhra Pradesh,Castor,32.81,15.469999999999999,471.5
+2017,Andhra Pradesh,Castor,31.810000000000002,20.84,655.14
+2010,Assam,Castor,0.98,0.4,408.16
+2011,Assam,Castor,1.01,0.52,514.85
+2012,Assam,Castor,0.8999999999999999,0.48,533.33
+2013,Assam,Castor,0.88,0.44,500.0
+2014,Assam,Castor,0.96,0.54,562.5
+2015,Assam,Castor,0.89,0.4,449.44
+2016,Assam,Castor,0.74,0.33,445.95
+2017,Assam,Castor,0.76,0.35,460.53
+2010,Gujarat,Castor,490.6,986.0,2009.78
+2011,Gujarat,Castor,877.7,1803.4,2054.69
+2012,Gujarat,Castor,750.7,1493.0,1988.81
+2013,Gujarat,Castor,630.24,1367.15,2169.25
+2014,Gujarat,Castor,693.55,1440.53,2077.04
+2015,Gujarat,Castor,713.8,1410.33,1975.81
+2016,Gujarat,Castor,543.72,1126.83,2072.45
+2017,Gujarat,Castor,585.24,1487.28,2541.32
+2012,Haryana,Castor,1.27,0.6,472.44
+2013,Haryana,Castor,0.7,0.7,1000.0
+2010,Karnataka,Castor,19.11,16.080000000000002,841.44
+2011,Karnataka,Castor,16.3,14.32,878.53
+2012,Karnataka,Castor,11.459999999999999,7.15,623.91
+2013,Karnataka,Castor,12.2,10.9,893.44
+2014,Karnataka,Castor,11.9,7.27,610.92
+2015,Karnataka,Castor,9.37,4.8999999999999995,522.95
+2016,Karnataka,Castor,9.540000000000001,4.7,492.66
+2017,Karnataka,Castor,7.12,4.59,644.66
+2010,Madhya Pradesh,Castor,1.0,0.39999999999999997,400.0
+2011,Madhya Pradesh,Castor,1.4,0.4,285.71
+2012,Madhya Pradesh,Castor,3.0,1.06,353.33
+2013,Madhya Pradesh,Castor,2.45,1.18,481.63
+2017,Madhya Pradesh,Castor,8.95,4.970000000000001,555.31
+2010,Maharashtra,Castor,9.8,4.1,418.37
+2011,Maharashtra,Castor,8.1,3.47,428.4
+2012,Maharashtra,Castor,18.22,4.68,256.86
+2013,Maharashtra,Castor,13.8,5.1,369.57
+2014,Maharashtra,Castor,17.3,4.0,231.21
+2015,Maharashtra,Castor,11.43,2.13,186.35
+2016,Maharashtra,Castor,7.05,2.07,293.62
+2017,Maharashtra,Castor,6.16,1.36,220.78
+2010,Orissa,Castor,14.54,8.92,613.48
+2011,Orissa,Castor,12.91,8.2,635.17
+2012,Orissa,Castor,12.54,8.08,644.34
+2013,Orissa,Castor,12.73,8.13,638.65
+2014,Orissa,Castor,10.93,6.970000000000001,637.69
+2015,Orissa,Castor,10.45,6.6,631.58
+2016,Orissa,Castor,8.91,5.62,630.75
+2017,Orissa,Castor,7.77,4.91,631.92
+2010,Rajasthan,Castor,148.71,210.67,1416.65
+2011,Rajasthan,Castor,291.28000000000003,430.49,1477.93
+2012,Rajasthan,Castor,223.01,341.08,1529.44
+2013,Rajasthan,Castor,195.26,286.14,1465.43
+2014,Rajasthan,Castor,226.33999999999997,335.13,1480.65
+2015,Rajasthan,Castor,191.44,269.85,1409.58
+2016,Rajasthan,Castor,142.46,190.68,1338.48
+2017,Rajasthan,Castor,142.46,167.85,1178.23
+2010,Tamil Nadu,Castor,5.999999999999999,1.85,308.33
+2011,Tamil Nadu,Castor,6.22,1.82,292.6
+2012,Tamil Nadu,Castor,5.64,1.75,310.28
+2013,Tamil Nadu,Castor,6.409999999999999,1.98,308.89
+2014,Tamil Nadu,Castor,5.15,1.71,332.04
+2015,Tamil Nadu,Castor,5.48,1.73,315.69
+2016,Tamil Nadu,Castor,4.69,1.4700000000000002,313.43
+2017,Tamil Nadu,Castor,4.37,1.41,322.65
+2010,Telangana,Castor,103.75999999999999,50.669999999999995,488.34
+2011,Telangana,Castor,91.52,35.730000000000004,390.41
+2012,Telangana,Castor,98.41,52.61000000000001,534.6
+2013,Telangana,Castor,79.84,56.48,707.41
+2014,Telangana,Castor,50.730000000000004,29.32,577.96
+2015,Telangana,Castor,47.97,17.17,357.93
+2016,Telangana,Castor,44.900000000000006,26.48,589.76
+2017,Telangana,Castor,28.16,26.41,937.86
+2010,Andhra Pradesh,Chickpea,474.82,571.14,1202.86
+2011,Andhra Pradesh,Chickpea,479.89000000000004,447.86,933.26
+2012,Andhra Pradesh,Chickpea,568.77,598.17,1051.69
+2013,Andhra Pradesh,Chickpea,472.4,648.0300000000001,1371.78
+2014,Andhra Pradesh,Chickpea,341.78,390.99,1143.98
+2015,Andhra Pradesh,Chickpea,471.13,499.79,1060.83
+2016,Andhra Pradesh,Chickpea,397.07,381.03000000000003,959.6
+2017,Andhra Pradesh,Chickpea,520.38,589.1299999999999,1132.11
+2010,Assam,Chickpea,1.76,0.86,488.64
+2011,Assam,Chickpea,1.81,0.92,508.29
+2012,Assam,Chickpea,1.71,0.9600000000000001,561.4
+2013,Assam,Chickpea,2.0100000000000002,1.4100000000000001,701.49
+2014,Assam,Chickpea,2.07,1.9500000000000002,942.03
+2015,Assam,Chickpea,2.1799999999999997,1.52,697.25
+2016,Assam,Chickpea,2.36,1.56,661.02
+2017,Assam,Chickpea,2.2199999999999998,1.52,684.68
+2010,Bihar,Chickpea,56.94,59.39,1043.03
+2011,Bihar,Chickpea,59.39,76.81,1293.32
+2012,Bihar,Chickpea,61.480000000000004,84.7,1377.68
+2013,Bihar,Chickpea,61.34,70.34,1146.72
+2014,Bihar,Chickpea,59.99,57.51,958.66
+2015,Bihar,Chickpea,59.379999999999995,58.56,986.19
+2016,Bihar,Chickpea,59.36,66.47999999999999,1119.95
+2017,Bihar,Chickpea,58.22,67.18,1153.9
+2010,Chhattisgarh,Chickpea,224.69,213.78,951.44
+2011,Chhattisgarh,Chickpea,260.22,260.75,1002.04
+2012,Chhattisgarh,Chickpea,267.87,304.86,1138.09
+2013,Chhattisgarh,Chickpea,289.76,221.56,764.63
+2014,Chhattisgarh,Chickpea,293.27,311.13,1060.9
+2015,Chhattisgarh,Chickpea,280.92,218.86,779.08
+2016,Chhattisgarh,Chickpea,290.66,338.31,1163.94
+2017,Chhattisgarh,Chickpea,335.02,331.68,990.03
+2010,Gujarat,Chickpea,175.5,199.8,1138.46
+2011,Gujarat,Chickpea,239.9,273.3,1139.22
+2012,Gujarat,Chickpea,136.1,133.1,977.96
+2013,Gujarat,Chickpea,241.66,298.65,1235.83
+2014,Gujarat,Chickpea,164.01,167.85,1023.41
+2015,Gujarat,Chickpea,114.14,101.16,886.28
+2016,Gujarat,Chickpea,164.39000000000001,184.87,1124.58
+2017,Gujarat,Chickpea,292.77,376.26,1285.17
+2010,Haryana,Chickpea,111.5,110.0,986.55
+2011,Haryana,Chickpea,78.89999999999999,73.0,925.22
+2012,Haryana,Chickpea,47.05,53.0,1126.46
+2013,Haryana,Chickpea,83.0,72.0,867.47
+2014,Haryana,Chickpea,64.0,41.0,640.62
+2015,Haryana,Chickpea,43.0,27.0,627.91
+2016,Haryana,Chickpea,37.1,46.400000000000006,1250.67
+2017,Haryana,Chickpea,32.0,36.4,1137.5
+2010,Himachal Pradesh,Chickpea,0.63,0.57,904.76
+2011,Himachal Pradesh,Chickpea,0.62,0.6100000000000001,983.87
+2010,Jharkhand,Chickpea,15.47,10.29,665.16
+2011,Jharkhand,Chickpea,14.059999999999999,13.03,926.74
+2012,Jharkhand,Chickpea,31.59,31.91,1010.13
+2013,Jharkhand,Chickpea,38.01,39.22,1031.83
+2014,Jharkhand,Chickpea,27.7,22.080000000000002,797.11
+2015,Jharkhand,Chickpea,36.17,30.48,842.69
+2016,Jharkhand,Chickpea,52.059999999999995,58.31,1120.05
+2017,Jharkhand,Chickpea,232.68,285.8,1228.3
+2010,Karnataka,Chickpea,959.2,608.96,634.86
+2011,Karnataka,Chickpea,802.59,374.98,467.21
+2012,Karnataka,Chickpea,969.0799999999999,581.36,599.91
+2013,Karnataka,Chickpea,945.76,705.31,745.76
+2014,Karnataka,Chickpea,939.02,623.33,663.81
+2015,Karnataka,Chickpea,1420.43,552.47,388.95
+2016,Karnataka,Chickpea,1002.9399999999999,592.56,590.82
+2017,Karnataka,Chickpea,1265.21,975.8700000000001,771.31
+2010,Madhya Pradesh,Chickpea,2882.3,2262.5,784.96
+2011,Madhya Pradesh,Chickpea,3037.6,3287.2000000000003,1082.17
+2012,Madhya Pradesh,Chickpea,2716.27,3278.04,1206.82
+2013,Madhya Pradesh,Chickpea,2774.32,2102.5299999999997,757.85
+2014,Madhya Pradesh,Chickpea,2796.0,2938.0,1050.79
+2015,Madhya Pradesh,Chickpea,3018.0,3344.0,1108.02
+2016,Madhya Pradesh,Chickpea,3223.0,4546.0,1410.49
+2017,Madhya Pradesh,Chickpea,3590.0,5385.03,1500.01
+2010,Maharashtra,Chickpea,1437.9,1300.19,904.23
+2011,Maharashtra,Chickpea,1075.1,857.18,797.3
+2012,Maharashtra,Chickpea,1134.5,867.64,764.78
+2013,Maharashtra,Chickpea,1519.5,1400.6399999999999,921.78
+2014,Maharashtra,Chickpea,1427.5,1087.7,761.96
+2015,Maharashtra,Chickpea,1442.02,776.68,538.61
+2016,Maharashtra,Chickpea,1929.13,1940.92,1006.11
+2017,Maharashtra,Chickpea,2234.06,2048.89,917.12
+2010,Orissa,Chickpea,41.91,32.67,779.53
+2011,Orissa,Chickpea,38.95,29.78,764.57
+2012,Orissa,Chickpea,41.23,31.91,773.95
+2013,Orissa,Chickpea,47.150000000000006,36.21,767.97
+2014,Orissa,Chickpea,47.25,36.38,769.95
+2015,Orissa,Chickpea,39.18,30.130000000000003,769.01
+2016,Orissa,Chickpea,40.32,30.97,768.11
+2017,Orissa,Chickpea,32.94,25.63,778.08
+2010,Punjab,Chickpea,2.7,3.5,1296.3
+2011,Punjab,Chickpea,1.8,2.2,1222.22
+2012,Punjab,Chickpea,2.4,3.1,1291.67
+2013,Punjab,Chickpea,1.9000000000000001,2.37,1247.37
+2014,Punjab,Chickpea,1.7999999999999998,1.9500000000000002,1083.33
+2015,Punjab,Chickpea,1.7,2.17,1276.47
+2016,Punjab,Chickpea,1.5999999999999999,2.2,1375.0
+2017,Punjab,Chickpea,1.7,2.0,1176.47
+2010,Rajasthan,Chickpea,1783.3200000000002,1600.71,897.6
+2011,Rajasthan,Chickpea,1433.96,990.01,690.4
+2012,Rajasthan,Chickpea,1252.94,1277.31,1019.45
+2013,Rajasthan,Chickpea,1923.49,1640.72,852.99
+2014,Rajasthan,Chickpea,1256.32,911.11,725.22
+2015,Rajasthan,Chickpea,942.0,840.34,892.08
+2016,Rajasthan,Chickpea,1547.91,1409.4,910.52
+2017,Rajasthan,Chickpea,1572.57,1688.27,1073.57
+2010,Tamil Nadu,Chickpea,7.29,4.93,676.27
+2011,Tamil Nadu,Chickpea,8.58,5.52,643.36
+2012,Tamil Nadu,Chickpea,7.04,4.54,644.89
+2013,Tamil Nadu,Chickpea,8.94,5.82,651.01
+2014,Tamil Nadu,Chickpea,6.82,4.19,614.37
+2015,Tamil Nadu,Chickpea,4.869999999999999,3.18,652.98
+2016,Tamil Nadu,Chickpea,5.24,3.38,645.04
+2017,Tamil Nadu,Chickpea,5.2,4.82,926.92
+2010,Telangana,Chickpea,108.75999999999999,148.1,1361.71
+2011,Telangana,Chickpea,84.85,72.07,849.38
+2012,Telangana,Chickpea,111.96000000000001,163.92000000000002,1464.09
+2013,Telangana,Chickpea,113.44,194.62,1715.62
+2014,Telangana,Chickpea,59.33,81.28,1369.96
+2015,Telangana,Chickpea,69.85,50.36,720.97
+2016,Telangana,Chickpea,101.42,131.79,1299.45
+2017,Telangana,Chickpea,97.46,147.77,1516.21
+2010,Uttar Pradesh,Chickpea,588.39,542.4399999999999,921.91
+2011,Uttar Pradesh,Chickpea,600.5699999999999,710.28,1182.68
+2012,Uttar Pradesh,Chickpea,604.0,676.5699999999999,1120.15
+2013,Uttar Pradesh,Chickpea,577.25,265.67,460.23
+2014,Uttar Pradesh,Chickpea,558.18,177.09,317.26
+2015,Uttar Pradesh,Chickpea,267.69,163.41,610.44
+2016,Uttar Pradesh,Chickpea,561.66,626.32,1115.12
+2017,Uttar Pradesh,Chickpea,500.74,578.54,1155.37
+2010,Uttarakhand,Chickpea,0.74,0.56,756.76
+2011,Uttarakhand,Chickpea,0.73,0.5800000000000001,794.52
+2012,Uttarakhand,Chickpea,0.6,0.51,850.0
+2013,Uttarakhand,Chickpea,0.58,0.49,844.83
+2014,Uttarakhand,Chickpea,0.6,0.5,833.33
+2015,Uttarakhand,Chickpea,0.65,0.53,815.38
+2016,Uttarakhand,Chickpea,0.74,0.6,810.81
+2017,Uttarakhand,Chickpea,0.51,0.43,843.14
+2010,West Bengal,Chickpea,22.15,23.669999999999998,1068.62
+2011,West Bengal,Chickpea,23.27,24.41,1048.99
+2012,West Bengal,Chickpea,25.14,29.56,1175.82
+2013,West Bengal,Chickpea,24.92,29.28,1174.96
+2014,West Bengal,Chickpea,26.200000000000003,30.86,1177.86
+2015,West Bengal,Chickpea,30.8,24.57,797.73
+2016,West Bengal,Chickpea,28.130000000000003,28.48,1012.44
+2017,West Bengal,Chickpea,29.189999999999998,41.84,1433.37
+2010,Andhra Pradesh,Cotton,389.0,145.43,373.86
+2011,Andhra Pradesh,Cotton,482.18,151.01999999999998,313.2
+2012,Andhra Pradesh,Cotton,589.11,262.34,445.32
+2013,Andhra Pradesh,Cotton,676.61,393.85,582.09
+2014,Andhra Pradesh,Cotton,821.08,495.21999999999997,603.13
+2015,Andhra Pradesh,Cotton,666.0699999999999,327.09999999999997,491.09
+2016,Andhra Pradesh,Cotton,471.52,281.53000000000003,597.07
+2017,Andhra Pradesh,Cotton,646.04,375.82,581.73
+2010,Assam,Cotton,1.42,0.1,70.42
+2011,Assam,Cotton,1.25,0.09,72.0
+2012,Assam,Cotton,1.78,0.14,78.65
+2013,Assam,Cotton,1.1199999999999999,0.08,71.43
+2014,Assam,Cotton,0.8999999999999999,0.060000000000000005,66.67
+2015,Assam,Cotton,0.9199999999999999,0.07,76.09
+2016,Assam,Cotton,0.8799999999999999,0.08,90.91
+2017,Assam,Cotton,0.75,0.07,93.33
+2010,Gujarat,Cotton,2623.2,1670.31,636.75
+2011,Gujarat,Cotton,3003.1,1763.6999999999998,587.29
+2012,Gujarat,Cotton,2457.2000000000003,841.67,342.53
+2013,Gujarat,Cotton,2608.42,1892.07,725.37
+2014,Gujarat,Cotton,2883.79,1662.04,576.34
+2015,Gujarat,Cotton,2721.58,1357.65,498.85
+2016,Gujarat,Cotton,2390.95,928.02,388.14
+2017,Gujarat,Cotton,2626.5,1820.28,693.04
+2010,Haryana,Cotton,493.29999999999995,295.66999999999996,599.37
+2011,Haryana,Cotton,601.8000000000001,445.56,740.38
+2012,Haryana,Cotton,592.63,404.26,682.15
+2013,Haryana,Cotton,567.0,344.59,607.74
+2014,Haryana,Cotton,647.0,329.63,509.47
+2015,Haryana,Cotton,615.2,179.11,291.14
+2016,Haryana,Cotton,571.1999999999999,367.39000000000004,643.19
+2017,Haryana,Cotton,668.5,292.68,437.82
+2010,Karnataka,Cotton,547.64,207.05,378.08
+2011,Karnataka,Cotton,569.15,217.15,381.53
+2012,Karnataka,Cotton,497.03000000000003,196.34,395.03
+2013,Karnataka,Cotton,662.0,337.90999999999997,510.44
+2014,Karnataka,Cotton,875.9200000000001,416.40000000000003,475.39
+2015,Karnataka,Cotton,641.88,207.38,323.08
+2016,Karnataka,Cotton,509.55,184.3,361.69
+2017,Karnataka,Cotton,546.95,331.94,606.89
+2010,Madhya Pradesh,Cotton,586.28,181.24,309.14
+2011,Madhya Pradesh,Cotton,616.86,207.62,336.58
+2012,Madhya Pradesh,Cotton,593.6600000000001,209.27,352.51
+2013,Madhya Pradesh,Cotton,573.81,220.58,384.41
+2014,Madhya Pradesh,Cotton,637.0,132.84,208.54
+2015,Madhya Pradesh,Cotton,562.0,123.12,219.07
+2016,Madhya Pradesh,Cotton,600.0,170.45999999999998,284.1
+2017,Madhya Pradesh,Cotton,603.19,171.54,284.39
+2010,Maharashtra,Cotton,3941.93,1270.38,322.27
+2011,Maharashtra,Cotton,4166.7,1159.47,278.27
+2012,Maharashtra,Cotton,4187.0,1154.8,275.81
+2013,Maharashtra,Cotton,4159.5,1590.15,382.29
+2014,Maharashtra,Cotton,4189.9,643.9,153.68
+2015,Maharashtra,Cotton,4207.2,704.51,167.45
+2016,Maharashtra,Cotton,4212.48,1935.8999999999999,459.56
+2017,Maharashtra,Cotton,4350.81,1096.83,252.1
+2010,Orissa,Cotton,74.37,40.93,550.36
+2011,Orissa,Cotton,101.75999999999999,39.31,386.3
+2012,Orissa,Cotton,118.67,57.2,482.01
+2013,Orissa,Cotton,123.99000000000001,50.830000000000005,409.95
+2014,Orissa,Cotton,127.19,53.79,422.91
+2015,Orissa,Cotton,125.19,50.56,403.87
+2016,Orissa,Cotton,135.99,382.37,2811.75
+2017,Orissa,Cotton,144.57,408.2,2823.55
+2010,Punjab,Cotton,482.99999999999994,309.64,641.08
+2011,Punjab,Cotton,515.0,275.35999999999996,534.68
+2012,Punjab,Cotton,481.0,292.86,608.86
+2013,Punjab,Cotton,446.0,269.1,603.36
+2014,Punjab,Cotton,420.0,241.55999999999997,575.14
+2015,Punjab,Cotton,339.0,70.74,208.67
+2016,Punjab,Cotton,285.0,228.05999999999997,800.21
+2017,Punjab,Cotton,291.0,230.93999999999997,793.61
+2010,Rajasthan,Cotton,335.85999999999996,145.68,433.75
+2011,Rajasthan,Cotton,567.59,294.29,518.49
+2012,Rajasthan,Cotton,540.67,46.74,86.45
+2013,Rajasthan,Cotton,393.1,39.419999999999995,100.28
+2014,Rajasthan,Cotton,486.55,46.78,96.15
+2015,Rajasthan,Cotton,447.66,37.18,83.05
+2016,Rajasthan,Cotton,471.16999999999996,280.85,596.07
+2017,Rajasthan,Cotton,584.2299999999999,57.95,99.19
+2010,Tamil Nadu,Cotton,120.76,42.120000000000005,348.79
+2011,Tamil Nadu,Cotton,135.79999999999998,64.86,477.61
+2012,Tamil Nadu,Cotton,133.25,43.41,325.78
+2013,Tamil Nadu,Cotton,151.0,74.94,496.29
+2014,Tamil Nadu,Cotton,186.72,107.8,577.34
+2015,Tamil Nadu,Cotton,148.11,58.78,396.87
+2016,Tamil Nadu,Cotton,148.21,36.25,244.59
+2017,Tamil Nadu,Cotton,181.62,0.08,0.44
+2010,Telangana,Cotton,1395.25,515.92,369.77
+2011,Telangana,Cotton,1580.8200000000002,389.90999999999997,246.65
+2012,Telangana,Cotton,1812.88,689.71,380.45
+2013,Telangana,Cotton,1712.85,767.75,448.23
+2014,Telangana,Cotton,1662.93,645.0,387.87
+2015,Telangana,Cotton,1773.2600000000002,671.94,378.93
+2016,Telangana,Cotton,1408.76,619.98,440.09
+2017,Telangana,Cotton,1896.97,935.19,492.99
+2010,Uttar Pradesh,Cotton,3.52,0.75,213.07
+2011,Uttar Pradesh,Cotton,2.93,0.6900000000000001,235.49
+2012,Uttar Pradesh,Cotton,5.08,1.19,234.25
+2013,Uttar Pradesh,Cotton,3.91,0.88,225.06
+2014,Uttar Pradesh,Cotton,6.300000000000001,0.33,52.38
+2015,Uttar Pradesh,Cotton,7.69,0.47,61.12
+2016,Uttar Pradesh,Cotton,5.63,0.35000000000000003,62.17
+2017,Uttar Pradesh,Cotton,4.14,0.26,62.8
+2010,West Bengal,Cotton,0.64,0.18,281.25
+2014,West Bengal,Cotton,0.62,0.28,451.61
+2010,Andhra Pradesh,Finger Millet,39.64,46.9,1183.15
+2011,Andhra Pradesh,Finger Millet,40.25,37.97,943.35
+2012,Andhra Pradesh,Finger Millet,38.510000000000005,42.01,1090.89
+2013,Andhra Pradesh,Finger Millet,41.56,43.459999999999994,1045.72
+2014,Andhra Pradesh,Finger Millet,33.43,34.42,1029.61
+2015,Andhra Pradesh,Finger Millet,31.189999999999998,33.989999999999995,1089.77
+2016,Andhra Pradesh,Finger Millet,32.07,34.519999999999996,1076.4
+2017,Andhra Pradesh,Finger Millet,34.45,44.0,1277.21
+2010,Bihar,Finger Millet,9.03,8.85,980.07
+2011,Bihar,Finger Millet,7.74,9.41,1215.76
+2012,Bihar,Finger Millet,7.95,9.41,1183.65
+2013,Bihar,Finger Millet,7.04,7.14,1014.2
+2014,Bihar,Finger Millet,6.72,9.88,1470.24
+2015,Bihar,Finger Millet,6.95,9.91,1425.9
+2016,Bihar,Finger Millet,4.78,3.4499999999999997,721.76
+2017,Bihar,Finger Millet,4.1899999999999995,4.18,997.61
+2011,Chhattisgarh,Finger Millet,8.15,2.05,251.53
+2012,Chhattisgarh,Finger Millet,8.299999999999999,2.36,284.34
+2013,Chhattisgarh,Finger Millet,7.65,1.9400000000000002,253.59
+2014,Chhattisgarh,Finger Millet,7.64,2.01,263.09
+2015,Chhattisgarh,Finger Millet,8.059999999999999,1.53,189.83
+2016,Chhattisgarh,Finger Millet,7.179999999999999,1.75,243.73
+2017,Chhattisgarh,Finger Millet,7.27,1.64,225.58
+2010,Gujarat,Finger Millet,20.0,13.9,695.0
+2011,Gujarat,Finger Millet,16.200000000000003,13.3,820.99
+2012,Gujarat,Finger Millet,17.3,16.5,953.76
+2013,Gujarat,Finger Millet,14.32,14.08,983.24
+2014,Gujarat,Finger Millet,20.07,17.14,854.01
+2015,Gujarat,Finger Millet,19.23,15.02,781.07
+2016,Gujarat,Finger Millet,19.21,23.97,1247.79
+2017,Gujarat,Finger Millet,11.879999999999999,10.65,896.46
+2010,Himachal Pradesh,Finger Millet,2.16,2.08,962.96
+2011,Himachal Pradesh,Finger Millet,2.19,2.45,1118.72
+2012,Himachal Pradesh,Finger Millet,2.34,2.45,1047.01
+2013,Himachal Pradesh,Finger Millet,1.9300000000000002,1.77,917.1
+2014,Himachal Pradesh,Finger Millet,1.92,1.89,984.38
+2015,Himachal Pradesh,Finger Millet,1.8199999999999998,1.8699999999999999,1027.47
+2016,Himachal Pradesh,Finger Millet,1.85,1.95,1054.05
+2017,Himachal Pradesh,Finger Millet,1.81,1.91,1055.25
+2011,Jharkhand,Finger Millet,21.560000000000002,20.41,946.66
+2016,Jharkhand,Finger Millet,19.43,22.57,1161.61
+2017,Jharkhand,Finger Millet,19.020000000000003,18.490000000000002,972.13
+2010,Karnataka,Finger Millet,787.89,1588.24,2015.81
+2011,Karnataka,Finger Millet,684.88,1271.86,1857.06
+2012,Karnataka,Finger Millet,645.09,974.5,1510.64
+2013,Karnataka,Finger Millet,671.4499999999999,1258.1200000000001,1873.74
+2014,Karnataka,Finger Millet,708.4399999999999,1299.16,1833.83
+2015,Karnataka,Finger Millet,705.68,1188.58,1684.3
+2016,Karnataka,Finger Millet,598.66,491.34,820.73
+2017,Karnataka,Finger Millet,777.83,1568.28,2016.22
+2010,Madhya Pradesh,Finger Millet,21.4,8.6,401.87
+2011,Madhya Pradesh,Finger Millet,20.6,6.0,291.26
+2010,Maharashtra,Finger Millet,120.03999999999999,117.41,978.09
+2011,Maharashtra,Finger Millet,130.3,137.92,1058.48
+2012,Maharashtra,Finger Millet,124.5,138.89,1115.58
+2013,Maharashtra,Finger Millet,124.5,142.3,1142.97
+2014,Maharashtra,Finger Millet,111.6,119.0,1066.31
+2015,Maharashtra,Finger Millet,91.7,92.9,1013.09
+2016,Maharashtra,Finger Millet,92.82,111.07,1196.62
+2017,Maharashtra,Finger Millet,92.82,106.41,1146.41
+2010,Orissa,Finger Millet,179.48000000000002,147.39,821.21
+2011,Orissa,Finger Millet,169.22,151.42,894.81
+2012,Orissa,Finger Millet,172.99,149.21,862.54
+2013,Orissa,Finger Millet,165.8,143.74,866.95
+2014,Orissa,Finger Millet,158.27,137.36,867.88
+2015,Orissa,Finger Millet,147.29,127.64999999999999,866.66
+2016,Orissa,Finger Millet,138.34,120.93,874.15
+2017,Orissa,Finger Millet,114.35,100.57999999999998,879.58
+2010,Tamil Nadu,Finger Millet,75.65,171.11,2261.86
+2011,Tamil Nadu,Finger Millet,82.82000000000001,224.89,2715.41
+2012,Tamil Nadu,Finger Millet,70.30000000000001,138.04999999999998,1963.73
+2013,Tamil Nadu,Finger Millet,118.72999999999999,362.34000000000003,3051.8
+2014,Tamil Nadu,Finger Millet,104.43,349.62,3347.89
+2015,Tamil Nadu,Finger Millet,90.02,282.05,3133.19
+2016,Tamil Nadu,Finger Millet,61.37,114.43,1864.59
+2017,Tamil Nadu,Finger Millet,86.51,321.34,3714.48
+2010,Telangana,Finger Millet,2.7,3.3899999999999997,1255.56
+2011,Telangana,Finger Millet,2.2,2.8,1272.73
+2012,Telangana,Finger Millet,2.24,3.0300000000000002,1352.68
+2013,Telangana,Finger Millet,1.7200000000000002,2.52,1465.12
+2014,Telangana,Finger Millet,1.54,1.75,1136.36
+2015,Telangana,Finger Millet,0.9199999999999999,0.51,554.35
+2016,Telangana,Finger Millet,1.13,1.31,1159.29
+2017,Telangana,Finger Millet,1.46,1.6600000000000001,1136.99
+2010,Uttarakhand,Finger Millet,119.2,159.29,1336.33
+2011,Uttarakhand,Finger Millet,114.51,160.05,1397.69
+2012,Uttarakhand,Finger Millet,113.23,157.79,1393.54
+2013,Uttarakhand,Finger Millet,108.65,148.82,1369.72
+2014,Uttarakhand,Finger Millet,107.91,149.05,1381.24
+2015,Uttarakhand,Finger Millet,105.46000000000001,148.7,1410.01
+2016,Uttarakhand,Finger Millet,106.37,157.41,1479.83
+2017,Uttarakhand,Finger Millet,101.51,138.85,1367.85
+2010,West Bengal,Finger Millet,11.72,13.84,1180.89
+2011,West Bengal,Finger Millet,8.430000000000001,8.25,978.65
+2012,West Bengal,Finger Millet,10.1,11.07,1096.04
+2013,West Bengal,Finger Millet,10.11,11.07,1094.96
+2014,West Bengal,Finger Millet,10.13,11.08,1093.78
+2015,West Bengal,Finger Millet,10.13,11.129999999999999,1098.72
+2016,West Bengal,Finger Millet,9.91,10.980000000000002,1107.97
+2010,Andhra Pradesh,Groundnut,1426.13,1105.82,775.4
+2011,Andhra Pradesh,Groundnut,1135.68,582.59,512.99
+2012,Andhra Pradesh,Groundnut,1157.5,779.54,673.47
+2013,Andhra Pradesh,Groundnut,1176.41,881.32,749.16
+2014,Andhra Pradesh,Groundnut,874.12,492.53,563.46
+2015,Andhra Pradesh,Groundnut,774.72,800.5600000000001,1033.35
+2016,Andhra Pradesh,Groundnut,1012.81,602.72,595.1
+2017,Andhra Pradesh,Groundnut,734.57,1047.6100000000001,1426.15
+2011,Bihar,Groundnut,0.81,0.8300000000000001,1024.69
+2012,Bihar,Groundnut,0.76,0.77,1013.16
+2013,Bihar,Groundnut,0.9,0.92,1022.22
+2014,Bihar,Groundnut,0.5800000000000001,0.5900000000000001,1017.24
+2016,Bihar,Groundnut,0.97,0.99,1020.62
+2017,Bihar,Groundnut,0.5700000000000001,0.58,1017.54
+2010,Chhattisgarh,Groundnut,29.0,42.41,1462.41
+2011,Chhattisgarh,Groundnut,28.669999999999998,37.86,1320.54
+2012,Chhattisgarh,Groundnut,29.4,40.49,1377.21
+2013,Chhattisgarh,Groundnut,29.18,42.4,1453.05
+2014,Chhattisgarh,Groundnut,29.08,40.79,1402.68
+2015,Chhattisgarh,Groundnut,29.04,37.25,1282.71
+2016,Chhattisgarh,Groundnut,26.73,46.92,1755.33
+2017,Chhattisgarh,Groundnut,25.41,32.12,1264.07
+2010,Gujarat,Groundnut,1921.7,3575.0,1860.33
+2011,Gujarat,Groundnut,1686.3,2716.8,1611.1
+2012,Gujarat,Groundnut,1285.2,757.75,589.6
+2013,Gujarat,Groundnut,1830.1299999999999,5435.04,2969.76
+2014,Gujarat,Groundnut,1383.29,2650.21,1915.87
+2015,Gujarat,Groundnut,1413.22,2031.15,1437.25
+2016,Gujarat,Groundnut,1758.3799999999999,3274.37,1862.15
+2017,Gujarat,Groundnut,1678.8,4065.82,2421.86
+2010,Haryana,Groundnut,2.3,2.4,1043.48
+2011,Haryana,Groundnut,2.1,2.0,952.38
+2012,Haryana,Groundnut,2.62,3.08,1175.57
+2013,Haryana,Groundnut,5.6000000000000005,6.7,1196.43
+2014,Haryana,Groundnut,1.0,2.0,2000.0
+2015,Haryana,Groundnut,4.5,5.5,1222.22
+2016,Haryana,Groundnut,4.6000000000000005,5.7,1239.13
+2017,Haryana,Groundnut,3.3000000000000003,3.7,1121.21
+2017,Jharkhand,Groundnut,32.27,35.830000000000005,1110.32
+2010,Karnataka,Groundnut,847.65,741.61,874.9
+2011,Karnataka,Groundnut,676.33,469.33,693.94
+2012,Karnataka,Groundnut,588.86,395.2,671.13
+2013,Karnataka,Groundnut,654.95,565.38,863.24
+2014,Karnataka,Groundnut,653.91,501.76,767.32
+2015,Karnataka,Groundnut,570.09,394.79,692.5
+2016,Karnataka,Groundnut,665.72,418.71999999999997,628.97
+2017,Karnataka,Groundnut,564.85,636.33,1126.55
+2010,Kerala,Groundnut,1.5,1.87,1246.67
+2011,Kerala,Groundnut,1.71,2.15,1257.31
+2012,Kerala,Groundnut,0.78,0.98,1256.41
+2013,Kerala,Groundnut,0.71,0.87,1225.35
+2010,Madhya Pradesh,Groundnut,201.2,300.6,1494.04
+2011,Madhya Pradesh,Groundnut,209.7,339.9,1620.89
+2012,Madhya Pradesh,Groundnut,221.14000000000001,352.75,1595.14
+2013,Madhya Pradesh,Groundnut,215.63,354.9,1645.87
+2014,Madhya Pradesh,Groundnut,215.3,361.75,1680.21
+2015,Madhya Pradesh,Groundnut,234.0,260.0,1111.11
+2016,Madhya Pradesh,Groundnut,254.0,377.0,1484.25
+2017,Madhya Pradesh,Groundnut,224.05,349.16,1558.4
+2010,Maharashtra,Groundnut,357.65,458.03,1280.67
+2011,Maharashtra,Groundnut,322.8,374.96999999999997,1161.62
+2012,Maharashtra,Groundnut,308.19,337.67,1095.66
+2013,Maharashtra,Groundnut,328.3,421.7,1284.5
+2014,Maharashtra,Groundnut,326.5,378.9,1160.49
+2015,Maharashtra,Groundnut,309.81,333.24,1075.63
+2016,Maharashtra,Groundnut,355.09,420.3,1183.64
+2017,Maharashtra,Groundnut,291.12,345.44,1186.59
+2010,Orissa,Groundnut,247.69,417.11,1684.0
+2011,Orissa,Groundnut,255.14,435.42,1706.59
+2012,Orissa,Groundnut,263.41,467.3,1774.04
+2013,Orissa,Groundnut,267.68,478.33,1786.95
+2014,Orissa,Groundnut,259.23,463.31,1787.25
+2015,Orissa,Groundnut,221.29,387.19,1749.69
+2016,Orissa,Groundnut,209.81,376.59,1794.91
+2017,Orissa,Groundnut,198.01,358.03000000000003,1808.14
+2010,Punjab,Groundnut,2.2,4.0,1818.18
+2011,Punjab,Groundnut,1.7000000000000002,2.9,1705.88
+2012,Punjab,Groundnut,1.6,2.9,1812.5
+2013,Punjab,Groundnut,1.3,2.4,1846.15
+2014,Punjab,Groundnut,1.4,2.6,1857.14
+2015,Punjab,Groundnut,1.0,1.9,1900.0
+2016,Punjab,Groundnut,1.2,2.3,1916.67
+2017,Punjab,Groundnut,1.2,2.3,1916.67
+2010,Rajasthan,Groundnut,346.94,681.07,1963.08
+2011,Rajasthan,Groundnut,416.13,805.28,1935.16
+2012,Rajasthan,Groundnut,402.25,623.75,1550.65
+2013,Rajasthan,Groundnut,466.29999999999995,907.41,1945.98
+2014,Rajasthan,Groundnut,504.53999999999996,1017.5199999999999,2016.73
+2015,Rajasthan,Groundnut,520.83,1054.75,2025.13
+2016,Rajasthan,Groundnut,561.1,1147.82,2045.66
+2017,Rajasthan,Groundnut,646.13,1262.21,1953.49
+2010,Tamil Nadu,Groundnut,385.54,895.66,2323.13
+2011,Tamil Nadu,Groundnut,385.63,1060.6799999999998,2750.51
+2012,Tamil Nadu,Groundnut,339.33,785.4,2314.56
+2013,Tamil Nadu,Groundnut,336.64,915.88,2720.65
+2014,Tamil Nadu,Groundnut,336.54,925.18,2749.09
+2015,Tamil Nadu,Groundnut,346.64,892.3100000000001,2574.17
+2016,Tamil Nadu,Groundnut,282.48,588.88,2084.68
+2017,Tamil Nadu,Groundnut,327.35,1007.44,3077.56
+2010,Telangana,Groundnut,195.91,351.2,1792.66
+2011,Telangana,Groundnut,171.36,262.02,1529.06
+2012,Telangana,Groundnut,187.15,334.85,1789.21
+2013,Telangana,Groundnut,210.07,355.13,1690.53
+2014,Telangana,Groundnut,154.8,295.23,1907.17
+2015,Telangana,Groundnut,127.79,205.9,1611.24
+2016,Telangana,Groundnut,167.1,341.96,2046.44
+2017,Telangana,Groundnut,167.07,372.52,2229.72
+2010,Uttar Pradesh,Groundnut,87.60000000000001,87.02999999999999,993.49
+2011,Uttar Pradesh,Groundnut,95.84,95.26,993.95
+2012,Uttar Pradesh,Groundnut,95.31,94.74,994.02
+2013,Uttar Pradesh,Groundnut,97.46,87.3,895.75
+2014,Uttar Pradesh,Groundnut,98.97,85.75,866.42
+2015,Uttar Pradesh,Groundnut,97.71000000000001,66.5,680.59
+2016,Uttar Pradesh,Groundnut,94.78,86.06,908.0
+2017,Uttar Pradesh,Groundnut,88.55,89.94,1015.7
+2010,West Bengal,Groundnut,62.06,103.23,1663.39
+2011,West Bengal,Groundnut,62.21,150.17,2413.92
+2012,West Bengal,Groundnut,69.45,152.09,2189.92
+2013,West Bengal,Groundnut,68.92,151.63,2200.09
+2014,West Bengal,Groundnut,70.85,155.46,2194.21
+2015,West Bengal,Groundnut,77.69,171.56,2208.26
+2016,West Bengal,Groundnut,66.08,156.92,2374.7
+2017,West Bengal,Groundnut,63.65,178.25,2800.47
+2010,Andhra Pradesh,Kharif Sorghum,8.81,12.74,1446.08
+2011,Andhra Pradesh,Kharif Sorghum,28.3,60.83,2149.47
+2012,Andhra Pradesh,Kharif Sorghum,27.7,73.39999999999999,2649.82
+2013,Andhra Pradesh,Kharif Sorghum,32.74,57.19,1746.79
+2014,Andhra Pradesh,Kharif Sorghum,36.91,54.92000000000001,1487.94
+2015,Andhra Pradesh,Kharif Sorghum,44.43,49.26,1108.71
+2016,Andhra Pradesh,Kharif Sorghum,14.270000000000001,20.48,1435.18
+2017,Andhra Pradesh,Kharif Sorghum,29.669999999999998,30.23,1018.87
+2010,Bihar,Kharif Sorghum,3.0900000000000003,3.2700000000000005,1058.25
+2011,Bihar,Kharif Sorghum,2.02,2.15,1064.36
+2012,Bihar,Kharif Sorghum,2.64,2.82,1068.18
+2013,Bihar,Kharif Sorghum,1.24,1.31,1056.45
+2014,Bihar,Kharif Sorghum,1.46,1.55,1061.64
+2015,Bihar,Kharif Sorghum,1.6199999999999999,1.72,1061.73
+2016,Bihar,Kharif Sorghum,1.8,1.92,1066.67
+2017,Bihar,Kharif Sorghum,1.3599999999999999,1.4500000000000002,1066.18
+2010,Chhattisgarh,Kharif Sorghum,5.98,8.61,1439.8
+2011,Chhattisgarh,Kharif Sorghum,5.32,4.1,770.68
+2012,Chhattisgarh,Kharif Sorghum,6.24,4.47,716.35
+2010,Gujarat,Kharif Sorghum,76.4,80.7,1056.28
+2011,Gujarat,Kharif Sorghum,68.2,80.4,1178.89
+2012,Gujarat,Kharif Sorghum,49.5,76.0,1535.35
+2013,Gujarat,Kharif Sorghum,149.47,214.78,1436.94
+2014,Gujarat,Kharif Sorghum,35.96,43.85,1219.41
+2015,Gujarat,Kharif Sorghum,74.71,102.49,1371.84
+2016,Gujarat,Kharif Sorghum,73.3,117.55,1603.68
+2017,Gujarat,Kharif Sorghum,66.99,93.35000000000001,1393.49
+2010,Haryana,Kharif Sorghum,70.8,38.0,536.72
+2011,Haryana,Kharif Sorghum,64.7,33.0,510.05
+2012,Haryana,Kharif Sorghum,55.2,27.5,498.19
+2013,Haryana,Kharif Sorghum,62.0,34.0,548.39
+2014,Haryana,Kharif Sorghum,53.0,27.0,509.43
+2015,Haryana,Kharif Sorghum,55.1,29.0,526.32
+2017,Jharkhand,Kharif Sorghum,3.3200000000000003,2.2199999999999998,668.67
+2010,Karnataka,Kharif Sorghum,215.79,344.75,1597.62
+2011,Karnataka,Kharif Sorghum,196.08,289.89,1478.43
+2012,Karnataka,Kharif Sorghum,158.07999999999998,193.57,1224.51
+2013,Karnataka,Kharif Sorghum,167.86,238.84,1422.85
+2014,Karnataka,Kharif Sorghum,115.59,159.83,1382.73
+2015,Karnataka,Kharif Sorghum,104.75,119.4,1139.86
+2016,Karnataka,Kharif Sorghum,110.72,128.79999999999998,1163.29
+2017,Karnataka,Kharif Sorghum,92.46,153.03,1655.09
+2010,Kerala,Kharif Sorghum,2.2,1.12,509.09
+2010,Madhya Pradesh,Kharif Sorghum,413.67,585.75,1415.98
+2011,Madhya Pradesh,Kharif Sorghum,346.09,533.31,1540.96
+2012,Madhya Pradesh,Kharif Sorghum,291.58,457.47,1568.93
+2013,Madhya Pradesh,Kharif Sorghum,244.34,341.62,1398.13
+2014,Madhya Pradesh,Kharif Sorghum,220.0,372.0,1690.91
+2015,Madhya Pradesh,Kharif Sorghum,208.0,330.0,1586.54
+2016,Madhya Pradesh,Kharif Sorghum,221.0,438.0,1981.9
+2017,Madhya Pradesh,Kharif Sorghum,270.04,653.42,2419.72
+2010,Maharashtra,Kharif Sorghum,1031.7,1367.38,1325.37
+2011,Maharashtra,Kharif Sorghum,895.62,1341.8,1498.18
+2012,Maharashtra,Kharif Sorghum,888.7,1197.42,1347.38
+2013,Maharashtra,Kharif Sorghum,803.8,926.4,1152.53
+2014,Maharashtra,Kharif Sorghum,680.1,584.4,859.29
+2015,Maharashtra,Kharif Sorghum,620.8,368.1,592.94
+2016,Maharashtra,Kharif Sorghum,603.42,575.38,953.53
+2017,Maharashtra,Kharif Sorghum,565.2900000000001,547.25,968.09
+2010,Orissa,Kharif Sorghum,8.9,5.35,601.12
+2011,Orissa,Kharif Sorghum,8.63,5.4399999999999995,630.36
+2014,Orissa,Kharif Sorghum,6.69,4.1899999999999995,626.31
+2015,Orissa,Kharif Sorghum,6.21,3.89,626.41
+2016,Orissa,Kharif Sorghum,5.47,3.44,628.88
+2017,Orissa,Kharif Sorghum,5.619999999999999,3.55,631.67
+2010,Rajasthan,Kharif Sorghum,726.9300000000001,508.92,700.09
+2011,Rajasthan,Kharif Sorghum,553.77,410.3,740.92
+2012,Rajasthan,Kharif Sorghum,680.36,420.42,617.94
+2013,Rajasthan,Kharif Sorghum,579.64,356.82,615.59
+2014,Rajasthan,Kharif Sorghum,660.97,504.48,763.24
+2015,Rajasthan,Kharif Sorghum,631.23,344.3,545.44
+2016,Rajasthan,Kharif Sorghum,579.32,349.53999999999996,603.36
+2017,Rajasthan,Kharif Sorghum,516.03,300.84,582.99
+2010,Tamil Nadu,Kharif Sorghum,179.56,144.29,803.58
+2011,Tamil Nadu,Kharif Sorghum,134.23999999999998,147.07,1095.58
+2012,Tamil Nadu,Kharif Sorghum,128.58,93.37,726.16
+2013,Tamil Nadu,Kharif Sorghum,225.05,250.47,1112.95
+2014,Tamil Nadu,Kharif Sorghum,235.48000000000002,471.16,2000.85
+2015,Tamil Nadu,Kharif Sorghum,185.22,193.87,1046.7
+2016,Tamil Nadu,Kharif Sorghum,128.34,106.52,829.98
+2017,Tamil Nadu,Kharif Sorghum,241.37,274.96,1139.16
+2010,Telangana,Kharif Sorghum,105.53999999999999,101.6,962.67
+2011,Telangana,Kharif Sorghum,74.97,92.77000000000001,1237.43
+2012,Telangana,Kharif Sorghum,75.33,90.39,1199.92
+2013,Telangana,Kharif Sorghum,70.84,76.88000000000001,1085.26
+2014,Telangana,Kharif Sorghum,42.620000000000005,47.0,1102.77
+2015,Telangana,Kharif Sorghum,45.17,50.53,1118.66
+2016,Telangana,Kharif Sorghum,61.95,54.6,881.36
+2017,Telangana,Kharif Sorghum,43.129999999999995,40.72,944.12
+2010,Uttar Pradesh,Kharif Sorghum,201.10999999999999,207.08,1029.69
+2011,Uttar Pradesh,Kharif Sorghum,187.48,217.97,1162.63
+2012,Uttar Pradesh,Kharif Sorghum,184.19,248.24,1347.74
+2013,Uttar Pradesh,Kharif Sorghum,165.19,173.66,1051.27
+2014,Uttar Pradesh,Kharif Sorghum,164.4,162.91,990.94
+2015,Uttar Pradesh,Kharif Sorghum,154.86,104.8,676.74
+2016,Uttar Pradesh,Kharif Sorghum,182.92000000000002,183.03,1000.6
+2017,Uttar Pradesh,Kharif Sorghum,169.14000000000001,214.82,1270.07
+2010,Assam,Linseed,7.05,3.79,537.59
+2011,Assam,Linseed,6.95,3.93,565.47
+2012,Assam,Linseed,6.41,3.77,588.14
+2013,Assam,Linseed,5.930000000000001,3.82,644.18
+2014,Assam,Linseed,5.58,3.92,702.51
+2015,Assam,Linseed,5.21,3.3200000000000003,637.24
+2016,Assam,Linseed,4.87,2.96,607.8
+2017,Assam,Linseed,4.92,3.02,613.82
+2010,Bihar,Linseed,23.02,18.82,817.55
+2011,Bihar,Linseed,23.44,20.28,865.19
+2012,Bihar,Linseed,22.0,19.060000000000002,866.36
+2013,Bihar,Linseed,18.71,15.879999999999999,848.74
+2014,Bihar,Linseed,16.46,14.18,861.48
+2015,Bihar,Linseed,15.049999999999999,12.93,859.14
+2016,Bihar,Linseed,12.7,10.56,831.5
+2017,Bihar,Linseed,12.11,10.32,852.19
+2010,Chhattisgarh,Linseed,38.4,10.0,260.42
+2011,Chhattisgarh,Linseed,35.269999999999996,13.69,388.15
+2012,Chhattisgarh,Linseed,32.269999999999996,13.42,415.87
+2013,Chhattisgarh,Linseed,31.159999999999997,11.84,379.97
+2014,Chhattisgarh,Linseed,27.41,11.17,407.52
+2015,Chhattisgarh,Linseed,25.08,9.469999999999999,377.59
+2017,Chhattisgarh,Linseed,17.759999999999998,4.56,256.76
+2010,Himachal Pradesh,Linseed,0.95,0.26,273.68
+2011,Himachal Pradesh,Linseed,1.04,0.31,298.08
+2012,Himachal Pradesh,Linseed,0.9299999999999999,0.35,376.34
+2013,Himachal Pradesh,Linseed,1.09,0.27,247.71
+2014,Himachal Pradesh,Linseed,0.6799999999999999,0.16,235.29
+2015,Himachal Pradesh,Linseed,0.7999999999999999,0.24,300.0
+2017,Himachal Pradesh,Linseed,0.7999999999999999,0.24,300.0
+2017,Jharkhand,Linseed,52.08,29.700000000000003,570.28
+2010,Karnataka,Linseed,11.36,3.89,342.43
+2011,Karnataka,Linseed,8.54,1.86,217.8
+2012,Karnataka,Linseed,6.890000000000001,1.22,177.07
+2013,Karnataka,Linseed,5.5600000000000005,1.65,296.76
+2014,Karnataka,Linseed,5.03,1.56,310.14
+2015,Karnataka,Linseed,4.97,0.59,118.71
+2016,Karnataka,Linseed,2.85,0.16,56.14
+2017,Karnataka,Linseed,2.28,0.7999999999999999,350.88
+2010,Madhya Pradesh,Linseed,94.39999999999999,33.4,353.81
+2011,Madhya Pradesh,Linseed,120.2,57.0,474.21
+2012,Madhya Pradesh,Linseed,87.9,48.26,549.03
+2013,Madhya Pradesh,Linseed,88.78999999999999,46.84,527.54
+2014,Madhya Pradesh,Linseed,72.0,44.0,611.11
+2015,Madhya Pradesh,Linseed,79.0,42.0,531.65
+2016,Madhya Pradesh,Linseed,119.0,58.0,487.39
+2017,Madhya Pradesh,Linseed,162.0,85.55,528.09
+2010,Maharashtra,Linseed,39.3,10.370000000000001,263.87
+2011,Maharashtra,Linseed,31.009999999999998,7.62,245.73
+2012,Maharashtra,Linseed,27.24,7.640000000000001,280.47
+2013,Maharashtra,Linseed,12.1,3.25,268.6
+2014,Maharashtra,Linseed,23.9,5.300000000000001,221.76
+2015,Maharashtra,Linseed,16.259999999999998,3.9799999999999995,244.77
+2016,Maharashtra,Linseed,14.2,3.3499999999999996,235.92
+2017,Maharashtra,Linseed,10.59,3.26,307.84
+2010,Orissa,Linseed,20.62,9.46,458.78
+2011,Orissa,Linseed,24.61,11.58,470.54
+2012,Orissa,Linseed,24.52,11.82,482.06
+2013,Orissa,Linseed,22.97,10.98,478.01
+2014,Orissa,Linseed,24.009999999999998,11.48,478.13
+2015,Orissa,Linseed,9.92,4.73,476.81
+2016,Orissa,Linseed,16.21,7.78,479.95
+2017,Orissa,Linseed,12.26,5.95,485.32
+2010,Rajasthan,Linseed,1.73,2.05,1184.97
+2011,Rajasthan,Linseed,1.19,1.29,1084.03
+2012,Rajasthan,Linseed,1.08,1.03,953.7
+2013,Rajasthan,Linseed,2.11,2.86,1355.45
+2014,Rajasthan,Linseed,2.56,3.28,1281.25
+2015,Rajasthan,Linseed,1.8399999999999999,1.87,1016.3
+2016,Rajasthan,Linseed,34.96,38.92,1113.27
+2017,Rajasthan,Linseed,4.99,5.04,1010.02
+2010,Telangana,Linseed,0.68,0.16,235.29
+2010,Uttar Pradesh,Linseed,29.19,12.96,443.99
+2011,Uttar Pradesh,Linseed,29.94,13.47,449.9
+2012,Uttar Pradesh,Linseed,29.62,13.350000000000001,450.71
+2013,Uttar Pradesh,Linseed,25.82,10.51,407.05
+2014,Uttar Pradesh,Linseed,24.64,14.29,579.95
+2015,Uttar Pradesh,Linseed,16.73,3.17,189.48
+2016,Uttar Pradesh,Linseed,32.37,17.4,537.53
+2017,Uttar Pradesh,Linseed,25.7,15.44,600.78
+2010,West Bengal,Linseed,4.12,1.44,349.51
+2011,West Bengal,Linseed,4.14,1.48,357.49
+2012,West Bengal,Linseed,3.8200000000000003,1.3399999999999999,350.79
+2013,West Bengal,Linseed,4.32,1.54,356.48
+2014,West Bengal,Linseed,5.29,1.96,370.51
+2015,West Bengal,Linseed,6.2,2.27,366.13
+2016,West Bengal,Linseed,6.63,2.44,368.02
+2017,West Bengal,Linseed,4.89,1.02,208.59
+2010,Andhra Pradesh,Maize,233.42,1884.47,8073.3
+2011,Andhra Pradesh,Maize,272.42,1763.19,6472.32
+2012,Andhra Pradesh,Maize,309.14,1910.92,6181.41
+2013,Andhra Pradesh,Maize,352.13,2213.51,6286.06
+2014,Andhra Pradesh,Maize,303.3,1938.09,6390.01
+2015,Andhra Pradesh,Maize,232.64999999999998,1411.69,6067.87
+2016,Andhra Pradesh,Maize,250.29,1652.91,6603.98
+2017,Andhra Pradesh,Maize,336.53,2325.9,6911.42
+2010,Assam,Maize,19.63,14.0,713.19
+2011,Assam,Maize,21.18,16.99,802.17
+2012,Assam,Maize,23.529999999999998,21.09,896.3
+2013,Assam,Maize,23.96,76.71,3201.59
+2014,Assam,Maize,27.880000000000003,92.83,3329.63
+2015,Assam,Maize,28.26,86.87,3073.96
+2016,Assam,Maize,31.1,90.69,2916.08
+2017,Assam,Maize,31.39,98.3,3131.57
+2010,Bihar,Maize,653.72,2108.2200000000003,3224.96
+2011,Bihar,Maize,696.88,2557.07,3669.31
+2012,Bihar,Maize,693.39,2755.9900000000002,3974.66
+2013,Bihar,Maize,732.32,2904.26,3965.83
+2014,Bihar,Maize,706.53,2478.77,3508.37
+2015,Bihar,Maize,704.96,2517.16,3570.64
+2016,Bihar,Maize,720.91,3845.7,5334.51
+2017,Bihar,Maize,677.45,3120.75,4606.61
+2010,Chhattisgarh,Maize,102.7,185.6,1807.21
+2011,Chhattisgarh,Maize,107.44,177.82,1655.06
+2012,Chhattisgarh,Maize,116.84,225.13,1926.82
+2013,Chhattisgarh,Maize,123.59,254.5,2059.23
+2014,Chhattisgarh,Maize,125.06,235.04000000000002,1879.42
+2015,Chhattisgarh,Maize,126.38,237.72000000000003,1880.99
+2016,Chhattisgarh,Maize,120.55,309.32,2565.91
+2017,Chhattisgarh,Maize,119.62,306.95,2566.04
+2010,Gujarat,Maize,565.5,978.1,1729.62
+2011,Gujarat,Maize,515.89,786.6,1524.74
+2012,Gujarat,Maize,457.8,790.5999999999999,1726.96
+2013,Gujarat,Maize,432.43,632.1700000000001,1461.9
+2014,Gujarat,Maize,394.34999999999997,568.84,1442.47
+2015,Gujarat,Maize,391.93,608.51,1552.6
+2016,Gujarat,Maize,449.87999999999994,840.6600000000001,1868.63
+2017,Gujarat,Maize,399.99,714.76,1786.94
+2010,Haryana,Maize,9.600000000000001,19.0,1979.17
+2011,Haryana,Maize,11.0,30.0,2727.27
+2012,Haryana,Maize,9.879999999999999,26.0,2631.58
+2013,Haryana,Maize,8.0,24.0,3000.0
+2014,Haryana,Maize,9.0,18.0,2000.0
+2015,Haryana,Maize,6.1,18.0,2950.82
+2016,Haryana,Maize,6.2,26.0,4193.55
+2017,Haryana,Maize,6.4,19.0,2968.75
+2010,Himachal Pradesh,Maize,281.66999999999996,641.54,2277.63
+2011,Himachal Pradesh,Maize,290.25,612.71,2110.97
+2012,Himachal Pradesh,Maize,275.98,605.08,2192.48
+2013,Himachal Pradesh,Maize,291.96999999999997,594.28,2035.41
+2014,Himachal Pradesh,Maize,289.19,503.71000000000004,1741.8
+2015,Himachal Pradesh,Maize,280.82,708.53,2523.08
+2016,Himachal Pradesh,Maize,262.58,483.45,1841.15
+2017,Himachal Pradesh,Maize,280.82,711.12,2532.3
+2010,Jharkhand,Maize,61.169999999999995,56.37,921.53
+2011,Jharkhand,Maize,65.87,92.16,1399.12
+2012,Jharkhand,Maize,93.03,117.54,1263.46
+2013,Jharkhand,Maize,83.09,136.39000000000001,1641.47
+2014,Jharkhand,Maize,106.55,240.61999999999998,2258.28
+2015,Jharkhand,Maize,118.72999999999999,115.12,969.59
+2016,Jharkhand,Maize,124.67999999999999,270.72999999999996,2171.4
+2017,Jharkhand,Maize,294.7,596.73,2024.87
+2010,Karnataka,Maize,1287.71,4444.37,3451.37
+2011,Karnataka,Maize,1349.78,4085.83,3027.03
+2012,Karnataka,Maize,1321.67,3475.99,2630.0
+2013,Karnataka,Maize,1377.2,4356.39,3163.22
+2014,Karnataka,Maize,1337.08,4213.61,3151.35
+2015,Karnataka,Maize,1220.31,3310.5,2712.84
+2016,Karnataka,Maize,1370.21,3314.29,2418.82
+2017,Karnataka,Maize,1307.03,5610.67,4292.69
+2010,Madhya Pradesh,Maize,837.9,1332.2,1589.93
+2011,Madhya Pradesh,Maize,851.9,1279.6,1502.05
+2012,Madhya Pradesh,Maize,854.55,2380.71,2785.92
+2013,Madhya Pradesh,Maize,851.65,1486.15,1745.02
+2014,Madhya Pradesh,Maize,1131.0,2530.0,2236.96
+2015,Madhya Pradesh,Maize,1100.0,2909.0,2644.55
+2016,Madhya Pradesh,Maize,1264.0,4300.0,3401.9
+2017,Madhya Pradesh,Maize,1352.16,4812.57,3559.17
+2010,Maharashtra,Maize,890.45,2602.43,2922.6
+2011,Maharashtra,Maize,877.3,2457.09,2800.74
+2012,Maharashtra,Maize,821.9300000000001,1826.03,2221.64
+2013,Maharashtra,Maize,946.4999999999999,3123.7999999999997,3300.37
+2014,Maharashtra,Maize,1076.2,2202.3,2046.37
+2015,Maharashtra,Maize,1066.89,1659.8700000000001,1555.8
+2016,Maharashtra,Maize,1053.43,3328.69,3159.86
+2017,Maharashtra,Maize,1063.53,3125.4,2938.7
+2010,Orissa,Maize,252.65,649.2,2569.56
+2011,Orissa,Maize,262.05,608.1,2320.55
+2012,Orissa,Maize,280.67,675.66,2407.31
+2013,Orissa,Maize,279.61,778.66,2784.81
+2014,Orissa,Maize,269.40000000000003,751.1800000000001,2788.34
+2015,Orissa,Maize,239.18,666.4,2786.19
+2016,Orissa,Maize,252.24,745.52,2955.6
+2017,Orissa,Maize,247.60999999999999,729.96,2948.02
+2010,Punjab,Maize,133.0,491.0,3691.73
+2011,Punjab,Maize,117.71999999999998,482.0,4094.46
+2012,Punjab,Maize,130.99999999999997,483.0,3687.02
+2013,Punjab,Maize,130.0,507.0,3900.0
+2014,Punjab,Maize,126.0,460.0,3650.79
+2015,Punjab,Maize,115.0,424.0,3686.96
+2016,Punjab,Maize,116.0,445.0,3836.21
+2017,Punjab,Maize,114.0,423.0,3710.53
+2010,Rajasthan,Maize,1143.0900000000001,2052.96,1795.97
+2011,Rajasthan,Maize,1045.63,1651.65,1579.57
+2012,Rajasthan,Maize,986.15,1858.1999999999998,1884.3
+2013,Rajasthan,Maize,926.71,1477.51,1594.36
+2014,Rajasthan,Maize,904.28,1565.5700000000002,1731.29
+2015,Rajasthan,Maize,881.12,1156.71,1312.77
+2016,Rajasthan,Maize,937.27,1404.17,1498.15
+2017,Rajasthan,Maize,870.11,1763.56,2026.82
+2010,Tamil Nadu,Maize,230.55,1027.5500000000002,4456.95
+2011,Tamil Nadu,Maize,280.65000000000003,1695.5,6041.33
+2012,Tamil Nadu,Maize,291.07,946.37,3251.35
+2013,Tamil Nadu,Maize,380.45,2245.25,5901.56
+2014,Tamil Nadu,Maize,321.98,2647.7400000000002,8223.31
+2015,Tamil Nadu,Maize,355.08,2532.34,7131.74
+2016,Tamil Nadu,Maize,315.03000000000003,953.39,3026.35
+2017,Tamil Nadu,Maize,324.53,2591.63,7985.79
+2010,Telangana,Maize,510.03,2068.57,4055.78
+2011,Telangana,Maize,591.35,1892.47,3200.25
+2012,Telangana,Maize,662.94,2943.7200000000003,4440.4
+2013,Telangana,Maize,750.22,3511.5,4680.63
+2014,Telangana,Maize,691.48,2308.05,3337.84
+2015,Telangana,Maize,572.7900000000001,1751.0700000000002,3057.09
+2016,Telangana,Maize,801.82,2882.47,3594.91
+2017,Telangana,Maize,630.4499999999999,2752.14,4365.36
+2010,Uttar Pradesh,Maize,778.12,1173.68,1508.35
+2011,Uttar Pradesh,Maize,757.4399999999999,1274.25,1682.31
+2012,Uttar Pradesh,Maize,736.84,1370.16,1859.51
+2013,Uttar Pradesh,Maize,709.52,1326.6,1869.71
+2014,Uttar Pradesh,Maize,716.24,1279.99,1787.1
+2015,Uttar Pradesh,Maize,703.79,1304.66,1853.76
+2016,Uttar Pradesh,Maize,807.01,1525.79,1890.67
+2017,Uttar Pradesh,Maize,724.98,1600.25,2207.3
+2010,Uttarakhand,Maize,25.4,39.06,1537.8
+2011,Uttarakhand,Maize,24.75,37.24,1504.65
+2012,Uttarakhand,Maize,25.37,37.47,1476.94
+2013,Uttarakhand,Maize,23.04,32.769999999999996,1422.31
+2014,Uttarakhand,Maize,23.32,48.519999999999996,2080.62
+2015,Uttarakhand,Maize,21.66,37.480000000000004,1730.38
+2016,Uttarakhand,Maize,21.259999999999998,35.63,1675.92
+2017,Uttarakhand,Maize,20.27,41.32,2038.48
+2010,West Bengal,Maize,88.67,352.33,3973.5
+2011,West Bengal,Maize,97.86,364.14,3721.03
+2012,West Bengal,Maize,123.04,461.44,3750.33
+2013,West Bengal,Maize,143.89,620.48,4312.18
+2014,West Bengal,Maize,151.82,649.88,4280.6
+2015,West Bengal,Maize,153.12,662.44,4326.28
+2016,West Bengal,Maize,151.35000000000002,728.19,4811.3
+2017,West Bengal,Maize,222.13,1380.86,6216.45
+2010,Andhra Pradesh,Minor Pulses,602.04,280.51,465.93
+2011,Andhra Pradesh,Minor Pulses,648.99,429.42,661.67
+2012,Andhra Pradesh,Minor Pulses,565.06,436.35,772.22
+2013,Andhra Pradesh,Minor Pulses,452.03000000000003,327.09,723.6
+2014,Andhra Pradesh,Minor Pulses,549.98,482.43,877.18
+2015,Andhra Pradesh,Minor Pulses,743.57,585.75,787.75
+2016,Andhra Pradesh,Minor Pulses,666.0,417.15000000000003,626.35
+2017,Andhra Pradesh,Minor Pulses,607.6,509.35,838.3
+2012,Assam,Minor Pulses,132.16,77.72,588.08
+2013,Assam,Minor Pulses,140.17,96.11999999999999,685.74
+2014,Assam,Minor Pulses,138.56,102.2,737.59
+2015,Assam,Minor Pulses,116.62,85.62,734.18
+2016,Assam,Minor Pulses,136.59,99.96000000000001,731.83
+2017,Assam,Minor Pulses,145.31,108.69,747.99
+2010,Bihar,Minor Pulses,456.06,368.54,808.1
+2011,Bihar,Minor Pulses,445.91999999999996,402.92,903.57
+2012,Bihar,Minor Pulses,432.32,410.91,950.48
+2013,Bihar,Minor Pulses,416.7,415.23,996.47
+2014,Bihar,Minor Pulses,426.2,342.9,804.55
+2015,Bihar,Minor Pulses,415.37,325.11,782.7
+2016,Bihar,Minor Pulses,412.8,361.98,876.89
+2017,Bihar,Minor Pulses,399.31,358.37,897.47
+2010,Chhattisgarh,Minor Pulses,570.9300000000001,294.43,515.7
+2011,Chhattisgarh,Minor Pulses,322.39,142.07,440.68
+2012,Chhattisgarh,Minor Pulses,538.64,225.84,419.28
+2013,Chhattisgarh,Minor Pulses,505.24,232.96,461.09
+2014,Chhattisgarh,Minor Pulses,504.83000000000004,359.32,711.76
+2015,Chhattisgarh,Minor Pulses,468.16,235.12,502.22
+2016,Chhattisgarh,Minor Pulses,413.12,310.67,752.01
+2017,Chhattisgarh,Minor Pulses,392.21,190.01,484.46
+2010,Gujarat,Minor Pulses,437.90000000000003,249.1,568.85
+2011,Gujarat,Minor Pulses,472.59999999999997,249.24,527.38
+2012,Gujarat,Minor Pulses,261.5,138.7,530.4
+2013,Gujarat,Minor Pulses,318.23,177.71,558.43
+2014,Gujarat,Minor Pulses,225.13,129.78,576.47
+2015,Gujarat,Minor Pulses,245.19,136.07,554.96
+2016,Gujarat,Minor Pulses,439.1,255.94,582.87
+2017,Gujarat,Minor Pulses,344.39,229.35,665.96
+2012,Haryana,Minor Pulses,19.97,136.69,6844.77
+2013,Haryana,Minor Pulses,14.2,8.65,609.15
+2014,Haryana,Minor Pulses,16.2,11.59,715.43
+2015,Haryana,Minor Pulses,20.3,7.5,369.46
+2016,Haryana,Minor Pulses,30.39,115.5,3800.59
+2017,Haryana,Minor Pulses,20.71,94.79,4577.02
+2010,Himachal Pradesh,Minor Pulses,27.23,30.95,1136.61
+2011,Himachal Pradesh,Minor Pulses,1.68,9.25,5505.95
+2012,Himachal Pradesh,Minor Pulses,32.95,47.949999999999996,1455.24
+2014,Himachal Pradesh,Minor Pulses,30.61,53.92,1761.52
+2015,Himachal Pradesh,Minor Pulses,29.43,57.080000000000005,1939.52
+2016,Himachal Pradesh,Minor Pulses,20.89,9.34,447.1
+2017,Himachal Pradesh,Minor Pulses,28.07,56.95,2028.86
+2010,Jharkhand,Minor Pulses,1.57,1.24,789.81
+2011,Jharkhand,Minor Pulses,5.11,5.05,988.26
+2012,Jharkhand,Minor Pulses,10.299999999999999,9.82,953.4
+2013,Jharkhand,Minor Pulses,10.59,8.780000000000001,829.08
+2014,Jharkhand,Minor Pulses,11.49,9.77,850.3
+2015,Jharkhand,Minor Pulses,58.290000000000006,34.47,591.35
+2016,Jharkhand,Minor Pulses,35.699999999999996,34.85,976.19
+2010,Karnataka,Minor Pulses,940.35,398.97,424.28
+2011,Karnataka,Minor Pulses,722.11,299.73,415.08
+2012,Karnataka,Minor Pulses,629.62,260.31,413.44
+2013,Karnataka,Minor Pulses,724.78,314.57,434.02
+2014,Karnataka,Minor Pulses,654.36,262.82,401.64
+2015,Karnataka,Minor Pulses,755.38,273.63,362.24
+2016,Karnataka,Minor Pulses,750.73,289.6,385.76
+2017,Karnataka,Minor Pulses,876.1,396.6,452.69
+2010,Kerala,Minor Pulses,3.82,2.9,759.16
+2011,Kerala,Minor Pulses,3.6799999999999997,3.13,850.54
+2012,Kerala,Minor Pulses,1.79,1.26,703.91
+2013,Kerala,Minor Pulses,2.09,0.0,0.0
+2014,Kerala,Minor Pulses,2.13,0.0,0.0
+2015,Kerala,Minor Pulses,2.3400000000000003,2.42,1034.19
+2016,Kerala,Minor Pulses,1.5499999999999998,1.42,916.13
+2017,Kerala,Minor Pulses,1.8,1.6199999999999999,900.0
+2010,Madhya Pradesh,Minor Pulses,1670.9,552.0,330.36
+2011,Madhya Pradesh,Minor Pulses,1599.8,533.0,333.17
+2013,Madhya Pradesh,Minor Pulses,2054.35,1863.59,907.14
+2014,Madhya Pradesh,Minor Pulses,1776.65,1147.91,646.11
+2015,Madhya Pradesh,Minor Pulses,2183.0,1646.8700000000001,754.41
+2016,Madhya Pradesh,Minor Pulses,2518.0,2402.12,953.98
+2017,Madhya Pradesh,Minor Pulses,3243.47,3245.77,1000.71
+2010,Maharashtra,Minor Pulses,1297.97,819.91,631.69
+2011,Maharashtra,Minor Pulses,986.2,582.05,590.19
+2012,Maharashtra,Minor Pulses,974.47,486.83,499.58
+2013,Maharashtra,Minor Pulses,1370.0,840.06,613.18
+2014,Maharashtra,Minor Pulses,775.4,240.0,309.52
+2015,Maharashtra,Minor Pulses,864.92,211.68,244.74
+2016,Maharashtra,Minor Pulses,991.53,552.35,557.07
+2017,Maharashtra,Minor Pulses,965.9200000000001,384.4,397.96
+2010,Orissa,Minor Pulses,1902.18,841.69,442.49
+2011,Orissa,Minor Pulses,1822.48,775.73,425.65
+2012,Orissa,Minor Pulses,1859.8400000000001,876.38,471.21
+2013,Orissa,Minor Pulses,1902.27,897.5,471.8
+2014,Orissa,Minor Pulses,1895.6200000000001,896.58,472.97
+2015,Orissa,Minor Pulses,1687.19,783.4399999999999,464.35
+2016,Orissa,Minor Pulses,1810.97,847.41,467.93
+2017,Orissa,Minor Pulses,1876.52,926.65,493.81
+2012,Punjab,Minor Pulses,10.0,7.5,750.0
+2013,Punjab,Minor Pulses,14.2,11.93,840.14
+2014,Punjab,Minor Pulses,11.809999999999999,9.69,820.49
+2015,Punjab,Minor Pulses,12.5,11.09,887.2
+2016,Punjab,Minor Pulses,10.700000000000001,9.7,906.54
+2017,Punjab,Minor Pulses,25.799999999999997,21.8,844.96
+2010,Rajasthan,Minor Pulses,2950.21,1637.43,555.02
+2011,Rajasthan,Minor Pulses,2996.19,1350.1299999999999,450.62
+2012,Rajasthan,Minor Pulses,1975.66,663.23,335.7
+2013,Rajasthan,Minor Pulses,2259.81,820.77,363.2
+2014,Rajasthan,Minor Pulses,2092.7599999999998,1029.24,491.81
+2015,Rajasthan,Minor Pulses,2912.63,1143.23,392.51
+2016,Rajasthan,Minor Pulses,4173.59,1984.98,475.6
+2017,Rajasthan,Minor Pulses,4275.79,1932.63,451.99
+2010,Tamil Nadu,Minor Pulses,593.71,216.61,364.84
+2012,Tamil Nadu,Minor Pulses,463.46,174.94,377.47
+2013,Tamil Nadu,Minor Pulses,747.17,550.36,736.59
+2014,Tamil Nadu,Minor Pulses,877.08,762.71,869.6
+2015,Tamil Nadu,Minor Pulses,882.77,581.8,659.06
+2016,Tamil Nadu,Minor Pulses,634.36,253.05,398.91
+2017,Tamil Nadu,Minor Pulses,770.26,497.78,646.25
+2010,Telangana,Minor Pulses,306.96000000000004,175.07,570.33
+2011,Telangana,Minor Pulses,234.64,133.52,569.04
+2012,Telangana,Minor Pulses,223.0,174.29,781.57
+2013,Telangana,Minor Pulses,186.6,137.37,736.17
+2014,Telangana,Minor Pulses,128.17,72.28,563.94
+2015,Telangana,Minor Pulses,152.98,92.17,602.5
+2016,Telangana,Minor Pulses,205.53,141.35,687.73
+2017,Telangana,Minor Pulses,143.6,102.42,713.23
+2010,Uttar Pradesh,Minor Pulses,1525.3700000000001,1172.77,768.84
+2011,Uttar Pradesh,Minor Pulses,1526.79,1392.76,912.21
+2012,Uttar Pradesh,Minor Pulses,1452.04,1331.06,916.68
+2013,Uttar Pradesh,Minor Pulses,1341.84,898.57,669.66
+2015,Uttar Pradesh,Minor Pulses,1348.97,959.62,711.37
+2016,Uttar Pradesh,Minor Pulses,1609.23,1406.28,873.88
+2017,Uttar Pradesh,Minor Pulses,1481.4099999999999,1291.8,872.01
+2015,Uttarakhand,Minor Pulses,50.44,41.99,832.47
+2016,Uttarakhand,Minor Pulses,50.61,42.6,841.73
+2017,Uttarakhand,Minor Pulses,50.91,43.449999999999996,853.47
+2010,West Bengal,Minor Pulses,173.38,150.65,868.9
+2011,West Bengal,Minor Pulses,174.5,129.02,739.37
+2012,West Bengal,Minor Pulses,191.53,169.9,887.07
+2013,West Bengal,Minor Pulses,206.99,183.47,886.37
+2014,West Bengal,Minor Pulses,220.46,197.1,894.04
+2015,West Bengal,Minor Pulses,310.62,228.74,736.4
+2016,West Bengal,Minor Pulses,274.81,242.51,882.46
+2017,West Bengal,Minor Pulses,403.8,357.71,885.86
+2010,Andhra Pradesh,Oilseeds,1974.08,2372.65,1201.9
+2011,Andhra Pradesh,Oilseeds,1649.8899999999999,1742.74,1056.28
+2012,Andhra Pradesh,Oilseeds,1591.5900000000001,1988.28,1249.24
+2013,Andhra Pradesh,Oilseeds,1540.83,2242.26,1455.23
+2014,Andhra Pradesh,Oilseeds,1236.82,1903.55,1539.07
+2015,Andhra Pradesh,Oilseeds,1100.0900000000001,2180.23,1981.87
+2016,Andhra Pradesh,Oilseeds,1332.29,2491.36,1869.98
+2017,Andhra Pradesh,Oilseeds,914.7,2876.52,3144.77
+2010,Assam,Oilseeds,259.17,151.75,585.52
+2012,Assam,Oilseeds,301.97,185.36,613.84
+2013,Assam,Oilseeds,298.59999999999997,184.60999999999999,618.25
+2014,Assam,Oilseeds,301.96,203.26,673.14
+2015,Assam,Oilseeds,305.2,212.08,694.89
+2013,Bihar,Oilseeds,121.16,155.69,1285.0
+2014,Bihar,Oilseeds,116.05,126.9,1093.49
+2010,Chhattisgarh,Oilseeds,321.53999999999996,219.42,682.4
+2011,Chhattisgarh,Oilseeds,306.73,178.67000000000002,582.5
+2012,Chhattisgarh,Oilseeds,306.36,223.94,730.97
+2013,Chhattisgarh,Oilseeds,301.31,211.32999999999998,701.37
+2014,Chhattisgarh,Oilseeds,291.63,147.63,506.22
+2015,Chhattisgarh,Oilseeds,302.6,130.28,430.54
+2010,Gujarat,Oilseeds,3110.0,5141.8,1653.31
+2011,Gujarat,Oilseeds,3129.8,5035.0,1608.73
+2012,Gujarat,Oilseeds,2449.4,2854.8900000000003,1165.55
+2013,Gujarat,Oilseeds,2950.1,7398.13,2507.76
+2014,Gujarat,Oilseeds,2325.42,4168.25,1792.47
+2015,Gujarat,Oilseeds,2370.68,3496.05,1474.7
+2010,Haryana,Oilseeds,521.0,964.89,1852.0
+2011,Haryana,Oilseeds,545.8,754.8,1382.92
+2012,Haryana,Oilseeds,567.61,930.0,1638.45
+2013,Haryana,Oilseeds,548.49,899.0999999999999,1639.23
+2014,Haryana,Oilseeds,495.4,739.5,1492.73
+2015,Haryana,Oilseeds,526.79,851.8000000000001,1616.96
+2016,Haryana,Oilseeds,522.9,984.6999999999999,1883.15
+2017,Haryana,Oilseeds,559.5999999999999,1134.6999999999998,2027.7
+2010,Himachal Pradesh,Oilseeds,13.030000000000001,6.28,481.96
+2012,Himachal Pradesh,Oilseeds,12.860000000000001,6.04,469.67
+2014,Himachal Pradesh,Oilseeds,12.23,6.62,541.29
+2015,Himachal Pradesh,Oilseeds,10.14,5.82,573.96
+2010,Jharkhand,Oilseeds,10.51,7.82,744.05
+2011,Jharkhand,Oilseeds,7.51,6.49,864.18
+2012,Jharkhand,Oilseeds,21.27,18.95,890.93
+2013,Jharkhand,Oilseeds,31.79,32.13,1010.7
+2014,Jharkhand,Oilseeds,27.740000000000002,24.22,873.11
+2015,Jharkhand,Oilseeds,37.160000000000004,31.64,851.45
+2010,Karnataka,Oilseeds,1622.53,1093.13,673.72
+2011,Karnataka,Oilseeds,1406.4,883.88,628.47
+2012,Karnataka,Oilseeds,1387.96,801.18,577.24
+2013,Karnataka,Oilseeds,1414.24,1121.49,793.0
+2014,Karnataka,Oilseeds,1371.8,899.41,655.64
+2015,Karnataka,Oilseeds,1288.72,0.0,0.0
+2010,Kerala,Oilseeds,773.86,0.0,0.0
+2011,Kerala,Oilseeds,824.22,0.0,0.0
+2012,Kerala,Oilseeds,800.23,0.0,0.0
+2013,Kerala,Oilseeds,810.51,0.0,0.0
+2014,Kerala,Oilseeds,795.37,0.0,0.0
+2015,Kerala,Oilseeds,791.63,0.0,0.0
+2010,Madhya Pradesh,Oilseeds,7012.7,8118.8,1157.73
+2011,Madhya Pradesh,Oilseeds,7181.82,7712.9,1073.95
+2013,Madhya Pradesh,Oilseeds,7560.45,7107.74,940.12
+2014,Madhya Pradesh,Oilseeds,6932.32,7611.92,1098.03
+2015,Madhya Pradesh,Oilseeds,7265.23,5139.53,707.41
+2010,Maharashtra,Oilseeds,3624.04,5045.84,1392.32
+2011,Maharashtra,Oilseeds,3701.62,4518.49,1220.68
+2012,Maharashtra,Oilseeds,3691.34,5159.94,1397.85
+2013,Maharashtra,Oilseeds,4467.0,5255.35,1176.48
+2014,Maharashtra,Oilseeds,4211.2,2278.3,541.01
+2015,Maharashtra,Oilseeds,4194.7,2166.12,516.39
+2010,Orissa,Oilseeds,771.68,638.01,826.78
+2011,Orissa,Oilseeds,765.09,663.69,867.47
+2012,Orissa,Oilseeds,750.55,689.87,919.15
+2013,Orissa,Oilseeds,752.4,698.57,928.46
+2014,Orissa,Oilseeds,741.58,679.9399999999999,916.88
+2015,Orissa,Oilseeds,630.67,564.29,894.75
+2016,Orissa,Oilseeds,630.71,560.61,888.86
+2017,Orissa,Oilseeds,603.37,535.34,887.25
+2012,Punjab,Oilseeds,51.6,70.2,1360.47
+2013,Punjab,Oilseeds,51.0,63.71,1249.22
+2014,Punjab,Oilseeds,47.49,59.3,1248.68
+2015,Punjab,Oilseeds,46.379999999999995,59.39,1280.51
+2010,Rajasthan,Oilseeds,5488.52,6604.8,1203.38
+2011,Rajasthan,Oilseeds,4626.46,5765.08,1246.11
+2012,Rajasthan,Oilseeds,4918.17,6371.14,1295.43
+2013,Rajasthan,Oilseeds,5279.15,6040.56,1144.23
+2014,Rajasthan,Oilseeds,4461.6900000000005,5320.55,1192.5
+2015,Rajasthan,Oilseeds,4843.27,5511.15,1137.9
+2010,Tamil Nadu,Oilseeds,865.65,0.0,0.0
+2012,Tamil Nadu,Oilseeds,819.51,0.0,0.0
+2013,Tamil Nadu,Oilseeds,407.84,961.35,2357.17
+2014,Tamil Nadu,Oilseeds,415.15,984.1800000000001,2370.66
+2015,Tamil Nadu,Oilseeds,406.44,931.98,2293.03
+2010,Telangana,Oilseeds,497.59,701.4399999999999,1409.67
+2011,Telangana,Oilseeds,449.14,587.93,1309.01
+2012,Telangana,Oilseeds,508.83000000000004,806.62,1585.24
+2013,Telangana,Oilseeds,589.23,881.24,1495.58
+2014,Telangana,Oilseeds,500.71,721.51,1440.97
+2015,Telangana,Oilseeds,453.53,477.62,1053.12
+2010,Uttar Pradesh,Oilseeds,1067.82,892.81,836.11
+2011,Uttar Pradesh,Oilseeds,1059.8,884.68,834.76
+2012,Uttar Pradesh,Oilseeds,1147.17,1028.48,896.54
+2013,Uttar Pradesh,Oilseeds,1103.79,826.25,748.56
+2015,Uttar Pradesh,Oilseeds,2.26,2.12,938.05
+2015,Uttarakhand,Oilseeds,25.349999999999998,27.61,1089.15
+2010,West Bengal,Oilseeds,670.76,703.29,1048.5
+2011,West Bengal,Oilseeds,678.77,710.51,1046.76
+2012,West Bengal,Oilseeds,727.5,820.9,1128.38
+2013,West Bengal,Oilseeds,745.4,840.4,1127.45
+2014,West Bengal,Oilseeds,760.9,858.0,1127.61
+2010,Andhra Pradesh,Pearl Millet,48.220000000000006,88.31,1831.4
+2011,Andhra Pradesh,Pearl Millet,31.83,51.53,1618.91
+2012,Andhra Pradesh,Pearl Millet,56.739999999999995,98.67,1738.98
+2013,Andhra Pradesh,Pearl Millet,49.230000000000004,81.85,1662.6
+2014,Andhra Pradesh,Pearl Millet,28.2,38.5,1365.25
+2015,Andhra Pradesh,Pearl Millet,36.75,65.04,1769.8
+2016,Andhra Pradesh,Pearl Millet,41.879999999999995,71.95,1718.0
+2017,Andhra Pradesh,Pearl Millet,48.36,93.18,1926.8
+2010,Bihar,Pearl Millet,4.85,5.44,1121.65
+2011,Bihar,Pearl Millet,4.46,5.0,1121.08
+2012,Bihar,Pearl Millet,4.26,4.84,1136.15
+2013,Bihar,Pearl Millet,2.64,3.0100000000000002,1140.15
+2014,Bihar,Pearl Millet,3.28,3.73,1137.2
+2015,Bihar,Pearl Millet,4.1,4.63,1129.27
+2016,Bihar,Pearl Millet,3.56,4.04,1134.83
+2017,Bihar,Pearl Millet,4.369999999999999,4.97,1137.3
+2010,Chhattisgarh,Pearl Millet,1.67,2.41,1443.11
+2010,Gujarat,Pearl Millet,872.4,1500.9,1720.43
+2011,Gujarat,Pearl Millet,866.3000000000001,1612.0,1860.79
+2012,Gujarat,Pearl Millet,599.4,1044.9,1743.24
+2013,Gujarat,Pearl Millet,672.13,1360.1799999999998,2023.69
+2014,Gujarat,Pearl Millet,453.06,1010.13,2229.57
+2015,Gujarat,Pearl Millet,391.21999999999997,885.96,2264.61
+2016,Gujarat,Pearl Millet,431.36,911.6,2113.32
+2017,Gujarat,Pearl Millet,397.18,964.93,2429.45
+2010,Haryana,Pearl Millet,659.6,1183.0,1793.51
+2011,Haryana,Pearl Millet,576.2,1175.0,2039.22
+2012,Haryana,Pearl Millet,410.74,791.0,1925.79
+2013,Haryana,Pearl Millet,403.0,829.0,2057.07
+2014,Haryana,Pearl Millet,393.0,683.0,1737.91
+2015,Haryana,Pearl Millet,369.90000000000003,651.0,1759.94
+2016,Haryana,Pearl Millet,467.11,964.0,2063.75
+2017,Haryana,Pearl Millet,449.3,721.0,1604.72
+2012,Himachal Pradesh,Pearl Millet,2.44,1.23,504.1
+2013,Himachal Pradesh,Pearl Millet,0.73,0.4,547.95
+2014,Himachal Pradesh,Pearl Millet,0.66,0.34,515.15
+2017,Jharkhand,Pearl Millet,0.61,0.34,557.38
+2010,Karnataka,Pearl Millet,309.26,334.0,1080.0
+2011,Karnataka,Pearl Millet,285.53,278.01,973.66
+2012,Karnataka,Pearl Millet,274.63,285.16999999999996,1038.38
+2013,Karnataka,Pearl Millet,280.46999999999997,330.93,1179.91
+2014,Karnataka,Pearl Millet,234.3,248.61,1061.08
+2015,Karnataka,Pearl Millet,166.35000000000002,110.75,665.76
+2016,Karnataka,Pearl Millet,242.33,255.64999999999998,1054.97
+2017,Karnataka,Pearl Millet,231.55,367.25,1586.05
+2010,Madhya Pradesh,Pearl Millet,200.51,384.14000000000004,1915.81
+2011,Madhya Pradesh,Pearl Millet,199.99,388.16,1940.9
+2012,Madhya Pradesh,Pearl Millet,193.05,388.4,2011.91
+2013,Madhya Pradesh,Pearl Millet,191.35999999999999,401.61,2098.71
+2014,Madhya Pradesh,Pearl Millet,225.0,428.0,1902.22
+2015,Madhya Pradesh,Pearl Millet,269.0,617.0,2293.68
+2016,Madhya Pradesh,Pearl Millet,279.0,776.0,2781.36
+2017,Madhya Pradesh,Pearl Millet,309.94,754.74,2435.12
+2010,Maharashtra,Pearl Millet,1034.6,1123.4,1085.83
+2011,Maharashtra,Pearl Millet,838.2,823.29,982.21
+2012,Maharashtra,Pearl Millet,788.2,504.54,640.12
+2013,Maharashtra,Pearl Millet,761.6,787.9,1034.53
+2014,Maharashtra,Pearl Millet,864.8,537.9,621.99
+2015,Maharashtra,Pearl Millet,800.6,332.9,415.81
+2016,Maharashtra,Pearl Millet,837.08,799.75,955.4
+2017,Maharashtra,Pearl Millet,787.83,669.19,849.41
+2010,Orissa,Pearl Millet,3.34,2.0700000000000003,619.76
+2011,Orissa,Pearl Millet,3.09,1.9,614.89
+2012,Orissa,Pearl Millet,2.84,1.73,609.15
+2013,Orissa,Pearl Millet,3.0300000000000002,1.8499999999999999,610.56
+2014,Orissa,Pearl Millet,2.35,1.44,612.77
+2015,Orissa,Pearl Millet,2.11,1.29,611.37
+2016,Orissa,Pearl Millet,1.8399999999999999,1.1300000000000001,614.13
+2017,Orissa,Pearl Millet,1.76,1.09,619.32
+2010,Punjab,Pearl Millet,3.0,3.0,1000.0
+2011,Punjab,Pearl Millet,3.0,3.0,1000.0
+2012,Punjab,Pearl Millet,3.0,3.0,1000.0
+2013,Punjab,Pearl Millet,0.8,0.8,1000.0
+2016,Punjab,Pearl Millet,1.2,0.7,583.33
+2017,Punjab,Pearl Millet,1.0,0.6,600.0
+2010,Rajasthan,Pearl Millet,5488.76,6091.41,1109.8
+2011,Rajasthan,Pearl Millet,5027.99,6301.77,1253.34
+2012,Rajasthan,Pearl Millet,3988.93,3870.69,970.36
+2013,Rajasthan,Pearl Millet,4446.97,4135.03,929.85
+2014,Rajasthan,Pearl Millet,4108.16,4465.0,1086.86
+2015,Rajasthan,Pearl Millet,4076.44,3220.85,790.11
+2016,Rajasthan,Pearl Millet,4177.75,4163.96,996.7
+2017,Rajasthan,Pearl Millet,4264.34,3756.7799999999997,880.98
+2010,Tamil Nadu,Pearl Millet,49.480000000000004,77.38,1563.86
+2011,Tamil Nadu,Pearl Millet,46.69,114.47,2451.7
+2012,Tamil Nadu,Pearl Millet,42.93,56.510000000000005,1316.33
+2013,Tamil Nadu,Pearl Millet,54.39,117.44,2159.22
+2014,Tamil Nadu,Pearl Millet,57.730000000000004,177.59,3076.22
+2015,Tamil Nadu,Pearl Millet,51.62,134.34,2602.48
+2016,Tamil Nadu,Pearl Millet,49.66,102.24999999999999,2059.0
+2017,Tamil Nadu,Pearl Millet,63.03,143.55,2277.49
+2010,Telangana,Pearl Millet,19.130000000000003,13.86,724.52
+2011,Telangana,Pearl Millet,11.33,7.109999999999999,627.54
+2012,Telangana,Pearl Millet,9.82,12.1,1232.18
+2013,Telangana,Pearl Millet,13.23,12.450000000000001,941.04
+2014,Telangana,Pearl Millet,11.2,10.51,938.39
+2015,Telangana,Pearl Millet,5.91,5.53,935.7
+2016,Telangana,Pearl Millet,16.700000000000003,14.52,869.46
+2017,Telangana,Pearl Millet,8.77,9.25,1054.73
+2010,Uttar Pradesh,Pearl Millet,940.01,1567.46,1667.49
+2011,Uttar Pradesh,Pearl Millet,913.55,1652.03,1808.36
+2012,Uttar Pradesh,Pearl Millet,900.54,1757.79,1951.93
+2013,Uttar Pradesh,Pearl Millet,919.03,1868.19,2032.78
+2014,Uttar Pradesh,Pearl Millet,951.74,1808.1399999999999,1899.83
+2015,Uttar Pradesh,Pearl Millet,974.89,1775.72,1821.46
+2016,Uttar Pradesh,Pearl Millet,907.1999999999999,1736.29,1913.9
+2017,Uttar Pradesh,Pearl Millet,925.38,1795.19,1939.95
+2010,Andhra Pradesh,Pigeonpea,296.68,114.22,384.99
+2011,Andhra Pradesh,Pigeonpea,182.86,55.38,302.85
+2012,Andhra Pradesh,Pigeonpea,204.25,98.02,479.9
+2013,Andhra Pradesh,Pigeonpea,184.14,103.95,564.52
+2014,Andhra Pradesh,Pigeonpea,150.55,75.81,503.55
+2015,Andhra Pradesh,Pigeonpea,220.31,132.14000000000001,599.79
+2016,Andhra Pradesh,Pigeonpea,349.44,132.98000000000002,380.55
+2017,Andhra Pradesh,Pigeonpea,279.51,120.1,429.68
+2010,Assam,Pigeonpea,7.03,5.0,711.24
+2011,Assam,Pigeonpea,5.61,4.38,780.75
+2012,Assam,Pigeonpea,5.84,4.83,827.05
+2013,Assam,Pigeonpea,6.05,5.55,917.36
+2014,Assam,Pigeonpea,5.96,5.6499999999999995,947.99
+2015,Assam,Pigeonpea,6.29,5.510000000000001,875.99
+2016,Assam,Pigeonpea,5.63,4.81,854.35
+2017,Assam,Pigeonpea,5.54,4.63,835.74
+2010,Bihar,Pigeonpea,25.52,39.47,1546.63
+2011,Bihar,Pigeonpea,22.16,42.07,1898.47
+2012,Bihar,Pigeonpea,22.14,47.13,2128.73
+2013,Bihar,Pigeonpea,21.92,36.48,1664.23
+2014,Bihar,Pigeonpea,19.9,28.53,1433.67
+2015,Bihar,Pigeonpea,23.56,37.17,1577.67
+2016,Bihar,Pigeonpea,20.96,32.18,1535.31
+2017,Bihar,Pigeonpea,18.49,25.1,1357.49
+2010,Chhattisgarh,Pigeonpea,55.48,24.12,434.75
+2011,Chhattisgarh,Pigeonpea,52.89,23.689999999999998,447.91
+2012,Chhattisgarh,Pigeonpea,51.84,31.02,598.38
+2013,Chhattisgarh,Pigeonpea,52.839999999999996,29.47,557.72
+2014,Chhattisgarh,Pigeonpea,55.33,35.04,633.29
+2015,Chhattisgarh,Pigeonpea,65.12,30.61,470.06
+2016,Chhattisgarh,Pigeonpea,63.489999999999995,39.06,615.21
+2017,Chhattisgarh,Pigeonpea,63.239999999999995,25.759999999999998,407.34
+2010,Gujarat,Pigeonpea,276.71,272.91,986.27
+2011,Gujarat,Pigeonpea,244.4,257.5,1053.6
+2012,Gujarat,Pigeonpea,228.1,270.2,1184.57
+2013,Gujarat,Pigeonpea,209.91,208.96,995.47
+2014,Gujarat,Pigeonpea,219.85000000000002,239.3,1088.47
+2015,Gujarat,Pigeonpea,229.43,281.85,1228.48
+2016,Gujarat,Pigeonpea,348.23,394.12,1131.78
+2017,Gujarat,Pigeonpea,271.19,337.08,1242.97
+2012,Haryana,Pigeonpea,8.55,9.14,1069.01
+2013,Haryana,Pigeonpea,9.399999999999999,10.5,1117.02
+2014,Haryana,Pigeonpea,4.0,2.5,625.0
+2010,Jharkhand,Pigeonpea,18.24,22.7,1244.52
+2011,Jharkhand,Pigeonpea,18.03,29.160000000000004,1617.3
+2012,Jharkhand,Pigeonpea,18.85,29.78,1579.84
+2013,Jharkhand,Pigeonpea,39.739999999999995,57.18,1438.85
+2014,Jharkhand,Pigeonpea,32.91,44.95,1365.85
+2015,Jharkhand,Pigeonpea,26.94,31.919999999999998,1184.86
+2016,Jharkhand,Pigeonpea,38.11000000000001,79.07000000000001,2074.78
+2017,Jharkhand,Pigeonpea,245.1,256.85,1047.94
+2010,Karnataka,Pigeonpea,891.55,524.74,588.57
+2011,Karnataka,Pigeonpea,767.38,355.44,463.19
+2012,Karnataka,Pigeonpea,659.75,467.11,708.01
+2013,Karnataka,Pigeonpea,823.76,756.58,918.45
+2014,Karnataka,Pigeonpea,728.05,474.02,651.08
+2015,Karnataka,Pigeonpea,657.37,241.65,367.6
+2016,Karnataka,Pigeonpea,1213.84,1212.3,998.73
+2017,Karnataka,Pigeonpea,884.9,839.5699999999999,948.77
+2012,Kerala,Pigeonpea,1.1800000000000002,1.89,1601.69
+2013,Kerala,Pigeonpea,0.89,1.4300000000000002,1606.74
+2014,Kerala,Pigeonpea,1.48,1.9,1283.78
+2015,Kerala,Pigeonpea,1.43,1.8399999999999999,1286.71
+2010,Madhya Pradesh,Pigeonpea,638.2,201.6,315.89
+2011,Madhya Pradesh,Pigeonpea,531.0,330.2,621.85
+2012,Madhya Pradesh,Pigeonpea,454.55,314.59,692.09
+2013,Madhya Pradesh,Pigeonpea,395.7,284.96,720.14
+2014,Madhya Pradesh,Pigeonpea,520.0,506.0,973.08
+2015,Madhya Pradesh,Pigeonpea,581.0,599.0,1030.98
+2016,Madhya Pradesh,Pigeonpea,692.0,871.0,1258.67
+2017,Madhya Pradesh,Pigeonpea,646.98,839.4,1297.41
+2010,Maharashtra,Pigeonpea,1301.79,975.79,749.58
+2011,Maharashtra,Pigeonpea,1233.1,871.1,706.43
+2012,Maharashtra,Pigeonpea,1213.6,1005.82,828.79
+2013,Maharashtra,Pigeonpea,1141.3,1034.2,906.16
+2014,Maharashtra,Pigeonpea,1210.2,353.3,291.94
+2015,Maharashtra,Pigeonpea,1236.9,444.2,359.12
+2016,Maharashtra,Pigeonpea,1435.63,2089.24,1455.28
+2017,Maharashtra,Pigeonpea,1375.1,1250.68,909.52
+2010,Orissa,Pigeonpea,135.39,124.02,916.02
+2011,Orissa,Pigeonpea,142.14,115.38,811.73
+2012,Orissa,Pigeonpea,140.87,128.48,912.05
+2013,Orissa,Pigeonpea,138.88,124.44,896.03
+2014,Orissa,Pigeonpea,137.87,123.81,898.02
+2015,Orissa,Pigeonpea,138.29,122.52,885.96
+2016,Orissa,Pigeonpea,135.54,119.82,884.02
+2017,Orissa,Pigeonpea,137.89,123.69,897.02
+2010,Punjab,Pigeonpea,4.51,4.41,977.83
+2011,Punjab,Pigeonpea,3.1,2.7,870.97
+2012,Punjab,Pigeonpea,2.4,2.2,916.67
+2013,Punjab,Pigeonpea,2.9,2.6,896.55
+2014,Punjab,Pigeonpea,2.6,2.39,919.23
+2015,Punjab,Pigeonpea,2.6,2.63,1011.54
+2016,Punjab,Pigeonpea,5.7,4.9,859.65
+2017,Punjab,Pigeonpea,2.6,2.7,1038.46
+2010,Rajasthan,Pigeonpea,21.330000000000002,16.16,757.62
+2011,Rajasthan,Pigeonpea,19.1,12.67,663.35
+2012,Rajasthan,Pigeonpea,16.79,14.78,880.29
+2013,Rajasthan,Pigeonpea,14.500000000000002,9.41,648.97
+2014,Rajasthan,Pigeonpea,13.18,9.700000000000001,735.96
+2015,Rajasthan,Pigeonpea,24.39,13.36,547.77
+2016,Rajasthan,Pigeonpea,17.83,19.43,1089.74
+2017,Rajasthan,Pigeonpea,12.46,12.65,1015.25
+2010,Tamil Nadu,Pigeonpea,35.769999999999996,23.7,662.57
+2011,Tamil Nadu,Pigeonpea,35.96,31.32,870.97
+2012,Tamil Nadu,Pigeonpea,42.07,33.11,787.02
+2013,Tamil Nadu,Pigeonpea,59.63999999999999,57.69,967.3
+2016,Tamil Nadu,Pigeonpea,56.57,37.05,654.94
+2017,Tamil Nadu,Pigeonpea,49.23,53.8,1092.83
+2010,Telangana,Pigeonpea,341.43,151.17,442.76
+2011,Telangana,Pigeonpea,298.65,90.69,303.67
+2012,Telangana,Pigeonpea,275.71,152.82,554.28
+2013,Telangana,Pigeonpea,262.91999999999996,139.24,529.59
+2014,Telangana,Pigeonpea,220.68,109.28,495.2
+2015,Telangana,Pigeonpea,248.93,104.85,421.2
+2016,Telangana,Pigeonpea,387.45,262.23,676.81
+2017,Telangana,Pigeonpea,330.36,263.76,798.4
+2010,Uttar Pradesh,Pigeonpea,334.51,301.42,901.08
+2011,Uttar Pradesh,Pigeonpea,288.75,294.37,1019.46
+2012,Uttar Pradesh,Pigeonpea,311.46999999999997,324.71,1042.51
+2013,Uttar Pradesh,Pigeonpea,300.71,271.43,902.63
+2014,Uttar Pradesh,Pigeonpea,286.52,174.03,607.39
+2015,Uttar Pradesh,Pigeonpea,264.73,182.38,688.93
+2016,Uttar Pradesh,Pigeonpea,337.71,362.86,1074.47
+2017,Uttar Pradesh,Pigeonpea,282.28,331.65999999999997,1174.93
+2010,Uttarakhand,Pigeonpea,1.97,1.33,675.13
+2011,Uttarakhand,Pigeonpea,2.56,1.75,683.59
+2012,Uttarakhand,Pigeonpea,2.52,1.98,785.71
+2013,Uttarakhand,Pigeonpea,2.3200000000000003,1.8900000000000001,814.66
+2014,Uttarakhand,Pigeonpea,3.1500000000000004,2.86,907.94
+2015,Uttarakhand,Pigeonpea,3.35,2.76,823.88
+2016,Uttarakhand,Pigeonpea,2.5,2.25,900.0
+2017,Uttarakhand,Pigeonpea,3.47,3.31,953.89
+2010,West Bengal,Pigeonpea,1.56,2.23,1429.49
+2011,West Bengal,Pigeonpea,1.26,0.55,436.51
+2012,West Bengal,Pigeonpea,1.4300000000000002,2.04,1426.57
+2013,West Bengal,Pigeonpea,1.49,2.15,1442.95
+2014,West Bengal,Pigeonpea,2.04,2.94,1441.18
+2015,West Bengal,Pigeonpea,2.85,2.48,870.18
+2016,West Bengal,Pigeonpea,2.48,3.14,1266.13
+2017,West Bengal,Pigeonpea,2.73,4.46,1633.7
+2010,Andhra Pradesh,Rabi Sorghum,79.4,143.63,1808.94
+2011,Andhra Pradesh,Rabi Sorghum,119.86999999999999,291.22,2429.47
+2012,Andhra Pradesh,Rabi Sorghum,136.47,338.52,2480.55
+2013,Andhra Pradesh,Rabi Sorghum,85.53,208.49999999999997,2437.74
+2014,Andhra Pradesh,Rabi Sorghum,104.53999999999999,289.54999999999995,2769.75
+2015,Andhra Pradesh,Rabi Sorghum,130.22,308.42,2368.45
+2016,Andhra Pradesh,Rabi Sorghum,83.14,177.84,2139.04
+2017,Andhra Pradesh,Rabi Sorghum,109.99000000000001,302.47,2749.98
+2010,Chhattisgarh,Rabi Sorghum,3.52,1.5999999999999999,454.55
+2010,Gujarat,Rabi Sorghum,49.400000000000006,58.3,1180.16
+2011,Gujarat,Rabi Sorghum,55.800000000000004,59.4,1064.52
+2012,Gujarat,Rabi Sorghum,30.1,31.3,1039.87
+2013,Gujarat,Rabi Sorghum,37.68,56.23,1492.3
+2014,Gujarat,Rabi Sorghum,33.7,48.019999999999996,1424.93
+2015,Gujarat,Rabi Sorghum,24.380000000000003,29.02,1190.32
+2016,Gujarat,Rabi Sorghum,30.139999999999997,45.65,1514.6
+2017,Gujarat,Rabi Sorghum,24.22,31.980000000000004,1320.4
+2010,Karnataka,Rabi Sorghum,1026.31,1122.22,1093.45
+2011,Karnataka,Rabi Sorghum,945.3399999999999,875.5899999999999,926.22
+2012,Karnataka,Rabi Sorghum,1105.83,1121.1399999999999,1013.84
+2013,Karnataka,Rabi Sorghum,971.38,1077.98,1109.74
+2014,Karnataka,Rabi Sorghum,930.5,1013.49,1089.19
+2015,Karnataka,Rabi Sorghum,999.2,677.64,678.18
+2016,Karnataka,Rabi Sorghum,837.28,717.27,856.67
+2017,Karnataka,Rabi Sorghum,995.63,1110.99,1115.87
+2010,Madhya Pradesh,Rabi Sorghum,3.68,5.21,1415.76
+2011,Madhya Pradesh,Rabi Sorghum,2.59,3.9999999999999996,1544.4
+2012,Madhya Pradesh,Rabi Sorghum,2.47,4.96,2008.1
+2013,Madhya Pradesh,Rabi Sorghum,3.52,5.2,1477.27
+2010,Maharashtra,Rabi Sorghum,3027.5,2084.58,688.55
+2011,Maharashtra,Rabi Sorghum,2333.4,1285.1299999999999,550.75
+2012,Maharashtra,Rabi Sorghum,2401.2,961.6,400.47
+2013,Maharashtra,Rabi Sorghum,2780.7,1921.5,691.01
+2014,Maharashtra,Rabi Sorghum,2608.1,1524.4,584.49
+2015,Maharashtra,Rabi Sorghum,2596.8,837.1,322.36
+2016,Maharashtra,Rabi Sorghum,3012.03,1963.35,651.84
+2017,Maharashtra,Rabi Sorghum,2898.86,1842.43,635.57
+2010,Tamil Nadu,Rabi Sorghum,63.9,102.7,1607.2
+2011,Tamil Nadu,Rabi Sorghum,63.46,105.48,1662.15
+2012,Tamil Nadu,Rabi Sorghum,82.34,81.61,991.13
+2013,Tamil Nadu,Rabi Sorghum,122.11,262.86,2152.65
+2014,Tamil Nadu,Rabi Sorghum,179.65,393.83,2192.21
+2015,Tamil Nadu,Rabi Sorghum,153.97,245.8,1596.41
+2016,Tamil Nadu,Rabi Sorghum,140.04,47.35,338.12
+2017,Tamil Nadu,Rabi Sorghum,144.29000000000002,155.70999999999998,1079.15
+2010,Telangana,Rabi Sorghum,60.61,50.01,825.11
+2011,Telangana,Rabi Sorghum,53.45,51.42,962.02
+2012,Telangana,Rabi Sorghum,47.370000000000005,43.88,926.32
+2013,Telangana,Rabi Sorghum,36.33,32.019999999999996,881.37
+2014,Telangana,Rabi Sorghum,36.4,36.269999999999996,996.43
+2015,Telangana,Rabi Sorghum,31.21,25.189999999999998,807.11
+2016,Telangana,Rabi Sorghum,27.82,33.11,1190.15
+2017,Telangana,Rabi Sorghum,24.17,32.67,1351.68
+2010,Andhra Pradesh,Rapeseed And Mustard,6.34,2.69,424.29
+2011,Andhra Pradesh,Rapeseed And Mustard,6.45,15.75,2441.86
+2012,Andhra Pradesh,Rapeseed And Mustard,3.53,1.53,433.43
+2013,Andhra Pradesh,Rapeseed And Mustard,3.3000000000000003,2.12,642.42
+2014,Andhra Pradesh,Rapeseed And Mustard,5.7,3.2,561.4
+2015,Andhra Pradesh,Rapeseed And Mustard,1.42,0.77,542.25
+2016,Andhra Pradesh,Rapeseed And Mustard,5.069999999999999,2.08,410.26
+2017,Andhra Pradesh,Rapeseed And Mustard,2.99,1.3699999999999999,458.19
+2010,Assam,Rapeseed And Mustard,240.42000000000002,141.29,587.68
+2011,Assam,Rapeseed And Mustard,244.29000000000002,136.73,559.7
+2012,Assam,Rapeseed And Mustard,275.84,169.07999999999998,612.96
+2013,Assam,Rapeseed And Mustard,276.07,167.42,606.44
+2014,Assam,Rapeseed And Mustard,276.40999999999997,185.31,670.42
+2015,Assam,Rapeseed And Mustard,281.04,196.58,699.47
+2016,Assam,Rapeseed And Mustard,288.86,186.01,643.95
+2017,Assam,Rapeseed And Mustard,284.61,182.2,640.17
+2010,Bihar,Rapeseed And Mustard,86.4,95.82000000000001,1109.03
+2011,Bihar,Rapeseed And Mustard,90.35,127.97,1416.38
+2012,Bihar,Rapeseed And Mustard,86.85,138.55,1595.28
+2013,Bihar,Rapeseed And Mustard,85.3,117.15,1373.39
+2014,Bihar,Rapeseed And Mustard,84.45,92.9,1100.06
+2015,Bihar,Rapeseed And Mustard,89.69,94.4,1052.51
+2016,Bihar,Rapeseed And Mustard,82.75999999999999,97.68,1180.28
+2017,Bihar,Rapeseed And Mustard,79.12,98.48,1244.69
+2010,Chhattisgarh,Rapeseed And Mustard,51.8,21.1,407.34
+2011,Chhattisgarh,Rapeseed And Mustard,49.17,21.83,443.97
+2012,Chhattisgarh,Rapeseed And Mustard,47.03,23.869999999999997,507.55
+2013,Chhattisgarh,Rapeseed And Mustard,47.54,26.979999999999997,567.52
+2014,Chhattisgarh,Rapeseed And Mustard,46.56,24.59,528.14
+2015,Chhattisgarh,Rapeseed And Mustard,46.32,26.009999999999998,561.53
+2016,Chhattisgarh,Rapeseed And Mustard,42.92,18.44,429.64
+2017,Chhattisgarh,Rapeseed And Mustard,41.43000000000001,18.35,442.92
+2010,Gujarat,Rapeseed And Mustard,222.7,349.2,1568.03
+2011,Gujarat,Rapeseed And Mustard,207.6,327.3,1576.59
+2012,Gujarat,Rapeseed And Mustard,212.79999999999998,360.6,1694.55
+2013,Gujarat,Rapeseed And Mustard,277.03000000000003,488.45,1763.17
+2014,Gujarat,Rapeseed And Mustard,185.03,336.67,1819.54
+2015,Gujarat,Rapeseed And Mustard,190.19,276.21000000000004,1452.28
+2016,Gujarat,Rapeseed And Mustard,200.04999999999998,354.40000000000003,1771.56
+2017,Gujarat,Rapeseed And Mustard,221.29,400.07,1807.9
+2010,Haryana,Rapeseed And Mustard,509.7,953.0,1869.73
+2011,Haryana,Rapeseed And Mustard,535.9,747.0,1393.92
+2012,Haryana,Rapeseed And Mustard,558.33,959.3,1718.16
+2013,Haryana,Rapeseed And Mustard,535.0,878.0,1641.12
+2014,Haryana,Rapeseed And Mustard,480.0,689.0,1435.42
+2015,Haryana,Rapeseed And Mustard,510.40000000000003,823.0,1612.46
+2016,Haryana,Rapeseed And Mustard,506.1,965.1,1906.94
+2017,Haryana,Rapeseed And Mustard,548.91,1107.5,2017.63
+2010,Himachal Pradesh,Rapeseed And Mustard,8.6,4.27,496.51
+2011,Himachal Pradesh,Rapeseed And Mustard,9.120000000000001,5.0,548.25
+2012,Himachal Pradesh,Rapeseed And Mustard,8.94,3.98,445.19
+2013,Himachal Pradesh,Rapeseed And Mustard,8.46,4.22,498.82
+2014,Himachal Pradesh,Rapeseed And Mustard,8.65,4.75,549.13
+2015,Himachal Pradesh,Rapeseed And Mustard,8.33,4.43,531.81
+2016,Himachal Pradesh,Rapeseed And Mustard,7.12,1.68,235.96
+2017,Himachal Pradesh,Rapeseed And Mustard,8.32,4.55,546.88
+2010,Jharkhand,Rapeseed And Mustard,10.51,7.82,744.05
+2011,Jharkhand,Rapeseed And Mustard,7.51,6.49,864.18
+2012,Jharkhand,Rapeseed And Mustard,21.27,18.95,890.93
+2013,Jharkhand,Rapeseed And Mustard,31.79,32.13,1010.7
+2014,Jharkhand,Rapeseed And Mustard,27.740000000000002,24.22,873.11
+2015,Jharkhand,Rapeseed And Mustard,37.160000000000004,31.64,851.45
+2016,Jharkhand,Rapeseed And Mustard,64.37,60.2,935.22
+2017,Jharkhand,Rapeseed And Mustard,305.04,218.16,715.18
+2010,Karnataka,Rapeseed And Mustard,3.85,1.51,392.21
+2011,Karnataka,Rapeseed And Mustard,3.54,1.07,302.26
+2012,Karnataka,Rapeseed And Mustard,2.2199999999999998,0.67,301.8
+2013,Karnataka,Rapeseed And Mustard,2.7,0.78,288.89
+2014,Karnataka,Rapeseed And Mustard,2.04,0.44,215.69
+2015,Karnataka,Rapeseed And Mustard,1.61,0.35000000000000003,217.39
+2016,Karnataka,Rapeseed And Mustard,4.59,0.8299999999999998,180.83
+2017,Karnataka,Rapeseed And Mustard,2.34,0.38,162.39
+2010,Madhya Pradesh,Rapeseed And Mustard,725.8,818.6,1127.86
+2011,Madhya Pradesh,Rapeseed And Mustard,783.9,869.2,1108.81
+2012,Madhya Pradesh,Rapeseed And Mustard,703.25,962.09,1368.06
+2013,Madhya Pradesh,Rapeseed And Mustard,702.1,651.54,927.99
+2014,Madhya Pradesh,Rapeseed And Mustard,614.0,630.0,1026.06
+2015,Madhya Pradesh,Rapeseed And Mustard,621.0,661.0,1064.41
+2016,Madhya Pradesh,Rapeseed And Mustard,711.0,920.99,1295.34
+2017,Madhya Pradesh,Rapeseed And Mustard,747.9,975.79,1304.71
+2016,Maharashtra,Rapeseed And Mustard,9.23,3.31,358.61
+2017,Maharashtra,Rapeseed And Mustard,6.66,2.27,340.84
+2010,Orissa,Rapeseed And Mustard,112.45,42.18,375.1
+2011,Orissa,Rapeseed And Mustard,126.67,52.66,415.73
+2012,Orissa,Rapeseed And Mustard,116.37,49.11,422.02
+2013,Orissa,Rapeseed And Mustard,145.36,61.63,423.98
+2014,Orissa,Rapeseed And Mustard,121.98,51.72,424.0
+2015,Orissa,Rapeseed And Mustard,99.69,41.97,421.01
+2016,Orissa,Rapeseed And Mustard,110.47,46.84,424.01
+2017,Orissa,Rapeseed And Mustard,109.57,47.660000000000004,434.97
+2010,Punjab,Rapeseed And Mustard,32.0,42.0,1312.5
+2011,Punjab,Rapeseed And Mustard,29.0,37.0,1275.86
+2012,Punjab,Rapeseed And Mustard,32.0,41.7,1303.12
+2013,Punjab,Rapeseed And Mustard,32.0,41.8,1306.25
+2014,Punjab,Rapeseed And Mustard,31.0,38.7,1248.39
+2015,Punjab,Rapeseed And Mustard,31.0,41.8,1348.39
+2016,Punjab,Rapeseed And Mustard,31.7,44.8,1413.25
+2017,Punjab,Rapeseed And Mustard,30.5,45.69,1498.03
+2010,Rajasthan,Rapeseed And Mustard,2489.89,3883.3,1559.63
+2011,Rajasthan,Rapeseed And Mustard,2441.26,2950.4700000000003,1208.58
+2012,Rajasthan,Rapeseed And Mustard,2724.96,3759.97,1379.83
+2013,Rajasthan,Rapeseed And Mustard,2782.55,3620.86,1301.27
+2014,Rajasthan,Rapeseed And Mustard,2433.77,2878.94,1182.91
+2015,Rajasthan,Rapeseed And Mustard,2532.33,3258.0,1286.56
+2016,Rajasthan,Rapeseed And Mustard,2503.31,3808.0299999999997,1521.2
+2017,Rajasthan,Rapeseed And Mustard,2183.01,3524.12,1614.34
+2012,Tamil Nadu,Rapeseed And Mustard,0.6000000000000001,0.13,216.67
+2013,Tamil Nadu,Rapeseed And Mustard,0.58,0.13,224.14
+2010,Telangana,Rapeseed And Mustard,0.5900000000000001,0.28,474.58
+2013,Telangana,Rapeseed And Mustard,0.84,0.6399999999999999,761.9
+2014,Telangana,Rapeseed And Mustard,2.26,3.96,1752.21
+2015,Telangana,Rapeseed And Mustard,1.36,1.67,1227.94
+2010,Uttar Pradesh,Rapeseed And Mustard,594.03,703.44,1184.18
+2011,Uttar Pradesh,Rapeseed And Mustard,604.42,685.5600000000001,1134.24
+2012,Uttar Pradesh,Rapeseed And Mustard,663.15,836.35,1261.18
+2013,Uttar Pradesh,Rapeseed And Mustard,663.6,672.49,1013.4
+2014,Uttar Pradesh,Rapeseed And Mustard,627.09,487.07,776.71
+2015,Uttar Pradesh,Rapeseed And Mustard,594.5600000000001,603.5699999999999,1015.15
+2016,Uttar Pradesh,Rapeseed And Mustard,690.46,858.82,1243.84
+2017,Uttar Pradesh,Rapeseed And Mustard,680.26,946.09,1390.78
+2010,Uttarakhand,Rapeseed And Mustard,11.879999999999999,9.68,814.81
+2011,Uttarakhand,Rapeseed And Mustard,11.65,9.16,786.27
+2012,Uttarakhand,Rapeseed And Mustard,12.47,11.49,921.41
+2013,Uttarakhand,Rapeseed And Mustard,11.15,8.46,758.74
+2014,Uttarakhand,Rapeseed And Mustard,13.049999999999999,9.17,702.68
+2015,Uttarakhand,Rapeseed And Mustard,11.09,10.69,963.93
+2016,Uttarakhand,Rapeseed And Mustard,12.23,10.53,861.0
+2017,Uttarakhand,Rapeseed And Mustard,12.200000000000001,9.78,801.64
+2010,West Bengal,Rapeseed And Mustard,410.78999999999996,419.29,1020.69
+2011,West Bengal,Rapeseed And Mustard,419.48,380.92,908.08
+2012,West Bengal,Rapeseed And Mustard,446.92999999999995,474.84000000000003,1062.45
+2013,West Bengal,Rapeseed And Mustard,448.61,478.09000000000003,1065.71
+2014,West Bengal,Rapeseed And Mustard,448.61,479.67,1069.24
+2015,West Bengal,Rapeseed And Mustard,457.86,490.23,1070.7
+2016,West Bengal,Rapeseed And Mustard,456.97,493.11,1079.09
+2017,West Bengal,Rapeseed And Mustard,610.38,733.36,1201.48
+2010,Andhra Pradesh,Rice,2772.38,7933.09,2861.47
+2011,Andhra Pradesh,Rice,2346.31,7744.17,3300.57
+2012,Andhra Pradesh,Rice,2209.25,6862.75,3106.37
+2013,Andhra Pradesh,Rice,2583.44,7993.45,3094.11
+2014,Andhra Pradesh,Rice,2393.9700000000003,8455.59,3532.04
+2015,Andhra Pradesh,Rice,2160.79,7518.29,3479.42
+2016,Andhra Pradesh,Rice,2105.02,8002.34,3801.55
+2017,Andhra Pradesh,Rice,2218.1800000000003,8461.34,3814.54
+2010,Assam,Rice,2516.33,5001.55,1987.64
+2011,Assam,Rice,2525.3,4691.42,1857.77
+2012,Assam,Rice,2461.89,5086.66,2066.16
+2013,Assam,Rice,2484.47,5163.03,2078.12
+2014,Assam,Rice,2477.1,5193.52,2096.61
+2015,Assam,Rice,2467.16,5094.54,2064.94
+2016,Assam,Rice,2449.98,5098.8099999999995,2081.16
+2017,Assam,Rice,2417.1800000000003,5255.4,2174.19
+2010,Bihar,Rice,2845.4,3112.65,1093.92
+2011,Bihar,Rice,3350.95,8237.97,2458.4
+2012,Bihar,Rice,3298.89,8322.02,2522.67
+2013,Bihar,Rice,3150.8,6649.61,2110.45
+2014,Bihar,Rice,3263.42,8241.64,2525.46
+2015,Bihar,Rice,3232.34,6802.25,2104.44
+2016,Bihar,Rice,3339.77,8238.77,2466.87
+2017,Bihar,Rice,3306.98,8093.16,2447.3
+2010,Chhattisgarh,Rice,3827.21,6356.62,1660.9
+2011,Chhattisgarh,Rice,3939.83,6300.82,1599.26
+2012,Chhattisgarh,Rice,3982.18,7848.41,1970.88
+2013,Chhattisgarh,Rice,3987.75,7102.75,1781.14
+2014,Chhattisgarh,Rice,4035.73,7977.76,1976.78
+2015,Chhattisgarh,Rice,3959.75,5154.33,1301.68
+2016,Chhattisgarh,Rice,4052.58,8793.27,2169.8
+2017,Chhattisgarh,Rice,3976.63,5749.05,1445.71
+2010,Gujarat,Rice,808.0999999999999,1665.8000000000002,2061.38
+2011,Gujarat,Rice,835.5,1789.6999999999998,2142.07
+2012,Gujarat,Rice,701.1,1497.3,2135.64
+2013,Gujarat,Rice,820.39,1778.1,2167.38
+2014,Gujarat,Rice,794.46,1771.58,2229.92
+2015,Gujarat,Rice,774.22,1691.8799999999999,2185.27
+2016,Gujarat,Rice,847.6,1988.47,2346.0
+2017,Gujarat,Rice,855.29,1889.81,2209.55
+2010,Haryana,Rice,1243.3,3465.0,2786.94
+2011,Haryana,Rice,1234.1,3757.0,3044.32
+2012,Haryana,Rice,1206.25,3941.0,3267.15
+2013,Haryana,Rice,1244.0,4041.0,3248.39
+2014,Haryana,Rice,1277.0,3989.0,3123.73
+2015,Haryana,Rice,1353.1,4144.0,3062.6
+2016,Haryana,Rice,1385.2,4453.0,3214.7
+2017,Haryana,Rice,1422.0,4880.0,3431.79
+2010,Himachal Pradesh,Rice,75.44000000000001,110.24,1461.29
+2011,Himachal Pradesh,Rice,75.06,108.64,1447.38
+2012,Himachal Pradesh,Rice,75.39,111.27000000000001,1475.93
+2013,Himachal Pradesh,Rice,73.11,106.91000000000001,1462.32
+2014,Himachal Pradesh,Rice,72.38,116.36000000000001,1607.63
+2015,Himachal Pradesh,Rice,71.61,114.66,1601.17
+2016,Himachal Pradesh,Rice,70.84,103.56,1461.89
+2017,Himachal Pradesh,Rice,71.61,114.78,1602.85
+2010,Jharkhand,Rice,837.19,759.24,906.89
+2011,Jharkhand,Rice,982.7,2064.48,2100.82
+2012,Jharkhand,Rice,1091.08,2133.74,1955.62
+2013,Jharkhand,Rice,1085.64,2245.66,2068.51
+2014,Jharkhand,Rice,989.0,2089.17,2112.41
+2015,Jharkhand,Rice,1162.5,1143.39,983.56
+2016,Jharkhand,Rice,1342.07,2775.0299999999997,2067.72
+2017,Jharkhand,Rice,1735.43,3421.25,1971.41
+2010,Karnataka,Rice,1539.48,4296.37,2790.79
+2011,Karnataka,Rice,1416.17,3955.76,2793.28
+2012,Karnataka,Rice,1278.94,3364.4,2630.62
+2013,Karnataka,Rice,1340.05,4052.57,3024.19
+2014,Karnataka,Rice,1326.55,4027.76,3036.27
+2015,Karnataka,Rice,1110.08,3020.63,2721.09
+2016,Karnataka,Rice,1034.54,2874.2200000000003,2778.26
+2017,Karnataka,Rice,992.95,2907.51,2928.15
+2010,Kerala,Rice,213.2,522.74,2451.88
+2011,Kerala,Rice,208.17000000000002,569.01,2733.39
+2012,Kerala,Rice,197.28,508.31,2576.59
+2013,Kerala,Rice,199.61,564.34,2827.21
+2014,Kerala,Rice,198.17,562.09,2836.4
+2015,Kerala,Rice,196.87,549.29,2790.12
+2016,Kerala,Rice,171.39000000000001,436.46999999999997,2546.65
+2017,Kerala,Rice,189.1,521.32,2756.85
+2010,Madhya Pradesh,Rice,1573.5,1766.6,1122.72
+2011,Madhya Pradesh,Rice,1651.8,2220.4,1344.23
+2012,Madhya Pradesh,Rice,1791.17,2971.14,1658.77
+2013,Madhya Pradesh,Rice,1881.55,3321.73,1765.42
+2014,Madhya Pradesh,Rice,2057.0,3522.66,1712.52
+2015,Madhya Pradesh,Rice,2026.0,3412.66,1684.43
+2016,Madhya Pradesh,Rice,2287.0,5499.21,2404.55
+2017,Madhya Pradesh,Rice,2035.14,4899.06,2407.23
+2010,Maharashtra,Rice,1518.1100000000001,2696.51,1776.23
+2011,Maharashtra,Rice,1544.2,2848.65,1844.74
+2012,Maharashtra,Rice,1559.03,3077.85,1974.21
+2013,Maharashtra,Rice,1604.9,3108.29,1936.75
+2014,Maharashtra,Rice,1551.2,2946.6,1899.56
+2015,Maharashtra,Rice,1502.8,2593.1,1725.51
+2016,Maharashtra,Rice,1535.37,3580.91,2332.28
+2017,Maharashtra,Rice,1450.95,2730.8,1882.08
+2010,Orissa,Rice,4225.69,6931.16,1640.24
+2011,Orissa,Rice,4004.54,5895.0,1472.08
+2012,Orissa,Rice,4022.83,9496.82,2360.73
+2013,Orissa,Rice,4180.22,7613.42,1821.3
+2014,Orissa,Rice,4166.26,9844.65,2362.95
+2015,Orissa,Rice,3941.5099999999998,5875.37,1490.64
+2016,Orissa,Rice,3962.7799999999997,9794.32,2471.58
+2017,Orissa,Rice,3766.39,6551.37,1739.43
+2010,Punjab,Rice,2826.0,10819.0,3828.38
+2011,Punjab,Rice,2791.39,10542.0,3776.61
+2012,Punjab,Rice,2849.0,11390.0,3997.89
+2013,Punjab,Rice,2851.0,11267.0,3951.95
+2014,Punjab,Rice,2894.0,11107.0,3837.94
+2015,Punjab,Rice,2975.0,11823.0,3974.12
+2016,Punjab,Rice,3046.0,12638.0,4149.05
+2017,Punjab,Rice,3065.0,13382.0,4366.07
+2010,Rajasthan,Rice,131.15,265.55,2024.78
+2011,Rajasthan,Rice,134.36,253.39,1885.9
+2012,Rajasthan,Rice,125.67,222.53,1770.75
+2013,Rajasthan,Rice,145.57999999999998,312.59000000000003,2147.2
+2014,Rajasthan,Rice,167.77,366.68,2185.61
+2015,Rajasthan,Rice,182.92,369.79,2021.59
+2016,Rajasthan,Rice,197.76,452.69,2289.09
+2017,Rajasthan,Rice,190.65,450.93,2365.22
+2010,Tamil Nadu,Rice,1905.77,5792.44,3039.42
+2011,Tamil Nadu,Rice,1781.44,6971.2,3913.24
+2012,Tamil Nadu,Rice,1493.27,4050.35,2712.4
+2013,Tamil Nadu,Rice,1725.77,7115.2,4122.91
+2014,Tamil Nadu,Rice,1795.01,7949.47,4428.65
+2015,Tamil Nadu,Rice,2000.23,7374.71,3686.93
+2016,Tamil Nadu,Rice,1837.33,6071.009999999999,3304.26
+2017,Tamil Nadu,Rice,1828.8700000000001,6905.96,3776.08
+2010,Telangana,Rice,1978.94,6536.23,3302.89
+2011,Telangana,Rice,1749.55,5147.63,2942.26
+2012,Telangana,Rice,1418.51,4647.81,3276.54
+2013,Telangana,Rice,1994.42,6581.09,3299.75
+2014,Telangana,Rice,1415.42,4544.99,3211.05
+2015,Telangana,Rice,1046.18,3047.29,2912.78
+2016,Telangana,Rice,1828.5600000000002,6599.07,3608.89
+2017,Telangana,Rice,1962.37,6263.44,3191.77
+2010,Uttar Pradesh,Rice,5831.48,12363.539999999999,2120.14
+2011,Uttar Pradesh,Rice,5918.08,13949.63,2357.12
+2012,Uttar Pradesh,Rice,5374.6,13182.31,2452.71
+2013,Uttar Pradesh,Rice,5967.15,14588.97,2444.88
+2014,Uttar Pradesh,Rice,5885.03,13346.029999999999,2267.79
+2015,Uttar Pradesh,Rice,5876.26,12531.73,2132.6
+2016,Uttar Pradesh,Rice,6006.6,14500.8,2414.14
+2017,Uttar Pradesh,Rice,5937.08,15551.39,2619.37
+2010,Uttarakhand,Rice,267.46000000000004,516.28,1930.31
+2011,Uttarakhand,Rice,259.58,559.12,2153.94
+2012,Uttarakhand,Rice,255.67,576.21,2253.73
+2013,Uttarakhand,Rice,247.61,569.83,2301.32
+2014,Uttarakhand,Rice,247.06,571.87,2314.7
+2015,Uttarakhand,Rice,250.96,611.34,2436.01
+2016,Uttarakhand,Rice,251.31,607.83,2418.65
+2017,Uttarakhand,Rice,247.04,632.1,2558.69
+2010,West Bengal,Rice,4944.15,13389.62,2708.17
+2011,West Bengal,Rice,5433.7,14610.279999999999,2688.83
+2012,West Bengal,Rice,5444.34,14946.74,2745.37
+2013,West Bengal,Rice,5513.7,15376.88,2788.85
+2014,West Bengal,Rice,5526.5199999999995,15927.2,2881.96
+2015,West Bengal,Rice,5523.96,15948.26,2887.11
+2016,West Bengal,Rice,5212.01,15106.32,2898.37
+2017,West Bengal,Rice,5307.6900000000005,15658.94,2950.24
+2010,Andhra Pradesh,Safflower,1.0,0.9,900.0
+2014,Andhra Pradesh,Safflower,0.76,0.25,328.95
+2013,Bihar,Safflower,1.64,1.32,804.88
+2010,Chhattisgarh,Safflower,0.9,0.30000000000000004,333.33
+2012,Chhattisgarh,Safflower,0.68,0.18,264.71
+2013,Chhattisgarh,Safflower,0.52,0.19,365.38
+2014,Chhattisgarh,Safflower,1.33,0.38,285.71
+2015,Chhattisgarh,Safflower,0.72,0.26,361.11
+2017,Jharkhand,Safflower,2.01,1.1099999999999999,552.24
+2010,Karnataka,Safflower,55.05,45.589999999999996,828.16
+2011,Karnataka,Safflower,55.269999999999996,34.93,631.99
+2012,Karnataka,Safflower,48.31,30.31,627.41
+2013,Karnataka,Safflower,43.15,34.19,792.35
+2014,Karnataka,Safflower,32.629999999999995,26.78,820.72
+2015,Karnataka,Safflower,53.83,21.02,390.49
+2016,Karnataka,Safflower,32.12,21.66,674.35
+2017,Karnataka,Safflower,33.69,30.34,900.56
+2014,Madhya Pradesh,Safflower,19.0,12.0,631.58
+2015,Madhya Pradesh,Safflower,7.0,0.0,0.0
+2016,Madhya Pradesh,Safflower,29.48,14.76,500.68
+2017,Madhya Pradesh,Safflower,1.01,0.5,495.05
+2010,Maharashtra,Safflower,172.9,94.13,544.42
+2011,Maharashtra,Safflower,130.7,70.84,542.0
+2012,Maharashtra,Safflower,104.93,57.620000000000005,549.13
+2013,Maharashtra,Safflower,126.3,82.69999999999999,654.79
+2014,Maharashtra,Safflower,74.2,26.3,354.45
+2015,Maharashtra,Safflower,56.809999999999995,12.75,224.43
+2016,Maharashtra,Safflower,75.67,52.43,692.88
+2017,Maharashtra,Safflower,38.9,21.56,554.24
+2010,Orissa,Safflower,0.75,0.45,600.0
+2011,Orissa,Safflower,0.74,0.43000000000000005,581.08
+2012,Orissa,Safflower,0.85,0.52,611.76
+2013,Orissa,Safflower,0.88,0.53,602.27
+2014,Orissa,Safflower,0.61,0.37,606.56
+2010,Telangana,Safflower,12.100000000000001,8.0,661.16
+2011,Telangana,Safflower,9.85,7.34,745.18
+2012,Telangana,Safflower,9.87,7.34,743.67
+2013,Telangana,Safflower,7.87,5.58,709.02
+2014,Telangana,Safflower,4.16,3.0999999999999996,745.19
+2015,Telangana,Safflower,3.85,2.58,670.13
+2016,Telangana,Safflower,4.37,2.9,663.62
+2017,Telangana,Safflower,3.8600000000000003,2.2,569.95
+2010,West Bengal,Safflower,0.54,0.44999999999999996,833.33
+2010,Andhra Pradesh,Sesamum,97.74,18.91,193.47
+2011,Andhra Pradesh,Sesamum,52.839999999999996,13.31,251.89
+2012,Andhra Pradesh,Sesamum,43.519999999999996,12.48,286.76
+2013,Andhra Pradesh,Sesamum,61.15,21.22,347.02
+2014,Andhra Pradesh,Sesamum,84.75,27.8,328.02
+2015,Andhra Pradesh,Sesamum,53.13,14.23,267.83
+2016,Andhra Pradesh,Sesamum,63.660000000000004,16.4,257.62
+2017,Andhra Pradesh,Sesamum,39.739999999999995,10.9,274.28
+2010,Assam,Sesamum,11.76,6.7,569.73
+2011,Assam,Sesamum,11.64,7.88,676.98
+2012,Assam,Sesamum,11.33,7.95,701.68
+2013,Assam,Sesamum,11.540000000000001,8.51,737.44
+2014,Assam,Sesamum,12.06,9.14,757.88
+2015,Assam,Sesamum,11.61,7.92,682.17
+2016,Assam,Sesamum,11.67,8.24,706.08
+2017,Assam,Sesamum,11.99,8.200000000000001,683.9
+2010,Bihar,Sesamum,2.5500000000000003,2.02,792.16
+2011,Bihar,Sesamum,2.57,2.28,887.16
+2012,Bihar,Sesamum,2.2199999999999998,1.95,878.38
+2013,Bihar,Sesamum,2.31,2.0100000000000002,870.13
+2014,Bihar,Sesamum,2.95,2.56,867.8
+2015,Bihar,Sesamum,2.7600000000000002,2.41,873.19
+2016,Bihar,Sesamum,2.02,1.79,886.14
+2017,Bihar,Sesamum,1.57,1.37,872.61
+2010,Chhattisgarh,Sesamum,20.39,6.83,334.97
+2011,Chhattisgarh,Sesamum,19.740000000000002,7.59,384.5
+2012,Chhattisgarh,Sesamum,19.68,5.77,293.19
+2013,Chhattisgarh,Sesamum,17.0,4.8,282.35
+2014,Chhattisgarh,Sesamum,17.55,7.92,451.28
+2015,Chhattisgarh,Sesamum,19.47,7.7,395.48
+2016,Chhattisgarh,Sesamum,18.37,7.55,411.0
+2017,Chhattisgarh,Sesamum,17.26,5.1899999999999995,300.7
+2010,Gujarat,Sesamum,289.0,126.6,438.06
+2011,Gujarat,Sesamum,246.51,116.0,470.57
+2012,Gujarat,Sesamum,168.2,115.5,686.68
+2013,Gujarat,Sesamum,187.57,96.27,513.25
+2014,Gujarat,Sesamum,190.55,105.68,554.61
+2015,Gujarat,Sesamum,163.29999999999998,60.519999999999996,370.61
+2016,Gujarat,Sesamum,148.94,85.12,571.51
+2017,Gujarat,Sesamum,122.99,79.21,644.04
+2010,Haryana,Sesamum,3.3000000000000003,1.3900000000000001,421.21
+2011,Haryana,Sesamum,2.0,0.7,350.0
+2012,Haryana,Sesamum,1.46,0.6,410.96
+2013,Haryana,Sesamum,1.3,0.6,461.54
+2015,Haryana,Sesamum,3.49,1.8,515.76
+2016,Haryana,Sesamum,1.8,1.49,827.78
+2017,Haryana,Sesamum,1.5000000000000002,0.7000000000000001,466.67
+2010,Himachal Pradesh,Sesamum,2.91,0.92,316.15
+2011,Himachal Pradesh,Sesamum,2.89,0.9000000000000001,311.42
+2012,Himachal Pradesh,Sesamum,2.6500000000000004,0.93,350.94
+2013,Himachal Pradesh,Sesamum,1.79,0.58,324.02
+2014,Himachal Pradesh,Sesamum,1.99,0.6500000000000001,326.63
+2016,Himachal Pradesh,Sesamum,2.71,0.8600000000000001,317.34
+2017,Jharkhand,Sesamum,16.180000000000003,6.7,414.09
+2010,Karnataka,Sesamum,86.74,50.58,583.12
+2011,Karnataka,Sesamum,61.31,30.54,498.12
+2012,Karnataka,Sesamum,41.01,13.280000000000001,323.82
+2013,Karnataka,Sesamum,41.0,23.51,573.41
+2014,Karnataka,Sesamum,44.29,22.62,510.72
+2015,Karnataka,Sesamum,50.629999999999995,24.47,483.31
+2016,Karnataka,Sesamum,35.11,22.310000000000002,635.43
+2017,Karnataka,Sesamum,35.58,31.25,878.3
+2010,Kerala,Sesamum,0.53,0.24,452.83
+2010,Madhya Pradesh,Sesamum,360.4,177.7,493.06
+2011,Madhya Pradesh,Sesamum,294.5,154.6,524.96
+2012,Madhya Pradesh,Sesamum,289.02,144.84,501.14
+2013,Madhya Pradesh,Sesamum,269.64,116.5,432.06
+2014,Madhya Pradesh,Sesamum,341.0,179.0,524.93
+2015,Madhya Pradesh,Sesamum,367.0,151.0,411.44
+2016,Madhya Pradesh,Sesamum,382.0,166.42,435.65
+2017,Madhya Pradesh,Sesamum,423.72,186.71,440.64
+2010,Maharashtra,Sesamum,55.5,19.790000000000003,356.58
+2011,Maharashtra,Sesamum,45.5,14.69,322.86
+2012,Maharashtra,Sesamum,39.54,11.66,294.89
+2013,Maharashtra,Sesamum,39.199999999999996,10.290000000000001,262.5
+2014,Maharashtra,Sesamum,20.599999999999998,4.1,199.03
+2015,Maharashtra,Sesamum,29.76,4.42,148.52
+2016,Maharashtra,Sesamum,33.49,7.25,216.48
+2017,Maharashtra,Sesamum,31.34,6.67,212.83
+2010,Orissa,Sesamum,260.62,100.45000000000002,385.43
+2011,Orissa,Sesamum,235.68,95.65,405.85
+2012,Orissa,Sesamum,230.19,94.16,409.05
+2013,Orissa,Sesamum,212.85,85.85,403.34
+2014,Orissa,Sesamum,233.17000000000002,94.56,405.54
+2015,Orissa,Sesamum,208.97,81.96000000000001,392.21
+2016,Orissa,Sesamum,203.19,79.44,390.96
+2017,Orissa,Sesamum,203.72,81.26,398.88
+2010,Punjab,Sesamum,6.6000000000000005,2.6,393.94
+2011,Punjab,Sesamum,4.8,1.7,354.17
+2012,Punjab,Sesamum,5.3999999999999995,1.9000000000000001,351.85
+2013,Punjab,Sesamum,4.1,1.4,341.46
+2014,Punjab,Sesamum,4.7,1.4,297.87
+2015,Punjab,Sesamum,4.7,1.5499999999999998,329.79
+2016,Punjab,Sesamum,3.0,1.1,366.67
+2017,Punjab,Sesamum,2.6999999999999997,0.9,333.33
+2010,Rajasthan,Sesamum,547.03,223.18,407.98
+2011,Rajasthan,Sesamum,512.79,166.37,324.44
+2012,Rajasthan,Sesamum,415.13,122.06,294.03
+2013,Rajasthan,Sesamum,360.69,72.06,199.78
+2014,Rajasthan,Sesamum,330.03000000000003,112.29,340.24
+2015,Rajasthan,Sesamum,366.82,115.37,314.51
+2016,Rajasthan,Sesamum,266.96,92.75,347.43
+2017,Rajasthan,Sesamum,251.94,67.86,269.35
+2010,Tamil Nadu,Sesamum,48.19,25.39,526.87
+2012,Tamil Nadu,Sesamum,33.18,17.15,516.88
+2013,Tamil Nadu,Sesamum,56.63,33.7,595.09
+2014,Tamil Nadu,Sesamum,64.26,44.78,696.86
+2015,Tamil Nadu,Sesamum,46.01,29.38,638.56
+2016,Tamil Nadu,Sesamum,28.23,10.83,383.63
+2017,Tamil Nadu,Sesamum,41.59,23.05,554.22
+2010,Telangana,Sesamum,27.23,7.25,266.25
+2011,Telangana,Sesamum,19.64,6.7700000000000005,344.7
+2012,Telangana,Sesamum,22.58,9.05,400.8
+2013,Telangana,Sesamum,24.2,8.71,359.92
+2014,Telangana,Sesamum,23.82,9.67,405.96
+2015,Telangana,Sesamum,13.870000000000001,2.92,210.53
+2016,Telangana,Sesamum,20.89,14.59,698.42
+2017,Telangana,Sesamum,16.3,8.92,547.24
+2010,Uttar Pradesh,Sesamum,342.65,68.0,198.45
+2011,Uttar Pradesh,Sesamum,314.09,70.22,223.57
+2012,Uttar Pradesh,Sesamum,344.65999999999997,64.31,186.59
+2013,Uttar Pradesh,Sesamum,293.62,43.25,147.3
+2014,Uttar Pradesh,Sesamum,323.08,63.7,197.16
+2015,Uttar Pradesh,Sesamum,546.3299999999999,165.64,303.19
+2016,Uttar Pradesh,Sesamum,271.4,58.21,214.48
+2017,Uttar Pradesh,Sesamum,278.35,82.18,295.24
+2010,Uttarakhand,Sesamum,1.61,0.35,217.39
+2011,Uttarakhand,Sesamum,1.4400000000000002,0.34,236.11
+2012,Uttarakhand,Sesamum,1.56,0.44,282.05
+2013,Uttarakhand,Sesamum,1.5899999999999999,0.42000000000000004,264.15
+2014,Uttarakhand,Sesamum,1.33,0.33999999999999997,255.64
+2015,Uttarakhand,Sesamum,1.42,0.4,281.69
+2016,Uttarakhand,Sesamum,1.56,0.47000000000000003,301.28
+2017,Uttarakhand,Sesamum,1.5999999999999999,0.5,312.5
+2010,West Bengal,Sesamum,182.82,168.64,922.44
+2011,West Bengal,Sesamum,182.14,167.2,917.98
+2012,West Bengal,Sesamum,196.35,180.5,919.28
+2013,West Bengal,Sesamum,213.25,197.73,927.22
+2014,West Bengal,Sesamum,224.48,208.64000000000001,929.44
+2015,West Bengal,Sesamum,227.51000000000002,211.73,930.64
+2016,West Bengal,Sesamum,228.11,211.73999999999998,928.24
+2017,West Bengal,Sesamum,239.45000000000002,233.29,974.27
+2010,Andhra Pradesh,Sorghum,88.2,156.35999999999999,1772.79
+2011,Andhra Pradesh,Sorghum,148.17,352.07,2376.12
+2012,Andhra Pradesh,Sorghum,164.14,411.95,2509.75
+2013,Andhra Pradesh,Sorghum,118.23,265.7,2247.31
+2014,Andhra Pradesh,Sorghum,141.45000000000002,344.49,2435.42
+2015,Andhra Pradesh,Sorghum,174.62,357.7,2048.45
+2016,Andhra Pradesh,Sorghum,97.39999999999999,198.32999999999998,2036.24
+2017,Andhra Pradesh,Sorghum,139.68,332.69,2381.8
+2010,Bihar,Sorghum,3.0900000000000003,3.2700000000000005,1058.25
+2011,Bihar,Sorghum,2.02,2.15,1064.36
+2012,Bihar,Sorghum,2.64,2.82,1068.18
+2013,Bihar,Sorghum,1.24,1.31,1056.45
+2014,Bihar,Sorghum,1.46,1.55,1061.64
+2015,Bihar,Sorghum,1.6199999999999999,1.72,1061.73
+2016,Bihar,Sorghum,1.8,1.92,1066.67
+2017,Bihar,Sorghum,1.3599999999999999,1.4500000000000002,1066.18
+2010,Chhattisgarh,Sorghum,5.99,8.530000000000001,1424.04
+2011,Chhattisgarh,Sorghum,5.32,4.1,770.68
+2012,Chhattisgarh,Sorghum,6.24,4.47,716.35
+2013,Chhattisgarh,Sorghum,5.16,3.3200000000000003,643.41
+2014,Chhattisgarh,Sorghum,5.0,4.24,848.0
+2015,Chhattisgarh,Sorghum,5.41,4.37,807.76
+2016,Chhattisgarh,Sorghum,4.01,5.4399999999999995,1356.61
+2017,Chhattisgarh,Sorghum,3.7300000000000004,4.69,1257.37
+2010,Gujarat,Sorghum,125.81,139.0,1104.84
+2011,Gujarat,Sorghum,124.0,139.8,1127.42
+2012,Gujarat,Sorghum,79.6,107.3,1347.99
+2013,Gujarat,Sorghum,187.12,271.0,1448.27
+2014,Gujarat,Sorghum,69.66,91.86,1318.69
+2015,Gujarat,Sorghum,99.09,131.51,1327.18
+2016,Gujarat,Sorghum,103.42999999999999,163.2,1577.88
+2017,Gujarat,Sorghum,91.19,125.32000000000001,1374.27
+2010,Haryana,Sorghum,70.8,38.0,536.72
+2011,Haryana,Sorghum,64.7,33.0,510.05
+2012,Haryana,Sorghum,55.2,27.5,498.19
+2013,Haryana,Sorghum,62.0,34.0,548.39
+2014,Haryana,Sorghum,53.0,27.0,509.43
+2015,Haryana,Sorghum,55.1,29.0,526.32
+2016,Haryana,Sorghum,52.400000000000006,33.0,629.77
+2017,Haryana,Sorghum,47.5,24.0,505.26
+2017,Jharkhand,Sorghum,3.3200000000000003,2.2199999999999998,668.67
+2010,Karnataka,Sorghum,1242.1,1466.96,1181.03
+2011,Karnataka,Sorghum,1141.42,1165.5,1021.1
+2012,Karnataka,Sorghum,1263.9,1314.72,1040.21
+2013,Karnataka,Sorghum,1139.21,1316.87,1155.95
+2014,Karnataka,Sorghum,1046.07,1173.32,1121.65
+2015,Karnataka,Sorghum,1103.92,797.02,721.99
+2016,Karnataka,Sorghum,948.01,846.0699999999999,892.47
+2017,Karnataka,Sorghum,1088.1100000000001,1264.02,1161.67
+2010,Kerala,Sorghum,2.2,1.12,509.09
+2010,Madhya Pradesh,Sorghum,417.35999999999996,590.96,1415.95
+2011,Madhya Pradesh,Sorghum,348.69,537.32,1540.97
+2012,Madhya Pradesh,Sorghum,294.06,592.44,2014.69
+2013,Madhya Pradesh,Sorghum,247.85,366.84,1480.09
+2014,Madhya Pradesh,Sorghum,220.0,372.0,1690.91
+2015,Madhya Pradesh,Sorghum,208.0,330.0,1586.54
+2016,Madhya Pradesh,Sorghum,221.0,438.0,1981.9
+2017,Madhya Pradesh,Sorghum,270.04,653.42,2419.72
+2010,Maharashtra,Sorghum,4059.2,3451.96,850.4
+2011,Maharashtra,Sorghum,3229.02,2626.93,813.54
+2012,Maharashtra,Sorghum,3289.9,2108.89,641.02
+2013,Maharashtra,Sorghum,3584.5,2847.9,794.5
+2014,Maharashtra,Sorghum,3288.2,2108.8,641.32
+2015,Maharashtra,Sorghum,3217.6,1205.2,374.56
+2016,Maharashtra,Sorghum,3615.4500000000003,2538.73,702.19
+2017,Maharashtra,Sorghum,3464.14,2389.68,689.83
+2010,Orissa,Sorghum,8.9,5.35,601.12
+2011,Orissa,Sorghum,8.63,5.4399999999999995,630.36
+2012,Orissa,Sorghum,7.83,4.89,624.52
+2013,Orissa,Sorghum,7.46,4.66,624.66
+2014,Orissa,Sorghum,6.69,4.1899999999999995,626.31
+2015,Orissa,Sorghum,6.21,3.89,626.41
+2016,Orissa,Sorghum,5.47,3.44,628.88
+2017,Orissa,Sorghum,5.619999999999999,3.55,631.67
+2010,Rajasthan,Sorghum,726.9300000000001,508.92,700.09
+2011,Rajasthan,Sorghum,553.8100000000001,410.3,740.87
+2012,Rajasthan,Sorghum,680.36,420.42,617.94
+2013,Rajasthan,Sorghum,579.64,356.82,615.59
+2014,Rajasthan,Sorghum,660.97,504.48,763.24
+2015,Rajasthan,Sorghum,631.23,344.3,545.44
+2016,Rajasthan,Sorghum,579.32,349.53999999999996,603.36
+2017,Rajasthan,Sorghum,516.03,300.84,582.99
+2010,Tamil Nadu,Sorghum,243.48000000000002,247.0,1014.46
+2011,Tamil Nadu,Sorghum,197.72,252.51999999999998,1277.16
+2012,Tamil Nadu,Sorghum,210.91,174.98,829.64
+2013,Tamil Nadu,Sorghum,347.15999999999997,513.32,1478.63
+2014,Tamil Nadu,Sorghum,415.13,868.9399999999999,2093.18
+2015,Tamil Nadu,Sorghum,339.18,439.64000000000004,1296.18
+2016,Tamil Nadu,Sorghum,268.38,153.85999999999999,573.29
+2017,Tamil Nadu,Sorghum,385.62,430.66,1116.8
+2010,Telangana,Sorghum,166.12,151.63,912.77
+2011,Telangana,Sorghum,128.45,144.18,1122.46
+2012,Telangana,Sorghum,122.7,134.25,1094.13
+2013,Telangana,Sorghum,107.17,108.88,1015.96
+2014,Telangana,Sorghum,79.0,83.26,1053.92
+2015,Telangana,Sorghum,76.36,75.72,991.62
+2016,Telangana,Sorghum,89.74000000000001,87.69,977.16
+2017,Telangana,Sorghum,67.3,73.4,1090.64
+2010,Uttar Pradesh,Sorghum,201.10999999999999,207.08,1029.69
+2011,Uttar Pradesh,Sorghum,187.48,217.97,1162.63
+2012,Uttar Pradesh,Sorghum,184.19,248.24,1347.74
+2013,Uttar Pradesh,Sorghum,165.19,173.66,1051.27
+2014,Uttar Pradesh,Sorghum,164.4,162.91,990.94
+2015,Uttar Pradesh,Sorghum,154.86,104.8,676.74
+2016,Uttar Pradesh,Sorghum,182.92000000000002,183.03,1000.6
+2017,Uttar Pradesh,Sorghum,169.14000000000001,214.82,1270.07
+2010,Andhra Pradesh,Soyabean,1.96,3.34,1704.08
+2011,Andhra Pradesh,Soyabean,2.21,3.56,1610.86
+2012,Andhra Pradesh,Soyabean,1.3900000000000001,2.54,1827.34
+2013,Andhra Pradesh,Soyabean,3.12,5.01,1605.77
+2014,Andhra Pradesh,Soyabean,0.92,1.97,2141.3
+2015,Andhra Pradesh,Soyabean,1.28,1.88,1468.75
+2016,Andhra Pradesh,Soyabean,1.57,1.45,923.57
+2010,Chhattisgarh,Soyabean,106.3,124.4,1170.27
+2011,Chhattisgarh,Soyabean,103.24,84.64999999999999,819.93
+2012,Chhattisgarh,Soyabean,101.46,126.12,1243.05
+2013,Chhattisgarh,Soyabean,107.77,111.86,1037.95
+2014,Chhattisgarh,Soyabean,102.84,50.06,486.78
+2015,Chhattisgarh,Soyabean,114.99000000000001,58.57,509.35
+2016,Chhattisgarh,Soyabean,96.24,75.39,783.35
+2017,Chhattisgarh,Soyabean,91.55000000000001,30.3,330.97
+2010,Gujarat,Soyabean,84.0,68.01,809.64
+2011,Gujarat,Soyabean,42.1,33.4,793.35
+2012,Gujarat,Soyabean,46.5,36.4,782.8
+2013,Gujarat,Soyabean,59.95,47.74,796.33
+2014,Gujarat,Soyabean,58.050000000000004,45.11,777.09
+2015,Gujarat,Soyabean,80.36,61.84,769.54
+2016,Gujarat,Soyabean,120.23,106.0,881.64
+2017,Gujarat,Soyabean,146.0,137.32999999999998,940.62
+2010,Himachal Pradesh,Soyabean,0.5499999999999999,0.78,1418.18
+2011,Himachal Pradesh,Soyabean,0.5399999999999999,0.9600000000000001,1777.78
+2012,Himachal Pradesh,Soyabean,0.62,0.8400000000000001,1354.84
+2013,Himachal Pradesh,Soyabean,0.53,0.79,1490.57
+2014,Himachal Pradesh,Soyabean,0.64,0.92,1437.5
+2015,Himachal Pradesh,Soyabean,0.5599999999999999,0.92,1642.86
+2016,Himachal Pradesh,Soyabean,0.52,0.91,1750.0
+2017,Himachal Pradesh,Soyabean,0.5599999999999999,0.92,1642.86
+2017,Jharkhand,Soyabean,1.9300000000000002,1.53,792.75
+2010,Karnataka,Soyabean,168.07999999999998,147.45000000000002,877.26
+2011,Karnataka,Soyabean,190.9,172.29,902.51
+2012,Karnataka,Soyabean,169.51,177.8,1048.91
+2013,Karnataka,Soyabean,218.91,270.15000000000003,1234.07
+2014,Karnataka,Soyabean,255.54,189.09,739.96
+2015,Karnataka,Soyabean,257.96999999999997,139.88,542.23
+2016,Karnataka,Soyabean,317.86,237.29,746.52
+2017,Karnataka,Soyabean,276.54,423.12999999999994,1530.09
+2010,Madhya Pradesh,Soyabean,5538.4,6767.9,1222.0
+2011,Madhya Pradesh,Soyabean,5655.22,6271.7,1109.01
+2012,Madhya Pradesh,Soyabean,6172.67,8407.15,1362.0
+2013,Madhya Pradesh,Soyabean,6543.57,4901.4,749.04
+2014,Madhya Pradesh,Soyabean,5571.0,6350.0,1139.83
+2015,Madhya Pradesh,Soyabean,5910.0,4450.0,752.96
+2016,Madhya Pradesh,Soyabean,5402.0,6650.0,1231.03
+2017,Madhya Pradesh,Soyabean,5010.07,5321.8099999999995,1062.22
+2010,Maharashtra,Soyabean,2729.1,4315.83,1581.41
+2011,Maharashtra,Soyabean,3010.3,3969.23,1318.55
+2012,Maharashtra,Soyabean,3063.9,4689.83,1530.67
+2013,Maharashtra,Soyabean,3519.9,4272.69,1213.87
+2014,Maharashtra,Soyabean,3640.2000000000003,1821.6,500.41
+2015,Maharashtra,Soyabean,3702.0,1794.5900000000001,484.76
+2016,Maharashtra,Soyabean,3840.84,4586.72,1194.2
+2017,Maharashtra,Soyabean,3693.73,3805.54,1030.27
+2014,Orissa,Soyabean,1.06,0.67,632.08
+2010,Rajasthan,Soyabean,765.51,1118.11,1460.61
+2011,Rajasthan,Soyabean,897.0699999999999,1385.18,1544.12
+2012,Rajasthan,Soyabean,1039.81,1468.69,1412.46
+2013,Rajasthan,Soyabean,1175.51,974.98,829.41
+2014,Rajasthan,Soyabean,923.18,956.66,1036.27
+2015,Rajasthan,Soyabean,1204.81,804.08,667.39
+2016,Rajasthan,Soyabean,1055.6100000000001,1131.82,1072.2
+2017,Rajasthan,Soyabean,886.5,1069.83,1206.8
+2010,Telangana,Soyabean,125.75,214.33999999999997,1704.49
+2011,Telangana,Soyabean,128.28,207.25,1615.61
+2012,Telangana,Soyabean,157.83,286.86,1817.53
+2013,Telangana,Soyabean,242.45999999999998,390.32,1609.83
+2014,Telangana,Soyabean,242.64,262.36,1081.27
+2015,Telangana,Soyabean,243.20999999999998,252.01999999999998,1036.22
+2016,Telangana,Soyabean,276.59000000000003,322.42,1165.7
+2017,Telangana,Soyabean,152.29,247.29,1623.81
+2010,Uttar Pradesh,Soyabean,12.9,16.87,1307.75
+2011,Uttar Pradesh,Soyabean,17.63,22.06,1251.28
+2012,Uttar Pradesh,Soyabean,13.69,19.35,1413.44
+2013,Uttar Pradesh,Soyabean,25.5,14.709999999999999,576.86
+2014,Uttar Pradesh,Soyabean,52.56000000000001,37.68000000000001,716.89
+2015,Uttar Pradesh,Soyabean,35.54,6.21,174.73
+2016,Uttar Pradesh,Soyabean,10.52,7.07,672.05
+2017,Uttar Pradesh,Soyabean,14.28,11.08,775.91
+2010,Uttarakhand,Soyabean,8.13,13.19,1622.39
+2011,Uttarakhand,Soyabean,9.05,14.42,1593.37
+2012,Uttarakhand,Soyabean,9.07,19.43,2142.23
+2013,Uttarakhand,Soyabean,9.17,14.38,1568.16
+2014,Uttarakhand,Soyabean,10.79,14.33,1328.08
+2015,Uttarakhand,Soyabean,11.93,15.95,1336.97
+2016,Uttarakhand,Soyabean,11.44,13.620000000000001,1190.56
+2017,Uttarakhand,Soyabean,10.540000000000001,12.77,1211.57
+2010,West Bengal,Soyabean,0.53,0.31,584.91
+2011,West Bengal,Soyabean,0.5900000000000001,0.47000000000000003,796.61
+2012,West Bengal,Soyabean,0.55,0.44,800.0
+2013,West Bengal,Soyabean,0.5900000000000001,0.42000000000000004,711.86
+2014,West Bengal,Soyabean,0.6000000000000001,0.42000000000000004,700.0
+2015,West Bengal,Soyabean,0.6000000000000001,0.44000000000000006,733.33
+2016,West Bengal,Soyabean,0.6000000000000001,0.44000000000000006,733.33
+2010,Andhra Pradesh,Sugarcane,281.97,1187.63,4211.9
+2011,Andhra Pradesh,Sugarcane,283.2,1301.21,4594.67
+2012,Andhra Pradesh,Sugarcane,281.33,1215.95,4322.15
+2013,Andhra Pradesh,Sugarcane,152.82999999999998,1200.8000000000002,7857.1
+2014,Andhra Pradesh,Sugarcane,139.22,1000.3,7185.03
+2015,Andhra Pradesh,Sugarcane,121.67999999999999,935.35,7686.97
+2016,Andhra Pradesh,Sugarcane,102.73,783.03,7622.21
+2017,Andhra Pradesh,Sugarcane,98.92,778.27,7867.67
+2010,Assam,Sugarcane,29.72,107.5,3617.09
+2011,Assam,Sugarcane,28.4,105.13,3701.76
+2012,Assam,Sugarcane,28.79,102.55,3562.0
+2013,Assam,Sugarcane,29.02,107.23,3695.04
+2014,Assam,Sugarcane,29.85,109.7,3675.04
+2015,Assam,Sugarcane,29.36,103.46,3523.84
+2016,Assam,Sugarcane,31.31,120.44,3846.69
+2017,Assam,Sugarcane,30.52,114.14,3739.84
+2010,Bihar,Sugarcane,250.68,1182.78,4718.29
+2012,Bihar,Sugarcane,250.38,1274.15,5088.86
+2013,Bihar,Sugarcane,258.07,1288.16,4991.51
+2014,Bihar,Sugarcane,254.34,1549.8799999999999,6093.73
+2015,Bihar,Sugarcane,244.03,1191.46,4882.43
+2016,Bihar,Sugarcane,239.57,1303.6,5441.42
+2017,Bihar,Sugarcane,233.77,1382.46,5913.76
+2010,Chhattisgarh,Sugarcane,9.47,2.27,239.7
+2011,Chhattisgarh,Sugarcane,8.15,4.5600000000000005,559.51
+2012,Chhattisgarh,Sugarcane,9.219999999999999,2.5700000000000003,278.74
+2013,Chhattisgarh,Sugarcane,9.22,2.39,259.22
+2014,Chhattisgarh,Sugarcane,12.45,7.65,614.46
+2015,Chhattisgarh,Sugarcane,19.23,4.6899999999999995,243.89
+2016,Chhattisgarh,Sugarcane,31.38,10.97,349.59
+2017,Chhattisgarh,Sugarcane,34.84,6.42,184.27
+2010,Gujarat,Sugarcane,190.1,1376.3,7239.87
+2011,Gujarat,Sugarcane,201.9,1274.9,6314.51
+2012,Gujarat,Sugarcane,176.6,1261.5,7143.26
+2013,Gujarat,Sugarcane,173.09,1151.39,6651.97
+2014,Gujarat,Sugarcane,208.56,1434.23,6876.82
+2015,Gujarat,Sugarcane,157.14000000000001,1094.7,6966.4
+2016,Gujarat,Sugarcane,157.99,1078.6799999999998,6827.52
+2017,Gujarat,Sugarcane,181.7,1162.26,6396.59
+2010,Haryana,Sugarcane,84.5,604.0,7147.93
+2011,Haryana,Sugarcane,94.81,695.0,7330.45
+2012,Haryana,Sugarcane,101.0,750.0,7425.74
+2013,Haryana,Sugarcane,101.0,742.7,7353.47
+2014,Haryana,Sugarcane,95.0,703.5,7405.26
+2016,Haryana,Sugarcane,101.8,822.0,8074.66
+2010,Himachal Pradesh,Sugarcane,1.64,3.71,2262.2
+2011,Himachal Pradesh,Sugarcane,1.96,2.78,1418.37
+2012,Himachal Pradesh,Sugarcane,1.83,3.8,2076.5
+2013,Himachal Pradesh,Sugarcane,1.44,0.35,243.06
+2014,Himachal Pradesh,Sugarcane,1.6,3.67,2293.75
+2015,Himachal Pradesh,Sugarcane,1.87,3.75,2005.35
+2016,Himachal Pradesh,Sugarcane,1.9500000000000002,4.79,2456.41
+2017,Himachal Pradesh,Sugarcane,1.87,3.67,1962.57
+2011,Jharkhand,Sugarcane,0.77,2.6999999999999997,3506.49
+2012,Jharkhand,Sugarcane,1.0,4.89,4890.0
+2013,Jharkhand,Sugarcane,0.8,3.69,4612.5
+2014,Jharkhand,Sugarcane,0.72,3.75,5208.33
+2010,Karnataka,Sugarcane,422.72,3965.79,9381.6
+2011,Karnataka,Sugarcane,862.79,7894.1,9149.5
+2012,Karnataka,Sugarcane,425.4,3551.09,8347.65
+2013,Karnataka,Sugarcane,420.03,3804.24,9057.07
+2014,Karnataka,Sugarcane,480.21999999999997,4383.8,9128.73
+2015,Karnataka,Sugarcane,449.58000000000004,3631.42,8077.36
+2016,Karnataka,Sugarcane,397.08,2737.82,6894.88
+2017,Karnataka,Sugarcane,400.01,3746.0899999999997,9364.99
+2010,Kerala,Sugarcane,6.39,2.7199999999999998,425.67
+2011,Kerala,Sugarcane,5.8,2.62,451.72
+2012,Kerala,Sugarcane,1.7200000000000002,1.6400000000000001,953.49
+2013,Kerala,Sugarcane,2.2199999999999998,2.23,1004.5
+2014,Kerala,Sugarcane,1.51,1.49,986.75
+2015,Kerala,Sugarcane,1.3599999999999999,13.83,10169.12
+2016,Kerala,Sugarcane,1.06,11.3,10660.38
+2017,Kerala,Sugarcane,1.05,11.51,10961.9
+2010,Madhya Pradesh,Sugarcane,48.1,196.10000000000002,4076.92
+2011,Madhya Pradesh,Sugarcane,69.0,267.3,3873.91
+2012,Madhya Pradesh,Sugarcane,53.919999999999995,275.71000000000004,5113.32
+2013,Madhya Pradesh,Sugarcane,55.45,279.78,5045.63
+2014,Madhya Pradesh,Sugarcane,102.0,409.0,4009.8
+2015,Madhya Pradesh,Sugarcane,102.0,516.0,5058.82
+2016,Madhya Pradesh,Sugarcane,91.93,472.6,5140.87
+2017,Madhya Pradesh,Sugarcane,98.04,54.33,554.16
+2010,Maharashtra,Sugarcane,964.5,8569.15,8884.55
+2011,Maharashtra,Sugarcane,1022.0,8945.61,8753.04
+2012,Maharashtra,Sugarcane,938.0999999999999,7533.5,8030.59
+2013,Maharashtra,Sugarcane,937.1,8395.4,8958.92
+2014,Maharashtra,Sugarcane,1029.5,9153.81,8891.51
+2015,Maharashtra,Sugarcane,987.1,6923.54,7014.02
+2016,Maharashtra,Sugarcane,633.26,5423.7,8564.73
+2017,Maharashtra,Sugarcane,902.03,8253.92,9150.38
+2010,Orissa,Sugarcane,40.839999999999996,290.76,7119.49
+2011,Orissa,Sugarcane,38.730000000000004,278.9,7201.14
+2012,Orissa,Sugarcane,39.17,260.5,6650.5
+2014,Orissa,Sugarcane,34.08,246.94,7245.89
+2016,Orissa,Sugarcane,27.439999999999998,201.32,7336.73
+2017,Orissa,Sugarcane,27.0,198.60999999999999,7355.93
+2010,Punjab,Sugarcane,70.0,417.0,5957.14
+2011,Punjab,Sugarcane,80.0,467.0,5837.5
+2012,Punjab,Sugarcane,82.0,583.2,7112.2
+2013,Punjab,Sugarcane,89.0,667.49,7499.89
+2014,Punjab,Sugarcane,94.0,703.89,7488.19
+2015,Punjab,Sugarcane,90.0,660.7,7341.11
+2016,Punjab,Sugarcane,88.0,715.2,8127.27
+2017,Punjab,Sugarcane,96.0,802.4,8358.33
+2010,Rajasthan,Sugarcane,5.53,36.800000000000004,6654.61
+2011,Rajasthan,Sugarcane,6.42,45.16,7034.27
+2012,Rajasthan,Sugarcane,5.81,42.46,7308.09
+2013,Rajasthan,Sugarcane,5.24,36.31,6929.39
+2014,Rajasthan,Sugarcane,5.59,40.5,7245.08
+2015,Rajasthan,Sugarcane,6.14,53.14,8654.72
+2016,Rajasthan,Sugarcane,6.859999999999999,48.88,7125.36
+2017,Rajasthan,Sugarcane,5.3999999999999995,38.18,7070.37
+2010,Tamil Nadu,Sugarcane,316.01,3425.18,10838.83
+2011,Tamil Nadu,Sugarcane,346.34000000000003,3898.38,11255.93
+2012,Tamil Nadu,Sugarcane,348.39,3401.39,9763.17
+2013,Tamil Nadu,Sugarcane,313.33,3245.39,10357.74
+2014,Tamil Nadu,Sugarcane,263.05,2809.2999999999997,10679.72
+2015,Tamil Nadu,Sugarcane,252.28,2550.89,10111.34
+2016,Tamil Nadu,Sugarcane,218.26000000000002,1898.78,8699.62
+2017,Tamil Nadu,Sugarcane,171.85,1715.56,9982.89
+2010,Telangana,Sugarcane,78.5,306.61,3905.86
+2011,Telangana,Sugarcane,84.07,389.49,4632.92
+2012,Telangana,Sugarcane,79.38,361.94,4559.59
+2013,Telangana,Sugarcane,39.32,337.65999999999997,8587.49
+2014,Telangana,Sugarcane,38.13999999999999,334.31,8765.34
+2015,Telangana,Sugarcane,34.910000000000004,240.48,6888.57
+2016,Telangana,Sugarcane,29.35,206.12,7022.83
+2017,Telangana,Sugarcane,35.78,266.32,7443.26
+2010,Uttar Pradesh,Sugarcane,2127.06,12099.83,5688.52
+2011,Uttar Pradesh,Sugarcane,2186.43,13030.96,5959.93
+2012,Uttar Pradesh,Sugarcane,2283.85,14226.789999999999,6229.3
+2013,Uttar Pradesh,Sugarcane,2303.84,14633.23,6351.67
+2014,Uttar Pradesh,Sugarcane,2301.04,15088.18,6557.11
+2015,Uttar Pradesh,Sugarcane,2239.43,14941.34,6671.94
+2016,Uttar Pradesh,Sugarcane,2227.84,16083.35,7219.26
+2017,Uttar Pradesh,Sugarcane,2304.21,18195.33,7896.56
+2010,Uttarakhand,Sugarcane,34.07,211.51999999999998,6208.39
+2011,Uttarakhand,Sugarcane,34.79,214.88,6176.49
+2012,Uttarakhand,Sugarcane,31.86,198.1,6217.83
+2013,Uttarakhand,Sugarcane,30.78,177.52,5767.38
+2014,Uttarakhand,Sugarcane,28.029999999999998,180.45,6437.75
+2015,Uttarakhand,Sugarcane,24.99,162.74,6512.2
+2016,Uttarakhand,Sugarcane,23.96,156.05,6512.94
+2017,Uttarakhand,Sugarcane,21.65,148.88,6876.67
+2010,West Bengal,Sugarcane,15.0,113.4,7560.0
+2011,West Bengal,Sugarcane,16.1,168.16,10444.72
+2012,West Bengal,Sugarcane,16.09,161.71,10050.34
+2013,West Bengal,Sugarcane,17.02,194.51,11428.32
+2014,West Bengal,Sugarcane,17.75,210.56,11862.54
+2015,West Bengal,Sugarcane,17.41,132.75,7624.93
+2016,West Bengal,Sugarcane,19.64,146.19,7443.48
+2017,West Bengal,Sugarcane,18.03,162.44,9009.43
+2010,Andhra Pradesh,Sunflower,197.39000000000001,127.63000000000001,646.59
+2011,Andhra Pradesh,Sunflower,133.22,99.51,746.96
+2012,Andhra Pradesh,Sunflower,114.07,71.78,629.26
+2013,Andhra Pradesh,Sunflower,79.97,67.98,850.07
+2014,Andhra Pradesh,Sunflower,50.07,40.160000000000004,802.08
+2015,Andhra Pradesh,Sunflower,26.28,23.16,881.28
+2016,Andhra Pradesh,Sunflower,21.13,21.259999999999998,1006.15
+2017,Andhra Pradesh,Sunflower,9.14,11.68,1277.9
+2010,Bihar,Sunflower,17.43,25.01,1434.88
+2011,Bihar,Sunflower,15.92,22.85,1435.3
+2012,Bihar,Sunflower,15.77,22.25,1410.91
+2013,Bihar,Sunflower,14.030000000000001,19.810000000000002,1411.97
+2014,Bihar,Sunflower,11.65,16.65,1429.18
+2015,Bihar,Sunflower,11.39,16.2,1422.3
+2016,Bihar,Sunflower,10.29,14.68,1426.63
+2017,Bihar,Sunflower,9.35,13.38,1431.02
+2010,Chhattisgarh,Sunflower,4.53,1.92,423.84
+2011,Chhattisgarh,Sunflower,3.4899999999999998,1.31,375.36
+2012,Chhattisgarh,Sunflower,3.17,1.1099999999999999,350.16
+2013,Chhattisgarh,Sunflower,3.07,0.16,52.12
+2014,Chhattisgarh,Sunflower,2.88,0.99,343.75
+2015,Chhattisgarh,Sunflower,2.4499999999999997,0.81,330.61
+2016,Chhattisgarh,Sunflower,2.27,0.01,4.41
+2017,Chhattisgarh,Sunflower,1.26,0.0,0.0
+2012,Haryana,Sunflower,3.9,8.399999999999999,2153.85
+2013,Haryana,Sunflower,3.9,11.100000000000001,2846.15
+2014,Haryana,Sunflower,2.0,4.0,2000.0
+2017,Jharkhand,Sunflower,2.1799999999999997,1.2,550.46
+2010,Karnataka,Sunflower,409.23,254.15,621.04
+2011,Karnataka,Sunflower,381.27,194.87,511.11
+2012,Karnataka,Sunflower,510.09000000000003,265.56,520.61
+2013,Karnataka,Sunflower,416.72999999999996,252.96,607.01
+2014,Karnataka,Sunflower,355.9,205.65,577.83
+2015,Karnataka,Sunflower,330.34,120.86,365.87
+2016,Karnataka,Sunflower,220.36,98.45,446.77
+2017,Karnataka,Sunflower,173.1,150.79,871.11
+2016,Madhya Pradesh,Sunflower,1.52,1.52,1000.0
+2017,Madhya Pradesh,Sunflower,3.12,2.61,836.54
+2010,Maharashtra,Sunflower,217.39999999999998,133.04,611.96
+2011,Maharashtra,Sunflower,102.7,61.42,598.05
+2012,Maharashtra,Sunflower,80.31,36.559999999999995,455.24
+2013,Maharashtra,Sunflower,93.8,57.550000000000004,613.54
+2014,Maharashtra,Sunflower,82.1,32.7,398.29
+2015,Maharashtra,Sunflower,48.19,11.01,228.47
+2016,Maharashtra,Sunflower,58.98,35.199999999999996,596.81
+2017,Maharashtra,Sunflower,40.9,20.72,506.6
+2010,Orissa,Sunflower,20.63,21.62,1047.99
+2011,Orissa,Sunflower,23.69,27.97,1180.67
+2012,Orissa,Sunflower,26.32,31.32,1189.97
+2013,Orissa,Sunflower,24.88,29.69,1193.33
+2014,Orissa,Sunflower,21.689999999999998,25.92,1195.02
+2015,Orissa,Sunflower,16.03,19.06,1189.02
+2016,Orissa,Sunflower,18.02,21.46,1190.9
+2017,Orissa,Sunflower,12.43,15.47,1244.57
+2010,Punjab,Sunflower,14.59,23.7,1624.4
+2011,Punjab,Sunflower,14.399999999999999,25.8,1791.67
+2012,Punjab,Sunflower,12.600000000000001,23.7,1880.95
+2016,Punjab,Sunflower,5.800000000000001,9.6,1655.17
+2017,Punjab,Sunflower,6.1,11.6,1901.64
+2010,Tamil Nadu,Sunflower,8.72,10.02,1149.08
+2011,Tamil Nadu,Sunflower,13.620000000000001,24.61,1806.9
+2012,Tamil Nadu,Sunflower,10.79,11.379999999999999,1054.68
+2013,Tamil Nadu,Sunflower,8.02,9.71,1210.72
+2014,Tamil Nadu,Sunflower,8.92,12.55,1406.95
+2015,Tamil Nadu,Sunflower,8.280000000000001,8.809999999999999,1064.01
+2016,Tamil Nadu,Sunflower,7.4399999999999995,2.91,391.13
+2017,Tamil Nadu,Sunflower,6.74,5.98,887.24
+2010,Telangana,Sunflower,27.97,28.54,1020.38
+2011,Telangana,Sunflower,24.32,24.05,988.9
+2012,Telangana,Sunflower,28.04,31.689999999999998,1130.17
+2013,Telangana,Sunflower,19.62,18.61,948.52
+2014,Telangana,Sunflower,18.38,25.67,1396.63
+2015,Telangana,Sunflower,11.54,13.33,1155.11
+2016,Telangana,Sunflower,5.89,9.59,1628.18
+2017,Telangana,Sunflower,3.6400000000000006,7.8100000000000005,2145.6
+2010,Uttar Pradesh,Sunflower,3.5599999999999996,6.220000000000001,1747.19
+2011,Uttar Pradesh,Sunflower,2.79,4.7700000000000005,1709.68
+2012,Uttar Pradesh,Sunflower,2.75,2.15,781.82
+2014,Uttar Pradesh,Sunflower,2.56,4.35,1699.22
+2015,Uttar Pradesh,Sunflower,2.18,3.55,1628.44
+2016,Uttar Pradesh,Sunflower,3.31,3.89,1175.23
+2017,Uttar Pradesh,Sunflower,2.08,3.0100000000000002,1447.12
+2010,West Bengal,Sunflower,6.58,7.35,1117.02
+2011,West Bengal,Sunflower,6.81,7.96,1168.87
+2012,West Bengal,Sunflower,7.36,9.61,1305.71
+2013,West Bengal,Sunflower,6.449999999999999,8.73,1353.49
+2014,West Bengal,Sunflower,6.92,9.0,1300.58
+2015,West Bengal,Sunflower,7.25,9.4,1296.55
+2016,West Bengal,Sunflower,7.23,9.49,1312.59
+2017,West Bengal,Sunflower,7.12,8.709999999999999,1223.31
+2010,Andhra Pradesh,Wheat,0.7500000000000001,1.07,1426.67
+2010,Assam,Wheat,44.37,55.54,1251.75
+2011,Assam,Wheat,39.81,48.19,1210.5
+2012,Assam,Wheat,33.76,43.94,1301.54
+2013,Assam,Wheat,31.06,40.17,1293.3
+2014,Assam,Wheat,23.36,28.43,1217.04
+2015,Assam,Wheat,20.72,24.12,1164.09
+2016,Assam,Wheat,17.27,23.189999999999998,1342.79
+2017,Assam,Wheat,17.580000000000002,24.39,1387.37
+2010,Bihar,Wheat,2100.19,5094.03,2425.51
+2011,Bihar,Wheat,2141.91,6530.94,3049.12
+2012,Bihar,Wheat,2207.7,6174.3,2796.71
+2013,Bihar,Wheat,2148.81,6134.73,2854.94
+2014,Bihar,Wheat,2154.43,3570.2200000000003,1657.15
+2015,Bihar,Wheat,2110.77,4736.46,2243.95
+2016,Bihar,Wheat,2105.81,5985.85,2842.54
+2017,Bihar,Wheat,2101.31,6104.3,2905.0
+2010,Chhattisgarh,Wheat,111.28,127.35,1144.41
+2011,Chhattisgarh,Wheat,104.85,135.14,1288.89
+2012,Chhattisgarh,Wheat,102.23,143.22,1400.96
+2013,Chhattisgarh,Wheat,105.03999999999999,140.74,1339.87
+2014,Chhattisgarh,Wheat,103.19,153.32,1485.8
+2015,Chhattisgarh,Wheat,105.8,142.34,1345.37
+2016,Chhattisgarh,Wheat,102.11,151.10000000000002,1479.78
+2017,Chhattisgarh,Wheat,102.19,141.64,1386.05
+2010,Gujarat,Wheat,1588.6,5013.4,3155.86
+2011,Gujarat,Wheat,1350.6,4072.1,3015.03
+2012,Gujarat,Wheat,1023.5,2944.0,2876.4
+2013,Gujarat,Wheat,1442.32,4608.01,3194.86
+2014,Gujarat,Wheat,1171.47,3293.5099999999998,2811.43
+2015,Gujarat,Wheat,857.73,2315.87,2700.0
+2016,Gujarat,Wheat,999.37,2757.76,2759.5
+2017,Gujarat,Wheat,1058.76,3101.06,2928.95
+2010,Haryana,Wheat,2504.0,11578.0,4623.8
+2011,Haryana,Wheat,2531.3,13119.0,5182.71
+2012,Haryana,Wheat,2496.92,11117.0,4452.29
+2013,Haryana,Wheat,2499.0,11800.0,4721.89
+2014,Haryana,Wheat,2628.0,10457.0,3979.07
+2015,Haryana,Wheat,2575.6,11351.0,4407.13
+2016,Haryana,Wheat,2564.01,12384.0,4829.93
+2017,Haryana,Wheat,2530.5,12263.0,4846.08
+2010,Himachal Pradesh,Wheat,346.95000000000005,534.71,1541.17
+2011,Himachal Pradesh,Wheat,345.17999999999995,506.78,1468.16
+2012,Himachal Pradesh,Wheat,350.14,656.53,1875.05
+2013,Himachal Pradesh,Wheat,415.67999999999995,324.28000000000003,780.12
+2014,Himachal Pradesh,Wheat,345.54,639.22,1849.92
+2015,Himachal Pradesh,Wheat,342.69,602.3,1757.57
+2016,Himachal Pradesh,Wheat,325.9,331.31,1016.6
+2017,Himachal Pradesh,Wheat,342.68,603.59,1761.38
+2010,Jharkhand,Wheat,49.62,54.17,1091.7
+2011,Jharkhand,Wheat,47.949999999999996,73.68,1536.6
+2012,Jharkhand,Wheat,69.33,128.57,1854.46
+2013,Jharkhand,Wheat,73.53,106.21,1444.44
+2014,Jharkhand,Wheat,87.25,139.05,1593.7
+2015,Jharkhand,Wheat,71.05,113.72,1600.56
+2016,Jharkhand,Wheat,112.11,226.86,2023.55
+2010,Karnataka,Wheat,254.75,279.06,1095.43
+2011,Karnataka,Wheat,225.48,193.31,857.33
+2012,Karnataka,Wheat,225.28,178.88,794.03
+2013,Karnataka,Wheat,209.1,210.04,1004.5
+2014,Karnataka,Wheat,197.63,260.1,1316.1
+2015,Karnataka,Wheat,173.85999999999999,129.01000000000002,742.03
+2016,Karnataka,Wheat,168.25,171.44,1018.96
+2017,Karnataka,Wheat,193.35,219.08,1133.07
+2010,Madhya Pradesh,Wheat,4633.1,9219.8,1989.99
+2011,Madhya Pradesh,Wheat,4889.2,12226.24,2500.66
+2012,Madhya Pradesh,Wheat,5601.05,16510.6,2947.77
+2013,Madhya Pradesh,Wheat,6123.05,15722.75,2567.8
+2014,Madhya Pradesh,Wheat,5999.0,18463.0,3077.68
+2015,Madhya Pradesh,Wheat,5914.0,18407.0,3112.45
+2016,Madhya Pradesh,Wheat,6423.0,21916.0,3412.11
+2017,Madhya Pradesh,Wheat,5802.9800000000005,20019.95,3449.94
+2010,Maharashtra,Wheat,1306.6,2300.75,1760.87
+2011,Maharashtra,Wheat,878.1,1498.6,1706.64
+2012,Maharashtra,Wheat,785.0,1198.71,1527.02
+2013,Maharashtra,Wheat,1028.2,1480.0,1439.41
+2014,Maharashtra,Wheat,1067.3,1307.7,1225.24
+2015,Maharashtra,Wheat,910.85,981.35,1077.4
+2016,Maharashtra,Wheat,1272.01,2214.01,1740.56
+2017,Maharashtra,Wheat,1137.74,1884.84,1656.65
+2010,Orissa,Wheat,17.55,28.04,1597.72
+2011,Orissa,Wheat,14.49,24.43,1685.99
+2012,Orissa,Wheat,14.27,24.86,1742.12
+2013,Orissa,Wheat,12.76,22.28,1746.08
+2014,Orissa,Wheat,10.120000000000001,17.81,1759.88
+2015,Orissa,Wheat,3.6100000000000003,6.35,1759.0
+2016,Orissa,Wheat,3.05,5.27,1727.87
+2017,Orissa,Wheat,2.9,5.38,1855.17
+2010,Punjab,Wheat,3510.0,16472.0,4692.88
+2011,Punjab,Wheat,3485.96,17782.0,5101.03
+2012,Punjab,Wheat,3517.0,16614.0,4723.91
+2013,Punjab,Wheat,3512.0,17620.0,5017.08
+2014,Punjab,Wheat,3505.0,15050.0,4293.87
+2015,Punjab,Wheat,3508.0,16077.0,4582.95
+2016,Punjab,Wheat,3495.0,17636.0,5046.07
+2017,Punjab,Wheat,3512.0,17830.0,5076.88
+2010,Rajasthan,Wheat,3036.16,10424.38,3433.41
+2011,Rajasthan,Wheat,2935.37,10160.92,3461.55
+2012,Rajasthan,Wheat,3063.23,10766.619999999999,3514.79
+2013,Rajasthan,Wheat,3205.66,11020.19,3437.73
+2014,Rajasthan,Wheat,3318.27,9823.91,2960.55
+2015,Rajasthan,Wheat,3108.96,10468.19,3367.1
+2016,Rajasthan,Wheat,3349.13,12430.94,3711.69
+2017,Rajasthan,Wheat,3050.25,11280.48,3698.21
+2010,Telangana,Wheat,9.329999999999998,12.08,1294.75
+2011,Telangana,Wheat,7.96,10.559999999999999,1326.63
+2012,Telangana,Wheat,7.9399999999999995,8.899999999999999,1120.91
+2013,Telangana,Wheat,7.039999999999999,7.789999999999999,1106.53
+2014,Telangana,Wheat,5.84,6.92,1184.93
+2015,Telangana,Wheat,4.95,16.91,3416.16
+2016,Telangana,Wheat,5.41,7.42,1371.53
+2017,Telangana,Wheat,4.16,5.77,1387.02
+2010,Uttar Pradesh,Wheat,9846.61,30602.91,3107.96
+2011,Uttar Pradesh,Wheat,9836.43,32271.69,3280.83
+2012,Uttar Pradesh,Wheat,9109.91,29041.28,3187.88
+2013,Uttar Pradesh,Wheat,9883.2,31611.63,3198.52
+2014,Uttar Pradesh,Wheat,9890.789999999999,20146.36,2036.88
+2015,Uttar Pradesh,Wheat,9691.27,27010.39,2787.08
+2016,Uttar Pradesh,Wheat,9931.3,35120.9,3536.38
+2017,Uttar Pradesh,Wheat,9797.59,35798.6,3653.82
+2010,Uttarakhand,Wheat,325.83,766.84,2353.5
+2011,Uttarakhand,Wheat,311.95,743.15,2382.27
+2012,Uttarakhand,Wheat,306.91,729.95,2378.38
+2013,Uttarakhand,Wheat,299.64,729.25,2433.75
+2014,Uttarakhand,Wheat,299.58,570.51,1904.37
+2015,Uttarakhand,Wheat,296.22,654.37,2209.07
+2016,Uttarakhand,Wheat,293.2,742.17,2531.28
+2017,Uttarakhand,Wheat,285.76,776.96,2718.92
+2010,West Bengal,Wheat,316.81,874.4200000000001,2760.08
+2011,West Bengal,Wheat,315.67,872.9,2765.23
+2012,West Bengal,Wheat,321.58,895.93,2786.03
+2013,West Bengal,Wheat,331.49,927.86,2799.06
+2014,West Bengal,Wheat,334.64,939.2600000000001,2806.78
+2015,West Bengal,Wheat,339.87,788.49,2319.98
+2016,West Bengal,Wheat,319.82,858.53,2684.42
+2017,West Bengal,Wheat,116.00999999999999,359.13,3095.68
