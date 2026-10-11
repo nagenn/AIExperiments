@@ -95,7 +95,7 @@ You can drop new PDFs into contracts/ at any time and click again.
 
 ### PART 1 — The Raw Agent (2 minutes)
 
-Open analyze_contract_standalone.py in your editor.
+Open analyze_contract.py in your editor.
 Walk through the code briefly — point out:
 - extract_contract_text()  — the PDF reader (perception)
 - compliance_rules.json    — the knowledge store (memory)
@@ -105,7 +105,7 @@ Walk through the code briefly — point out:
 Then run it from the terminal:
 
 ```
-python3.9 analyze_contract_standalone.py sample_contract.pdf
+python3.9 analyze_contract.py sample_contract.pdf
 ```
 
 Watch the result print. Then say:
