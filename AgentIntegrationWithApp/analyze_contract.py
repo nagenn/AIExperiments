@@ -5,6 +5,8 @@ from openai import OpenAI
 from typing import Optional
 from dotenv import load_dotenv
 
+CONTRACTS_FOLDER = "contracts"
+
 load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -100,3 +102,41 @@ def run_analysis(pdf_path: str, rules_path: str = "compliance_rules.json") -> di
                 "recommendations": "AI response could not be parsed.",
                 "confidence": 0.0
             }
+
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) < 2:
+        print("Usage: python3.9 analyze_contract.py <filename.pdf>")
+        print("Example: python3.9 analyze_contract.py sample_contract.pdf")
+        sys.exit(1)
+
+    filename = sys.argv[1]
+    pdf_path = os.path.join(CONTRACTS_FOLDER, filename)
+
+    if not os.path.exists(pdf_path):
+        print(f"ERROR: File not found — {pdf_path}")
+        print(f"Make sure the PDF is in the '{CONTRACTS_FOLDER}/' folder.")
+        sys.exit(1)
+
+    print("=" * 50)
+    print(f"CONTRACT REVIEW AGENT")
+    print(f"Analysing: {filename}")
+    print("=" * 50)
+    print("\n[1/3] Extracting text from PDF...")
+    print("[2/3] Sending to LLM for analysis...")
+    print("      (this may take 10-20 seconds...)\n")
+
+    result = run_analysis(pdf_path)
+
+    print("=== RESULT ===")
+    print(json.dumps(result, indent=2))
+    print("\n" + "=" * 50)
+
+    risk = result.get("risk_score", "Unknown")
+    if risk == "High":
+        print("⚠️  HIGH RISK — Escalate for legal review")
+    elif risk == "Medium":
+        print("⚠️  MEDIUM RISK — Needs attention")
+    else:
+        print("✅  LOW RISK — Cleared")
+    print("=" * 50)
